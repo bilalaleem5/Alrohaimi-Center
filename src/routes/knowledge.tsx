@@ -14,7 +14,7 @@ export const Route = createFileRoute("/knowledge")({
   head: () => ({
     meta: [
       {
-        title: "Knowledge Repository — Prof. Abdulmohsen Alrohaimi Center",
+        title: "Knowledge Repository — Dr. Abdulmohsen Alrohaimi Center",
       },
       {
         name: "description",
@@ -196,7 +196,7 @@ function Knowledge() {
           <div className="grid gap-6 md:grid-cols-2">
             {filteredPubs.map((pub) => {
               const isCopied = citationCopied === pub.id;
-              const citationText = `${pub.author} (${pub.year}). ${pub.title.en}. Prof. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.`;
+              const citationText = `${pub.author} (${pub.year}). ${pub.title.en}. Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.`;
 
               return (
                 <div

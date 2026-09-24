@@ -14,16 +14,16 @@ export const Route = createFileRoute("/about")({
     meta: [
       {
         title:
-          "About the Center & Founder — Prof. Abdulmohsen Alrohaimi Center",
+          "About the Center & Founder — Dr. Abdulmohsen Alrohaimi Center",
       },
       {
         name: "description",
         content:
-          "Learn about the Center's vision, mission, founder Prof. Abdulmohsen Hameed Alrohaimi, and the intellectual journey from the desert to global impact.",
+          "Learn about the Center's vision, mission, founder Dr. Abdulmohsen Hameed Alrohaimi, and the intellectual journey from the desert to global impact.",
       },
       {
         property: "og:title",
-        content: "About Prof. Abdulmohsen Alrohaimi Center",
+        content: "About Dr. Abdulmohsen Alrohaimi Center",
       },
       {
         property: "og:description",
@@ -146,7 +146,7 @@ function About() {
               <p className="mt-6 max-w-[58ch] text-lg leading-relaxed text-[#4e5e7b] md:text-xl">
                 {ar
                   ? "مركز فكري وبحثي وتطبيقي متعدد التخصصات يستكشف العلاقة بين الإنسان والإدراك والأنظمة والقيادة والتحول الحضاري في عصر الذكاء الاصطناعي."
-                  : "Prof. Abdulmohsen Alrohaimi Center is an elite multidisciplinary intellectual, research, and applied center exploring the relationship between humanity, cognition, systems, leadership, and civilizational transformation in the age of artificial intelligence."}
+                  : "Dr. Abdulmohsen Alrohaimi Center is an elite multidisciplinary intellectual, research, and applied center exploring the relationship between humanity, cognition, systems, leadership, and civilizational transformation in the age of artificial intelligence."}
               </p>
 
               {/* Verified Credentials Pills */}
@@ -333,7 +333,7 @@ function About() {
                   </div>
                   <div className="flex items-center justify-between border-b border-[#0c1836]/10 pb-2">
                     <span>{ar ? "الاعتماد الأكاديمي" : "Validation"}</span>
-                    <span className="font-semibold text-[#0c1836]">Prof. Abdulmohsen Alrohaimi</span>
+                    <span className="font-semibold text-[#0c1836]">Dr. Abdulmohsen Alrohaimi</span>
                   </div>
                 </div>
 
@@ -515,8 +515,8 @@ function About() {
 
             <p className="mt-6 text-base leading-relaxed text-[#4e5e7b]">
               {ar
-                ? "تؤكد المنظومة الفكرية للمركز على التمييز الصارم بين مرحلة البناء والتنظير الفلسفي من جهة، وبين النتائج المثبتة عبر الأبحاث التجريبية والمقاييس التطبيقية من جهة أخرى. وتخضع كافة مذكرات التفاهم والبرامج البحثية لاتفاقيات توثيق الملكية الفكرية والإسناد الأكاديمي المعتمدة دولياً لضمان أصالة المخرجات المعرفية الصادرة عن المركز والمؤسس البروفيسور عبدالمحسن حميد الرحيمي."
-                : "The Center's intellectual framework strictly maintains clear delineation between philosophical theoretical construction and empirically validated findings derived from diagnostic metric applications. All collaborative protocols and research memoranda uphold international academic peer-review standards and recognized intellectual attribution conventions for foundational works authored by Founder Prof. Abdulmohsen Hameed Alrohaimi."}
+                ? "تؤكد المنظومة الفكرية للمركز على التمييز الصارم بين مرحلة البناء والتنظير الفلسفي من جهة، وبين النتائج المثبتة عبر الأبحاث التجريبية والمقاييس التطبيقية من جهة أخرى. وتخضع كافة مذكرات التفاهم والبرامج البحثية لاتفاقيات توثيق الملكية الفكرية والإسناد الأكاديمي المعتمدة دولياً لضمان أصالة المخرجات المعرفية الصادرة عن المركز والمؤسس الدكتور عبدالمحسن حميد الرحيمي."
+                : "The Center's intellectual framework strictly maintains clear delineation between philosophical theoretical construction and empirically validated findings derived from diagnostic metric applications. All collaborative protocols and research memoranda uphold international academic peer-review standards and recognized intellectual attribution conventions for foundational works authored by Founder Dr. Abdulmohsen Hameed Alrohaimi."}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 border-t border-[#0c1836]/10 pt-6">

@@ -224,7 +224,7 @@ export function TheoryStageInteractive() {
 
               <div className="mt-6 flex items-center justify-between border-t border-[#0c1836]/10 pt-4 text-[11px]">
                 <span className="text-[#718096]">
-                  {ar ? "مركز البروفيسور عبدالمحسن الرحيمي" : "Alrohaimi Center Riyadh"}
+                  {ar ? "مركز الدكتور عبدالمحسن الرحيمي" : "Alrohaimi Center Riyadh"}
                 </span>
                 <span className="font-mono font-bold text-[#b88a3b]">alrohaimitheory.org</span>
               </div>

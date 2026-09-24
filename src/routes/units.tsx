@@ -14,7 +14,7 @@ export const Route = createFileRoute("/units")({
   head: () => ({
     meta: [
       {
-        title: "Center Units & Labs — Prof. Abdulmohsen Alrohaimi Center",
+        title: "Center Units & Labs — Dr. Abdulmohsen Alrohaimi Center",
       },
       {
         name: "description",

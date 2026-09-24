@@ -160,11 +160,11 @@ export function Shell({ children }: { children: ReactNode }) {
                   <RoyalEmblem size={scrolled ? 50 : 64} />
                 </div>
 
-                {/* Name Split: Line 1 Prof. Abdulmohsen | Line 2 Alrohaimi Center */}
+                {/* Name Split: Line 1 Dr. Abdulmohsen | Line 2 Alrohaimi Center */}
                 <div className="flex flex-col min-w-0 justify-center">
                   <div className="flex items-center">
                     <span className="font-sans text-[11px] lg:text-[12px] font-semibold uppercase tracking-wider text-amber-800/90 leading-tight whitespace-nowrap">
-                      {ar ? "البروفيسور عبدالمحسن" : "Prof. Abdulmohsen"}
+                      {ar ? "الدكتور عبدالمحسن" : "Dr. Abdulmohsen"}
                     </span>
                   </div>
 
@@ -340,7 +340,7 @@ function Footer() {
                 {ar ? centerInfo.name.ar : centerInfo.name.en}
               </strong>
               <p className="text-xs text-amber-800 font-semibold mt-0.5">
-                {ar ? "المؤسس: البروفيسور عبدالمحسن حميد الرحيمي" : `Founder: ${centerInfo.founder.en}`}
+                {ar ? "المؤسس: الدكتور عبدالمحسن حميد الرحيمي" : `Founder: ${centerInfo.founder.en}`}
               </p>
             </div>
           </div>

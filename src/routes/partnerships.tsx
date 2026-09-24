@@ -18,7 +18,7 @@ export const Route = createFileRoute("/partnerships")({
       {
         name: "description",
         content:
-          "Collaborate with Prof. Abdulmohsen Alrohaimi Center on cutting-edge research, cognitive sovereignty frameworks, and international dialogue on humanity in the age of AI.",
+          "Collaborate with Dr. Abdulmohsen Alrohaimi Center on cutting-edge research, cognitive sovereignty frameworks, and international dialogue on humanity in the age of AI.",
       },
       {
         property: "og:title",
@@ -123,8 +123,8 @@ function Partnerships() {
               <div className="mt-4 h-0.5 w-24 bg-[#b88a3b]" />
               <p className="mt-6 text-base leading-relaxed text-[#4e5e7b] md:text-lg">
                 {ar
-                  ? "يستكشف المركز مسارات التعاون الدولي والحوار العالمي حول مستقبل القيادة والإنسان والإدراك في عصر الذكاء الاصطناعي. وتهدف الشراكات البحثية إلى دعم الدراسة والتطوير والتطبيق الميداني مع الحفاظ التام على الإسناد الفكري والعلمي الواضح للنظريات والنماذج والأعمال الأصيلة الصادرة عن المركز والمؤسس البروفيسور عبدالمحسن حميد الرحيمي."
-                  : "The Center explores pathways for international collaboration and global dialogue on the future of leadership, humanity, and cognition in the age of artificial intelligence. Research partnerships are explicitly structured to advance empirical testing, curriculum development, and applied governance while maintaining transparent intellectual attribution for the foundational theories, models, and original treatises created by Founder Prof. Abdulmohsen Hameed Alrohaimi."}
+                  ? "يستكشف المركز مسارات التعاون الدولي والحوار العالمي حول مستقبل القيادة والإنسان والإدراك في عصر الذكاء الاصطناعي. وتهدف الشراكات البحثية إلى دعم الدراسة والتطوير والتطبيق الميداني مع الحفاظ التام على الإسناد الفكري والعلمي الواضح للنظريات والنماذج والأعمال الأصيلة الصادرة عن المركز والمؤسس الدكتور عبدالمحسن حميد الرحيمي."
+                  : "The Center explores pathways for international collaboration and global dialogue on the future of leadership, humanity, and cognition in the age of artificial intelligence. Research partnerships are explicitly structured to advance empirical testing, curriculum development, and applied governance while maintaining transparent intellectual attribution for the foundational theories, models, and original treatises created by Founder Dr. Abdulmohsen Hameed Alrohaimi."}
               </p>
             </div>
 

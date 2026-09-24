@@ -4,8 +4,8 @@ export const pick = <T,>(lang: Lang, en: T, ar: T): T => (lang === "en" ? en : a
 
 export const centerInfo = {
   name: {
-    en: "Prof. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
-    ar: "مركز البروفيسور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
+    en: "Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
+    ar: "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
   },
   shortName: {
     en: "Alrohaimi Center",
@@ -16,8 +16,8 @@ export const centerInfo = {
     ar: "من فهم الإنسان والإدراك إلى صناعة التحول",
   },
   founder: {
-    en: "Prof. Abdulmohsen Hameed Alrohaimi",
-    ar: "البروفيسور عبدالمحسن حميد الرحيمي",
+    en: "Dr. Abdulmohsen Hameed Alrohaimi",
+    ar: "الدكتور عبدالمحسن حميد الرحيمي",
     title: {
       en: "Founder & Lead Theorist",
       ar: "المؤسس والمنظر الرئيسي",
@@ -708,7 +708,7 @@ export const publications = [
     category: "Models & Theories",
     arabicCategory: "النماذج والنظريات",
     year: "2026",
-    author: "Prof. Abdulmohsen Hameed Alrohaimi",
+    author: "Dr. Abdulmohsen Hameed Alrohaimi",
     pages: "348 pages · Academic Edition",
     description: {
       en: "The comprehensive treatise introducing the six-stage movement from latency to impact, offering an original intellectual architecture for human and institutional agency.",
@@ -756,7 +756,7 @@ export const publications = [
     category: "Books & References",
     arabicCategory: "الكتب والمراجع",
     year: "2025",
-    author: "Prof. Abdulmohsen Hameed Alrohaimi",
+    author: "Dr. Abdulmohsen Hameed Alrohaimi",
     pages: "Hardcover Book · 280 pages",
     description: {
       en: "A seminal reference text bridging classical wisdom and complex systems science for contemporary executive leaders.",

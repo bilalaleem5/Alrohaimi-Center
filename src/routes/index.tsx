@@ -57,7 +57,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Prof. Abdulmohsen Alrohaimi Center | alrohaimitheory.org",
+        content: "Dr. Abdulmohsen Alrohaimi Center | alrohaimitheory.org",
       },
       {
         property: "og:description",
@@ -114,7 +114,7 @@ function Home() {
                     </p>
                     <div className="mt-2 flex items-center justify-between border-t border-amber-900/10 pt-2">
                       <p className="font-mono text-[9px] font-bold uppercase tracking-wider text-amber-800">
-                        {ar ? "أ.د. عبدالمحسن الرحيمي" : "Prof. Abdulmohsen Alrohaimi"}
+                        {ar ? "أ.د. عبدالمحسن الرحيمي" : "Dr. Abdulmohsen Alrohaimi"}
                       </p>
                       <p className="font-mono text-[8.5px] uppercase tracking-wider text-slate-500">
                         {ar ? "المؤسس والمنظر الرئيسي" : "Founder & Lead Theorist"}
@@ -138,7 +138,7 @@ function Home() {
               <h1 className="mt-6 max-w-[18ch] text-balance font-display text-4xl font-black leading-[1.12] text-[#0c1836] sm:text-5xl md:text-6xl lg:text-[3.8rem]">
                 {ar ? (
                   <>
-                    <span className="block text-[#0c1836]">مركز البروفيسور</span>
+                    <span className="block text-[#0c1836]">مركز الدكتور</span>
                     <span className="gold-text-light block">عبدالمحسن الرحيمي</span>
                     <span className="block text-2xl font-bold text-[#334155] sm:text-3xl md:text-4xl mt-1">
                       للسيادة الإدراكية والتحول الحضاري
@@ -146,7 +146,7 @@ function Home() {
                   </>
                 ) : (
                   <>
-                    <span className="block text-[#0c1836]">Prof. Abdulmohsen</span>
+                    <span className="block text-[#0c1836]">Dr. Abdulmohsen</span>
                     <span className="gold-text-light block">Alrohaimi Center</span>
                     <span className="block text-2xl font-bold text-[#334155] sm:text-3xl md:text-4xl mt-1">
                       for Cognitive Sovereignty & Civilizational Transformation

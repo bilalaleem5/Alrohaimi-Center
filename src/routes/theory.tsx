@@ -16,7 +16,7 @@ export const Route = createFileRoute("/theory")({
   head: () => ({
     meta: [
       {
-        title: "Alrohaimi Theory — Prof. Abdulmohsen Alrohaimi Center",
+        title: "Alrohaimi Theory — Dr. Abdulmohsen Alrohaimi Center",
       },
       {
         name: "description",
@@ -132,7 +132,7 @@ function Theory() {
                 </p>
                 <div className="mx-auto mt-6 h-0.5 w-16 bg-[#b88a3b]" />
                 <p className="mt-4 font-mono text-xs font-bold text-[#0c1836]">
-                  Prof. Abdulmohsen Alrohaimi
+                  Dr. Abdulmohsen Alrohaimi
                 </p>
                 <p className="mt-0.5 font-mono text-[10px] text-[#718096]">
                   Riyadh · Kingdom of Saudi Arabia

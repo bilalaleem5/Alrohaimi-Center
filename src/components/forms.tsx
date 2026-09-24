@@ -31,8 +31,8 @@ export function InquiryForm({ partnership = false }: { partnership?: boolean }) 
         </h3>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-[#4e5e7b]">
           {lang === "ar"
-            ? "شكرًا لتواصلكم مع مركز البروفيسور عبدالمحسن الرحيمي. سيتواصل معكم ممثل الوحدة الأكاديمية المختصة في أقرب وقت."
-            : "Thank you for reaching out to Prof. Abdulmohsen Alrohaimi Center. An academic liaison will review your proposal promptly."}
+            ? "شكرًا لتواصلكم مع مركز الدكتور عبدالمحسن الرحيمي. سيتواصل معكم ممثل الوحدة الأكاديمية المختصة في أقرب وقت."
+            : "Thank you for reaching out to Dr. Abdulmohsen Alrohaimi Center. An academic liaison will review your proposal promptly."}
         </p>
         <Button
           onClick={() => setSent(false)}
@@ -143,7 +143,7 @@ export function InquiryForm({ partnership = false }: { partnership?: boolean }) 
           <span>
             {lang === "ar"
               ? "أرغب في استلام النشرات الفكرية والمخرجات المعرفية المعتمدة الصادرة عن المركز."
-              : "I wish to receive official whitepapers and knowledge outputs from Prof. Abdulmohsen Alrohaimi Center."}
+              : "I wish to receive official whitepapers and knowledge outputs from Dr. Abdulmohsen Alrohaimi Center."}
           </span>
         </label>
       )}

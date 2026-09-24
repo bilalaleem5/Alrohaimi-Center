@@ -253,7 +253,7 @@ export function OutputsShowcase() {
 
             <p className="mx-auto mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300/90 font-normal">
               {ar
-                ? "يفتح مركز البروفيسور عبدالمحسن الرحيمي مسارات التعاون العلمي الرفيع مع الجامعات العالمية، والمؤسسات الحكومية، وصناع القرار لتبادل المعرفة وصناعة الأثر التاريخي."
+                ? "يفتح مركز الدكتور عبدالمحسن الرحيمي مسارات التعاون العلمي الرفيع مع الجامعات العالمية، والمؤسسات الحكومية، وصناع القرار لتبادل المعرفة وصناعة الأثر التاريخي."
                 : "The Center actively partners with international universities, research institutions, and sovereign executive bodies to advance cognitive sovereignty and create enduring civilizational impact."}
             </p>
 
