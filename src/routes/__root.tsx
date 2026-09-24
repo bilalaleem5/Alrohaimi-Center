@@ -9,7 +9,6 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Shell, SiteProvider, RoyalEmblem, Arrow } from "../components/site";
 
 function NotFoundComponent() {
@@ -42,7 +41,6 @@ function NotFoundComponent() {
 
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   const router = useRouter();
-  useEffect(() => reportLovableError(error, { boundary: "root" }), [error]);
   return (
     <div className="grid min-h-[70vh] place-items-center bg-[#fbf9f5] px-5 py-24 text-center text-[#0c1836]">
       <div className="card-3d-light max-w-md rounded-3xl bg-white p-10 shadow-luxury">
