@@ -1,0 +1,244 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: #b88a3b;
+  --color-gold-bright: #d4a34b;
+  --color-gold-dark: #8c641e;
+  --color-navy: #0d1b3e;
+  --color-navy-dark: #070f24;
+  --color-sand: #f5f0e6;
+  --color-destructive: oklch(0.68 0.2 25);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: #b88a3b;
+  --font-display: "Libre Baskerville", "Noto Kufi Arabic", serif;
+  --font-body: "IBM Plex Sans", "Noto Sans Arabic", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-ar: "Noto Sans Arabic", "Noto Kufi Arabic", sans-serif;
+  --shadow-luxury: 0 12px 40px -10px rgba(13, 27, 62, 0.08);
+  --shadow-elevated: 0 24px 60px -12px rgba(13, 27, 62, 0.12);
+  --shadow-gold: 0 8px 30px rgba(184, 138, 59, 0.22);
+}
+
+/* ==========================================================================
+   OFFICIAL PRESTIGE SAUDI LIGHT THEME (ROYAL IVORY & SAUDI IMPERIAL GOLD)
+   ========================================================================== */
+:root {
+  --radius: 0.85rem;
+  /* Luxurious Warm Royal Ivory & Marble Sand Background */
+  --background: #fbf9f5;
+  --foreground: #0c1836;
+  --card: #ffffff;
+  --card-foreground: #0c1836;
+  --popover: #ffffff;
+  --popover-foreground: #0c1836;
+  --primary: #b88a3b;
+  --primary-foreground: #ffffff;
+  --secondary: #f4efe4;
+  --secondary-foreground: #0c1836;
+  --muted: #eee8db;
+  --muted-foreground: #4e5e7b;
+  --accent: #b88a3b;
+  --accent-foreground: #ffffff;
+  --border: rgba(184, 138, 59, 0.22);
+  --input: rgba(12, 24, 54, 0.15);
+  --ring: #b88a3b;
+}
+
+/* Base resets & typography */
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    scroll-behavior: smooth;
+    background: #fbf9f5;
+    color: #0c1836;
+  }
+  body {
+    margin: 0;
+    background: #fbf9f5;
+    color: #0c1836;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  button, a {
+    cursor: pointer;
+  }
+  ::selection {
+    background: rgba(184, 138, 59, 0.25);
+    color: #0c1836;
+  }
+}
+
+/* ==========================================================================
+   LUXURY LIGHT VISUAL SYSTEM & KINETIC MICRO-INTERACTIONS
+   ========================================================================== */
+
+/* Frosted Glass & Luxury Cards */
+.glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(184, 138, 59, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px -8px rgba(13, 27, 62, 0.06);
+}
+
+.glass-sand {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(246, 241, 230, 0.85));
+  border: 1px solid rgba(184, 138, 59, 0.28);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.glass-navy {
+  background: linear-gradient(135deg, #091329, #0d1b3e);
+  border: 1px solid rgba(223, 190, 122, 0.35);
+  color: #ffffff;
+}
+
+/* Radiant Gold Text on Light Background */
+.gold-text-light {
+  background: linear-gradient(135deg, #8a6217 0%, #b88a3b 45%, #8c641e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.royal-heading {
+  color: #0c1836;
+}
+
+/* Ambient Warm Light Atmosphere */
+.glow-ambient-light {
+  background: radial-gradient(circle at 50% -5%, rgba(184, 138, 59, 0.12) 0%, transparent 60%),
+              radial-gradient(circle at 90% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 10% 65%, rgba(184, 138, 59, 0.06) 0%, transparent 55%),
+              #fbf9f5;
+}
+
+/* Interactive 3D Card Hover Perspective */
+.card-3d-light {
+  background: #ffffff;
+  border: 1px solid rgba(184, 138, 59, 0.22);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+  will-change: transform;
+  box-shadow: 0 10px 30px -8px rgba(12, 24, 54, 0.06);
+}
+
+.card-3d-light:hover {
+  transform: translateY(-7px) rotateX(1.5deg) scale(1.012);
+  box-shadow: 0 24px 50px -10px rgba(12, 24, 54, 0.12), 0 0 25px rgba(184, 138, 59, 0.18);
+  border-color: rgba(184, 138, 59, 0.55);
+}
+
+/* Shimmer & Golden Borders */
+.shimmer-gold {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-gold::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -150%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(184, 138, 59, 0.25), transparent);
+  animation: shimmer 4.5s infinite;
+  pointer-events: none;
+}
+@keyframes shimmer {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
+/* Pulsing energy dot for light mode */
+.pulse-gold-light {
+  box-shadow: 0 0 0 0 rgba(184, 138, 59, 0.7);
+  animation: pulse-light 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+@keyframes pulse-light {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(184, 138, 59, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 9px rgba(184, 138, 59, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(184, 138, 59, 0); }
+}
+
+/* Page enter transition */
+.page-enter {
+  animation: page-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Depth Stage */
+.depth-stage {
+  perspective: 1200px;
+}
+.depth-image {
+  transform: rotateY(-2.5deg) rotateX(1.5deg);
+  transform-origin: center;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s;
+  box-shadow: 0 20px 50px -10px rgba(12, 24, 54, 0.15);
+}
+.depth-stage:hover .depth-image {
+  transform: rotateY(0) rotateX(0) scale(1.02);
+  box-shadow: 0 28px 65px -12px rgba(12, 24, 54, 0.22), 0 0 35px rgba(184, 138, 59, 0.15);
+}
+
+.editorial-rule-gold {
+  background: linear-gradient(90deg, #b88a3b, rgba(184, 138, 59, 0.15));
+}
+
+.marquee-track {
+  animation: marquee 35s linear infinite;
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* Arabic Typography Enhancements */
+[dir="rtl"] {
+  font-family: "Noto Sans Arabic", "Noto Kufi Arabic", sans-serif;
+  text-align: right;
+}
+[dir="rtl"] .font-display {
+  font-family: "Noto Kufi Arabic", serif;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+[dir="rtl"] .font-mono {
+  font-family: "Noto Kufi Arabic", monospace;
+  letter-spacing: 0;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .page-enter, .marquee-track, .shimmer-gold::before, .pulse-gold-light {
+    animation: none !important;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

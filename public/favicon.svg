@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a34b" />
+      <stop offset="50%" stop-color="#b88a3b" />
+      <stop offset="100%" stop-color="#8c641e" />
+    </linearGradient>
+    <radialGradient id="bgDisc" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="85%" stop-color="#fbf7ee" />
+      <stop offset="100%" stop-color="#ede3cd" />
+    </radialGradient>
+  </defs>
+
+  <!-- Circular Foundation Background Disc -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgDisc)" stroke="#b88a3b" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="44" stroke="url(#goldGradLight)" stroke-width="1" stroke-dasharray="2 3" />
+
+  <!-- Riyadh Modern Skyline Silhouette (Right side) -->
+  <path
+    d="M50 72 L50 48 L56 48 L56 42 L62 42 L62 72 M68 72 L68 38 L72 38 L75 28 L78 38 L78 72 M82 72 L82 52 L86 52 L86 72"
+    fill="#b88a3b"
+    opacity="0.35"
+  />
+  <!-- Kingdom Tower Silhouette -->
+  <path
+    d="M72 72 L73 34 L75 28 L77 34 L78 72 Z M74 38 A1.5 1.5 0 0 1 76 38 A1.5 1.5 0 0 1 74 38 Z"
+    fill="#8c641e"
+    opacity="0.65"
+  />
+
+  <!-- Left Neural Brain Hemisphere -->
+  <path
+    d="M48 28 C34 28 24 38 24 50 C24 62 34 72 48 72"
+    stroke="url(#goldGradLight)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Neural Synaptic Circuits -->
+  <path
+    d="M28 50 C34 46 40 54 48 50 M32 40 C38 42 42 36 48 38 M32 60 C38 58 42 64 48 62"
+    stroke="#0d1b3e"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <circle cx="28" cy="50" r="2" fill="#b88a3b" />
+  <circle cx="34" cy="42" r="2" fill="#0d1b3e" />
+  <circle cx="40" cy="56" r="2" fill="#b88a3b" />
+  <circle cx="34" cy="58" r="2" fill="#0d1b3e" />
+
+  <!-- Torch of Enlightenment at Apex with 'CAI' -->
+  <path
+    d="M50 14 C48 18 47 20 49 24 C50 25 51 25 52 24 C54 20 52 18 50 14 Z"
+    fill="url(#goldGradLight)"
+  />
+  <text
+    x="50"
+    y="26"
+    text-anchor="middle"
+    font-size="5"
+    font-family="'IBM Plex Sans', sans-serif"
+    font-weight="bold"
+    fill="#0d1b3e"
+  >
+    CAI
+  </text>
+
+  <!-- Base 'AI' Node -->
+  <circle cx="50" cy="74" r="6" fill="#f4efe4" stroke="#b88a3b" stroke-width="1.5" />
+  <text
+    x="50"
+    y="76"
+    text-anchor="middle"
+    font-size="4.5"
+    font-family="'IBM Plex Sans', sans-serif"
+    font-weight="bold"
+    fill="#0d1b3e"
+  >
+    AI
+  </text>
+</svg>
