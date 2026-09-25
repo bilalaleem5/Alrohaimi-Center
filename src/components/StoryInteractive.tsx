@@ -78,10 +78,10 @@ export function StoryInteractive() {
       num: "01",
       title: ar ? "المرحلة 01: من شح الموارد إلى قراءة الواقع" : "Phase 01: Reading Reality in Scarcity",
       narrative: ar
-        ? "بدأت الفكرة في بيئة شحيحة الموارد، حيث لم تكن القدرة كامنة في الوفرة، بل في قراءة الواقع، وإدارة الممكن، والتكيف والابتكار وصناعة القيمة من المحدود."
-        : "The idea originated in an environment of scarce resources, where capability was not born of abundance, but from reading reality, managing the possible, and engineering value from the limited.",
+        ? "ينطلق المنظور الفكري للمركز من ملاحظة جوهرية: قد توجد القدرة قبل أن تصبح مرئية أو منظمة أو معبأة. تمثل الصحراء سياقاً يغدو فيه التكيف والإدراك وسعة الحيلة وإدارة الممكن أشكالاً أساسية من الذكاء."
+        : "The Center's intellectual perspective begins with a fundamental observation: capability may exist before it becomes visible, organized, or mobilized. The desert represents a context in which adaptation, perception, resourcefulness, resilience, and the management of possibility become essential forms of intelligence.",
       tag: ar ? "نقطة الانطلاق" : "The Genesis",
-      quote: ar ? "القدرة تبدأ من قراءة الواقع لا من الوفرة" : "Capability begins by reading reality, not abundance.",
+      quote: ar ? "الصحراء ليست مجرد جغرافيا، بل هي مدرسة" : "The desert is not merely geography. It is a school.",
     },
     {
       num: "02",

@@ -136,56 +136,52 @@ function Home() {
                 </span>
               </div>
 
-              {/* Main Headline */}
-              <h1 className="mt-6 max-w-[18ch] text-balance font-display text-4xl font-black leading-[1.12] text-[#0c1836] sm:text-5xl md:text-6xl lg:text-[3.8rem]">
-                {ar ? (
-                  <>
-                    <span className="block text-[#0c1836]">مركز الدكتور</span>
-                    <span className="gold-text-light block">عبدالمحسن الرحيمي</span>
-                    <span className="block text-2xl font-bold text-[#334155] sm:text-3xl md:text-4xl mt-1">
-                      للسيادة الإدراكية والتحول الحضاري
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <span className="block text-[#0c1836]">Dr. Abdulmohsen</span>
-                    <span className="gold-text-light block">Alrohaimi Center</span>
-                    <span className="block text-2xl font-bold text-[#334155] sm:text-3xl md:text-4xl mt-1">
-                      for Cognitive Sovereignty & Civilizational Transformation
-                    </span>
-                  </>
-                )}
-              </h1>
+              {/* Main Headline (Section 6 of Master Developer Document) */}
+              <div className="mt-4">
+                <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#b88a3b]">
+                  {ar
+                    ? "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري"
+                    : "DR. ABDULMOHSEN ALROHAIMI CENTER FOR COGNITIVE SOVEREIGNTY & CIVILIZATIONAL TRANSFORMATION"}
+                </span>
+                <h1 className="mt-3 max-w-[18ch] text-balance font-display text-4xl font-black leading-[1.12] text-[#0c1836] sm:text-5xl md:text-6xl lg:text-[4rem]">
+                  {ar ? (
+                    <>
+                      من الكمون{" "}
+                      <span className="gold-text-light block sm:inline">إلى الأثر</span>
+                    </>
+                  ) : (
+                    <>
+                      From Latency{" "}
+                      <span className="gold-text-light block sm:inline">to Impact</span>
+                    </>
+                  )}
+                </h1>
+              </div>
 
-              {/* Gold Tagline (Directly from Client Wireframe) */}
-              <p className="mt-5 max-w-[48ch] font-display text-xl font-bold italic leading-relaxed text-amber-800 sm:text-2xl">
-                {ar ? centerInfo.tagline.ar : `"${centerInfo.tagline.en}"`}
-              </p>
-
-              {/* Mission / Positioning Paragraph (Point 2) */}
-              <p className="mt-4 max-w-[58ch] text-base leading-relaxed text-[#4e5e7b] sm:text-lg">
+              {/* Supporting copy (Section 6 of Master Developer Document) */}
+              <p className="mt-5 max-w-[58ch] text-base leading-relaxed text-[#4e5e7b] sm:text-lg">
                 {ar
-                  ? "مركز فكري وبحثي وتطبيقي يطور منظومات نظرية، وأطراً مفاهيمية، ونماذج تشغيلية، ونماذج تشخيصية أولية، وبرامج بحثية تعنى بالإنسان والإدراك والأنظمة والقيادة والتحول الحضاري."
-                  : "An intellectual, research, and applied center developing theoretical systems, conceptual frameworks, models, diagnostic prototypes, and research programs addressing humanity, cognition, systems, leadership, and civilizational transformation."}
+                  ? "يطور مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري أطراً فكرية ونظرية وتطبيقية تستكشف كيفية انتقال الإمكان الكامن الإنساني والمؤسسي عبر الإدراك والمعنى والقرار والتحول والأثر."
+                  : "The Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation develops intellectual, theoretical, and applied frameworks exploring how latent human and institutional potential moves through cognition, meaning, decision, transformation, and impact."}
               </p>
 
-              {/* Dual Action CTAs */}
+              {/* Dual Action CTAs (Section 6 of Master Developer Document) */}
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link
-                  to="/about"
+                  to="/theory"
                   className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#b88a3b] to-[#996515] px-7 py-3.5 text-sm font-bold text-white shadow-gold transition-all hover:from-[#c59642] hover:to-[#a77019] hover:scale-105"
                 >
-                  <span>{ar ? "اكتشف المركز" : "Discover the Center"}</span>
+                  <span>{ar ? "استكشف نظرية الرحيمي" : "Explore Alrohaimi Theory"}</span>
                   <span className="transition-transform group-hover:translate-x-1">
                     <Arrow />
                   </span>
                 </Link>
 
                 <Link
-                  to="/knowledge"
+                  to="/research"
                   className="inline-flex items-center gap-2 rounded-full border border-amber-900/20 bg-white px-6 py-3.5 text-sm font-semibold text-[#0c1836] shadow-sm transition-all hover:border-amber-600 hover:bg-[#f7f3ea]"
                 >
-                  <span>{ar ? "استكشف منظومتنا المعرفية" : "Explore Our Knowledge System"}</span>
+                  <span>{ar ? "استكشف الأبحاث" : "Explore the Research"}</span>
                 </Link>
               </div>
 

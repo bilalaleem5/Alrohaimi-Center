@@ -36,8 +36,8 @@ const PILLARS_DATA: PillarDetail[] = [
       ar: "كيف يستيقظ الإمكان الكامن لدى الإنسان إلى فاعلية واعية؟",
     },
     desc: {
-      en: "Understanding humanity, existential meaning, and latent capability as the prime ontological anchor of civilizational renewal.",
-      ar: "فهم الإنسان والمعنى والقدرة الكامنة بوصفها المحرك الجوهري والمنطلق التأسيسي للنهوض الحضاري.",
+      en: "Understanding human capability, meaning, dignity, and agency.",
+      ar: "فهم القدرة الإنسانية، والمعنى، والكرامة، والفاعلية.",
     },
     concept: { en: "Latent Potential // الكمون الإنساني", ar: "الكمون الإنساني والفاعلية" },
     accentColor: "#b88a3b",
@@ -58,8 +58,8 @@ const PILLARS_DATA: PillarDetail[] = [
       ar: "كيف يتحول الوعي والإدراك إلى قرارات رشيدة في عصر الذكاء الاصطناعي؟",
     },
     desc: {
-      en: "Deciphering awareness, perceptual architecture, and cognitive sovereignty in individual leaders and institutional minds.",
-      ar: "فك شفرة الوعي وهندسة الإدراك والسيادة الإدراكية لدى القادة والمؤسسات في عصر الخوارزميات.",
+      en: "Exploring perception, interpretation, decision-making, and cognitive sovereignty.",
+      ar: "استكشاف الإدراك، والتفسير، وصناعة القرار، والسيادة الإدراكية.",
     },
     concept: { en: "Cognitive Sovereignty // السيادة الإدراكية", ar: "السيادة الإدراكية والقرار" },
     accentColor: "#0284c7",
@@ -80,8 +80,8 @@ const PILLARS_DATA: PillarDetail[] = [
       ar: "كيف تتفاعل شبكات الاعتماد المتبادل عبر البيئات المؤسسية المعقدة؟",
     },
     desc: {
-      en: "Navigating non-linear adaptive networks, institutional feedback loops, and emergent socio-technical dynamics.",
-      ar: "قراءة الشبكات التكيفية المعقدة وحلقات التغذية الراجعة المؤسسية والديناميكيات الاجتماعية والتقنية.",
+      en: "Studying institutions, complex systems, interdependencies, and adaptive transformation.",
+      ar: "دراسة المؤسسات، والأنظمة المعقدة، والترابطات المنظومية، والتحول التكيفي.",
     },
     concept: { en: "Complex Dynamics // تعقيد الأنظمة", ar: "الأنظمة المعقدة والتكيف" },
     accentColor: "#059669",
@@ -102,8 +102,8 @@ const PILLARS_DATA: PillarDetail[] = [
       ar: "كيف تُحوَّل المعرفة النظرية والقدرة الكامنة إلى أثر حضاري دائم؟",
     },
     desc: {
-      en: "Translating theoretical models into empirical executive academies, sovereign metrics, and enduring civilizational transformation.",
-      ar: "تحويل النماذج النظرية إلى أكاديميات قيادية ومؤشرات قياس معيارية تصنع أثراً حضارياً مستداماً.",
+      en: "Exploring how knowledge and latent capability can move toward systemic and civilizational impact.",
+      ar: "استكشاف كيفية انتقال المعرفة والقدرة الكامنة نحو أثر منظومي وحضاري.",
     },
     concept: { en: "Historical Impact // الأثر الحضاري", ar: "صناعة الأثر المستدام" },
     accentColor: "#b88a3b",

@@ -41,11 +41,11 @@ const RESEARCH_FIELDS: ResearchField[] = [
     name: { en: "Alrohaimi Theory", ar: "نظرية الرحيمي" },
     category: { en: "Foundational Epistemic System", ar: "المنظومة الفكرية التأسيسية" },
     desc: {
-      en: "A comprehensive intellectual architecture tracing human agency through six interconnected phases: from latent potential to enduring civilizational impact.",
-      ar: "منظومة فكرية تأسيسية ورصينة تؤصل لمسار الفاعلية الإنسانية عبر ست مراحل متكاملة: من الكمون إلى صناعة الأثر الحضاري.",
+      en: "A developing intellectual and theoretical system exploring the transition from latent potential through cognition, meaning, decision, transformation, and impact.",
+      ar: "منظومة فكرية ونظرية قيد التطوير تستكشف الانتقال من الإمكان الكامن عبر الإدراك والمعنى والقرار والتحول والأثر.",
     },
     inquiry: {
-      en: "How does latent potential awaken and crystallize into enduring historic capability?",
+      en: "How does latent potential awaken and crystallize into enduring historical capability?",
       ar: "كيف يتحول الإمكان الإنساني الكامن إلى قدرة وفعل وأثر حضاري دائم؟",
     },
     tags: {
@@ -61,8 +61,8 @@ const RESEARCH_FIELDS: ResearchField[] = [
     name: { en: "Cognitive Sovereignty", ar: "السيادة الإدراكية" },
     category: { en: "Decision Autonomy & AI Defense", ar: "استقلالية القرار والذكاء الاصطناعي" },
     desc: {
-      en: "Empowering leaders and institutions to preserve sovereign critical judgment, interpret synthetic realities, and prevent algorithmic capture in the AI era.",
-      ar: "تمكين القادة والمؤسسات من صيانة استقلالية القرار وحماية الإدراك والوعي النقدي في مواجهة الهيمنة الخوارزمية.",
+      en: "The capacity of individuals and institutions to understand, interpret, and assume responsibility for decisions in an age of algorithmic and AI-enabled systems.",
+      ar: "قدرة الأفراد والمؤسسات على فهم القرارات وتفسيرها وتحمل مسؤوليتها في عصر الأنظمة الخوارزمية والمدعومة بالذكاء الاصطناعي.",
     },
     inquiry: {
       en: "How do sovereign institutions retain authentic agency amidst algorithmic saturation?",
@@ -81,8 +81,8 @@ const RESEARCH_FIELDS: ResearchField[] = [
     name: { en: "Conscious Leadership", ar: "القيادة الواعية" },
     category: { en: "Executive Wisdom & Ethics", ar: "الرشاد القيادي والأخلاقي" },
     desc: {
-      en: "The executive arm translating theoretical models into practical leadership excellence, ethical vision creation, and complex institutional stewardship.",
-      ar: "الذراع التنفيذي الذي يحول النماذج المعرفية إلى ممارسة قيادية رفيعة، ورشاد أخلاقي، وإدارة حكيمة للتحولات المؤسسية.",
+      en: "Leadership understood as a process grounded in cognition, meaning, responsible decision-making, purposeful transformation, and human agency.",
+      ar: "القيادة بوصفها عملية ترتكز إلى الإدراك والمعنى وصناعة القرار الرشيد والتحول الهادف والفاعلية الإنسانية.",
     },
     inquiry: {
       en: "How is heightened perception transformed into sound stewardship under uncertainty?",
@@ -101,8 +101,8 @@ const RESEARCH_FIELDS: ResearchField[] = [
     name: { en: "Complex Systems", ar: "الأنظمة المعقدة" },
     category: { en: "Adaptive Institutional Dynamics", ar: "الشبكات التكيفية والديناميكيات المؤسسية" },
     desc: {
-      en: "Rigorous scientific modeling of non-linear interdependencies, feedback mechanisms, and emergent structural phenomena across socio-technical systems.",
-      ar: "دراسة ونمذجة علمية للشبكات التكيفية المعقدة وحلقات التغذية الراجعة غير الخطية والانبثاق المنظومي عبر المؤسسات.",
+      en: "The study of adaptive systems, emergent phenomena, interdependencies, and structural dynamics affecting governance and transformation.",
+      ar: "دراسة الأنظمة التكيفية، والظواهر المنبثقة، وشبكات الترابط، والديناميكيات الهيكلية المؤثرة في الحوكمة والتحول.",
     },
     inquiry: {
       en: "How do complex institutional interdependencies configure adaptive resilience?",
@@ -121,8 +121,8 @@ const RESEARCH_FIELDS: ResearchField[] = [
     name: { en: "Existential Resilience", ar: "المرونة الوجودية" },
     category: { en: "Human Dignity & Meaning", ar: "المعنى الوجودي وثبات الكرامة" },
     desc: {
-      en: "Examining the biological, psychological, and philosophical roots of resilience: how human dignity and purpose anchor fortitude during macro-shifts.",
-      ar: "فحص الأسس الحيوية والنفسية والفلسفية للمرونة: كيف تثبت كرامة الإنسان وغايته قدرته على مواجهة الضغوط والتحولات الكبرى.",
+      en: "Exploring meaning, human dignity, and sustained human capacity to respond to systemic pressure and rapid change.",
+      ar: "استكشاف المعنى، والكرامة الإنسانية، والقدرة المستدامة للإنسان على الاستجابة للضغوط المنظومية والتغيرات المتسارعة.",
     },
     inquiry: {
       en: "What anchors moral fortitude and human purpose when external structures fail?",
@@ -141,8 +141,8 @@ const RESEARCH_FIELDS: ResearchField[] = [
     name: { en: "Civilizational Transformation", ar: "التحول الحضاري" },
     category: { en: "Macro Strategic Impact & 2030", ar: "التحول الشامل ورؤية 2030" },
     desc: {
-      en: "Bridging theoretical knowledge into measurable societal outcomes, national indicators, and sovereign transformation aligned with Saudi Vision 2030.",
-      ar: "تحويل الإنتاج النظري إلى ممارسات مجتمعية ومؤشرات قياس معيارية تصنع أثراً حضارياً ملموساً متوافقاً مع رؤية المملكة 2030.",
+      en: "Studying how societies and institutions can move from latent knowledge and capability toward systemic and historical impact.",
+      ar: "دراسة كيفية انتقال المجتمعات والمؤسسات من المعرفة والقدرة الكامنة نحو أثر منظومي وتاريخي.",
     },
     inquiry: {
       en: "How is theoretical knowledge engineered into enduring, multi-generational global impact?",

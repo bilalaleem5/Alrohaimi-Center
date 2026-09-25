@@ -143,10 +143,10 @@ function About() {
                   : "Knowledge Connecting Humanity, Cognition & Transformation"}
               </h1>
               <div className="mt-6 h-0.5 w-32 bg-[#b88a3b]" />
-              <p className="mt-6 max-w-[58ch] text-lg leading-relaxed text-[#4e5e7b] md:text-xl">
+              <p className="mt-6 max-w-[58ch] text-base leading-relaxed text-[#4e5e7b] md:text-lg">
                 {ar
-                  ? "مركز فكري وبحثي وتطبيقي متعدد التخصصات يستكشف العلاقة بين الإنسان والإدراك والأنظمة والقيادة والتحول الحضاري في عصر الذكاء الاصطناعي."
-                  : "Dr. Abdulmohsen Alrohaimi Center is an elite multidisciplinary intellectual, research, and applied center exploring the relationship between humanity, cognition, systems, leadership, and civilizational transformation in the age of artificial intelligence."}
+                  ? "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري هو مركز فكري وبحثي مكرس لتعميق فهم الإنسان والإدراك والأنظمة المعقدة والقيادة والتحول الحضاري. يطور المركز نظريات ومفاهيم وأطراً بحثية وبرامج تعليمية وأدوات تطبيقية مصممة لاستكشاف كيفية انتقال المعرفة والقدرة الكامنة نحو أثر ذي مغزى. ويلتزم المركز بالحوار العلمي المفتوح، والتحكيم الأكاديمي، والبحث التجريبي، والتعاون الدولي."
+                  : "The Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation is an intellectual and research center dedicated to deepening the understanding of humanity, cognition, complex systems, leadership, and civilizational transformation. The Center develops theories, concepts, research frameworks, educational programs, and applied tools designed to explore how knowledge and latent capability can move toward meaningful impact. The Center is committed to open scientific dialogue, peer engagement, empirical research, and international collaboration."}
               </p>
 
               {/* Verified Credentials Pills */}
