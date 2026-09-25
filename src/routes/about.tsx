@@ -161,7 +161,7 @@ function About() {
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-[#b88a3b]/30 bg-[#f5f0e6] px-4 py-1.5 font-mono text-xs font-bold text-[#b88a3b] shadow-xs">
                   <Sparkles size={13} />
-                  VISION 2030 ALIGNED
+                  {ar ? "أصالة التراث، رؤية 2030، والعمق الحضاري" : "SAUDI HERITAGE & VISION 2030 DEPTH"}
                 </span>
               </div>
             </div>

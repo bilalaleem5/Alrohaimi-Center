@@ -272,7 +272,7 @@ export function DualFlagshipShowcase() {
                   </span>
                 </div>
                 <p className="mt-0.5 font-mono text-[11px] uppercase tracking-wider text-sky-900 font-semibold">
-                  {ar ? "الذراع القيادي والتنفيذي · البرامج السيادية" : "Executive Leadership Arm · Sovereign Cohorts"}
+                  {ar ? "منظومة فكرية وتربوية قيادية" : "Intellectual & Educational Leadership Ecosystem"}
                 </p>
 
                 {/* Animated Sky Blue Sliding Underline */}

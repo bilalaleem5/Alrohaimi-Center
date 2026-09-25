@@ -26,133 +26,79 @@ export function UnitsInteractive() {
   const unitsData = [
     {
       num: "01",
-      icon: Brain,
+      icon: ShieldAlert,
       title: {
-        en: "Living Systems & Biological Cognition Lab",
-        ar: "مختبر الأنظمة الحية والإدراك البيولوجي",
+        en: "Cognitive Sovereignty Unit",
+        ar: "وحدة السيادة الإدراكية",
       },
-      tag: { en: "Bio-Cognition", ar: "الإدراك الحيوي" },
+      tag: { en: "Epistemic Independence & AI", ar: "السيادة الإدراكية والذكاء الاصطناعي" },
       description: {
-        en: "Explores the biological, ecological, and living system foundations of cognition, awareness, adaptation, and sound decision-making across complex environments.",
-        ar: "يستكشف الأسس البيولوجية والحيوية للإدراك والوعي والتكيف وصناعة القرار في الأنظمة الحية والبيئات المتغيرة.",
+        en: "Developing knowledge, methodologies, and frameworks related to human cognition, critical discernment, decision-making, and ethical governance in the age of algorithmic and AI systems.",
+        ar: "تطوير المعرفة والأطر المنهجية المتعلقة بالإدراك وصناعة القرار والإنسان في عصر الأنظمة الخوارزمية والذكاء الاصطناعي.",
       },
       vectors: {
-        en: ["Biological Neural Networks", "Adaptive Decision Ecology", "Living Homeostasis"],
-        ar: ["الشبكات العصبية الحيوية", "بيئة اتخاذ القرار التكيفية", "الاتزان الحيوي للأنظمة"],
+        en: ["Algorithmic Agency Defense", "Decision Integrity Audits", "Epistemic Independence", "Human-AI Symbiosis"],
+        ar: ["الفاعلية الخوارزمية", "تدقيق نزاهة القرارات", "الاستقلال المعرفي", "التناغم الإنساني التقني"],
       },
-      type: "bio",
+      type: "sovereignty",
     },
     {
       num: "02",
-      icon: BarChart3,
+      icon: GraduationCap,
       title: {
-        en: "Applied Transformation & Metrics Unit",
-        ar: "وحدة التحول التطبيقي والمقاييس",
+        en: "Conscious Leadership & Civilizational Transformation Unit",
+        ar: "وحدة القيادة الواعية والتحول الحضاري",
       },
-      tag: { en: "Metrics & Indicators", ar: "المقاييس والمؤشرات" },
+      tag: { en: "Leadership & Civilizational Horizons", ar: "القيادة الواعية والتحول الحضاري" },
       description: {
-        en: "Develops empirical diagnostic instruments, proprietary indicators, and applied frameworks for transformation assessment across sovereign institutions.",
-        ar: "تطور أدوات القياس التطبيقية والمؤشرات المعيارية والأطر العملية لتقييم التحول المؤسسي وقياس الأثر الحضاري.",
+        en: "Developing advanced leadership models, strategic foresight frameworks, transformation management paradigms, and sustainable civilizational impact programs for public and private institutions.",
+        ar: "تطوير مفاهيم القيادة المتقدمة، وصناعة الرؤية، وإدارة التحول، وتحقيق الأثر الحضاري المستدام للمؤسسات القيادية.",
       },
       vectors: {
-        en: ["AICT Readiness Index", "Empirical Transformation Audit", "Impact Scorecards"],
-        ar: ["مؤشر الجاهزية AICT", "تدقيق التحول التطبيقي", "لوحات قياس الأثر"],
+        en: ["Executive Discernment", "Saudi School of Conscious Leadership", "Civilizational Strategy", "Institutional Regeneration"],
+        ar: ["الرشاد القيادي", "المدرسة السعودية للقيادة الواعية", "الاستراتيجية الحضارية", "التجديد المؤسسي"],
       },
-      type: "metrics",
+      type: "leadership",
     },
     {
       num: "03",
       icon: BookMarked,
       title: {
-        en: "Cognitive & Conceptual Lexicon Unit",
-        ar: "وحدة المعجم الإدراكي والمفاهيمي",
+        en: "Knowledge, Theories & Research Unit",
+        ar: "وحدة المعرفة والنظريات والأبحاث",
       },
-      tag: { en: "Conceptual Architecture", ar: "البناء المفاهيمي" },
+      tag: { en: "Theoretical Architecture & Complexity", ar: "المعرفة والنظريات والأبحاث" },
       description: {
-        en: "Constructs the specialized vocabulary, philosophical taxonomies, and conceptual definitions that anchor the Center's intellectual publications.",
-        ar: "تبني المفردات المفاهيمية والأطر التعريفية المنهجية والمعاجم التي ترتكز عليها منظومة المركز الفكرية والعلمية.",
+        en: "Constructing foundational theories, scientific concepts, analytical models, and research publications anchoring Alrohaimi Theory, living systems, and complex systems scholarship.",
+        ar: "بناء النظريات التأسيسية، والمفاهيم، والنماذج، والمؤشرات، وإجراء البحوث النظرية والتطبيقية التي ترتكز عليها نظرية الرحيمي والأنظمة المعقدة.",
       },
       vectors: {
-        en: ["Epistemic Taxonomy", "Conceptual Linguistics", "Civilizational Ontology"],
-        ar: ["التصنيف الإبستيمولوجي", "لسانيات الوعي والمعنى", "الأنطولوجيا الحضارية"],
+        en: ["Theoretical Architecture", "Alrohaimi Theory Development", "Complexity Modeling", "Research Studies & Strategic Whitepapers"],
+        ar: ["البناء النظري", "تطوير نظرية الرحيمي", "نمذجة التعقيد", "الدراسات البحثية والأوراق الاستراتيجية"],
       },
-      type: "lexicon",
+      type: "theories",
     },
     {
       num: "04",
-      icon: HeartHandshake,
-      title: {
-        en: "Existential Resilience Literature Lab",
-        ar: "مختبر أدبيات المرونة الوجودية",
-      },
-      tag: { en: "Resilience & Meaning", ar: "المرونة والمعنى" },
-      description: {
-        en: "Studies philosophical meaning, cultural heritage, and human endurance when confronting systemic disruption, scarcity, and rapid historical transformation.",
-        ar: "يستكشف الأدب والمعنى الفلسفي والأصالة وقدرة الإنسان على مواجهة التحولات الجذرية والأزمات في بيئات عدم اليقين.",
-      },
-      vectors: {
-        en: ["Existential Integrity", "Scarcity Resilience", "Human Dignity Preservation"],
-        ar: ["التماسك الوجودي", "مرونة بيئات الشح", "صون الكرامة الإنسانية"],
-      },
-      type: "resilience",
-    },
-    {
-      num: "05",
       icon: Compass,
       title: {
-        en: "Civilizational Futures Platform",
-        ar: "منصة المستقبل والتحول الحضاري",
+        en: "Thought, Future & Impact Unit",
+        ar: "وحدة الفكر والمستقبل والأثر",
       },
-      tag: { en: "Futures & Foresight", ar: "استشراف المستقبل" },
+      tag: { en: "Futures & Impact Assessment", ar: "الفكر والمستقبل والأثر" },
       description: {
-        en: "Explores macro-historical trajectories, long-range civilizational foresight, and knowledge-driven pathways for sustainable global flourishing.",
-        ar: "تستشرف مسارات التحول الحضاري، والدراسات المستقبلية الكبرى، وصناعة الأثر العالمي المرتكز إلى المعرفة الرصينة.",
+        en: "Develops prototype diagnostic tools, developing indicators, and applied frameworks for exploring transformation assessment across institutional contexts.",
+        ar: "تطور أدوات تشخيصية أولية ومؤشرات قيد التطوير وأطراً تطبيقية لاستكشاف تقييم التحول وربط الفكر الاستشرافي بالأثر المؤسسي والمجتمعي.",
       },
       vectors: {
-        en: ["Strategic Foresight 2030+", "Macro-Civilizational Trajectories", "Global Impact Models"],
-        ar: ["الاستشراف الاستراتيجي 2030+", "المسارات الحضارية الكبرى", "نماذج الأثر الدولي"],
+        en: ["Civilizational Foresight", "Prototype Diagnostic Scorecards", "Developing Transformation Indicators", "Global Academic Dialogue"],
+        ar: ["استشراف المستقبل الحضاري", "لوحات القياس التشخيصية الأولية", "مؤشرات التحول قيد التطوير", "الحوار العلمي الدولي"],
       },
-      type: "futures",
-    },
-    {
-      num: "06",
-      icon: GraduationCap,
-      title: {
-        en: "Saudi School of Conscious Leadership",
-        ar: "المدرسة السعودية للقيادة الواعية",
-      },
-      tag: { en: "Executive Academy", ar: "التمكين القيادي" },
-      description: {
-        en: "The executive education arm translating foundational discovery into leadership excellence, strategic foresight, and sustainable institutional transformation.",
-        ar: "الذراع التنفيذي للتدريب القيادي وتمكين صناع القرار، ينقل المعرفة النظرية إلى ممارسة قيادية حية تغير الواقع.",
-      },
-      vectors: {
-        en: ["Sovereign Decision Immersion", "Executive Foresight Clinics", "Algorithmic Autonomy Training"],
-        ar: ["معايشة القرار السيادي", "عيادات الاستشراف القيادي", "التدريب على الاستقلال الإدراكي"],
-      },
-      type: "leadership",
-    },
-    {
-      num: "07",
-      icon: ShieldAlert,
-      title: {
-        en: "Cognitive Sovereignty & AI Lab",
-        ar: "مختبر السيادة الإدراكية والذكاء الاصطناعي",
-      },
-      tag: { en: "AI & Sovereignty", ar: "السيادة والذكاء الاصطناعي" },
-      description: {
-        en: "Develops protocols, audit frameworks, and applied safeguards protecting institutional judgment and human agency in the age of algorithmic hegemony.",
-        ar: "يطور أطر العمل الرائدة وأدوات التدقيق المعرفي لتعزيز السيادة الإدراكية وحماية القرار الوطني في عصر الهيمنة الخوارزمية.",
-      },
-      vectors: {
-        en: ["Algorithmic Agency Defense", "Decision Integrity Audits", "Human-AI Symbiosis Governance"],
-        ar: ["حماية الاستقلال الخوارزمي", "تدقيق نزاهة القرارات", "حوكمة التناغم البشري التقني"],
-      },
-      type: "sovereignty",
+      type: "impact",
     },
   ];
 
-  // Auto-cycle through the 7 units smoothly
+  // Auto-cycle through the 4 institutional units smoothly
   useEffect(() => {
     if (isPaused) return;
     const interval = setInterval(() => {
@@ -178,28 +124,28 @@ export function UnitsInteractive() {
             <div className="flex items-center gap-2.5">
               <span className="h-px w-6 bg-amber-600" />
               <span className="font-mono text-xs font-bold uppercase tracking-widest text-amber-900">
-                {ar ? "البنية المؤسسية التخصصية" : "THE INSTITUTIONAL APPARATUS"}
+                {ar ? "البنية المؤسسية المعتمدة" : "THE INSTITUTIONAL ARCHITECTURE"}
               </span>
             </div>
 
             <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-[#0c1836] tracking-tight">
               {ar ? (
                 <>
-                  وحدات المركز{" "}
-                  <span className="gold-text-light italic font-serif font-normal">ومختبراته التخصصية</span>
+                  الوحدات المؤسسية{" "}
+                  <span className="gold-text-light italic font-serif font-normal">الأربع الكبرى</span>
                 </>
               ) : (
                 <>
-                  Specialized Laboratories{" "}
-                  <span className="gold-text-light italic font-serif font-normal">& Institutional Units</span>
+                  Four Foundational{" "}
+                  <span className="gold-text-light italic font-serif font-normal">Institutional Units</span>
                 </>
               )}
             </h2>
 
             <p className="mt-2.5 text-sm sm:text-base leading-relaxed text-[#4e5e7b]">
               {ar
-                ? "منظومة بحثية متكاملة تضم سبعة مختبرات تخصصية تبني المعرفة وتطور أدوات التحول الحضاري."
-                : "An integrated intellectual architecture of seven specialized laboratories developing rigorous theoretical discoveries and applied transformative tools."}
+                ? "أربع وحدات مؤسسية تقود السيادة الإدراكية، والقيادة الواعية، وبناء النظريات، والدراسات المستقبلية عبر ستة مجالات بحثية متكاملة."
+                : "An integrated intellectual architecture of four institutional units driving cognitive sovereignty, conscious leadership, theoretical scholarship, and civilizational futures across six interdisciplinary research domains."}
             </p>
           </div>
 
@@ -215,8 +161,8 @@ export function UnitsInteractive() {
                   ? "فحص تفاعلي موجه"
                   : "Interactive Inspection"
                 : ar
-                  ? "تدفق استكشافي مستمر (07 مختبرات)"
-                  : "Continuous Roster Cycle (07 Labs)"}
+                  ? "الوحدات المؤسسية الأربع (04 وحدات)"
+                  : "Four Institutional Units (04 Units)"}
             </span>
           </div>
         </div>
@@ -305,7 +251,7 @@ export function UnitsInteractive() {
                 </span>
                 <span className="text-slate-300">|</span>
                 <span className="font-mono text-xs text-slate-500 uppercase">
-                  {ar ? "مختبر تخصصي متقدم" : "Specialized Research Lab"}
+                  {ar ? "وحدة مؤسسية كبرى" : "Core Institutional Unit"}
                 </span>
               </div>
 
@@ -426,7 +372,7 @@ export function UnitsInteractive() {
                 to="/units"
                 className="font-mono text-xs font-semibold text-slate-500 hover:text-amber-900 transition-colors"
               >
-                {ar ? "دليل كافة المختبرات والوحدات ←" : "Complete Units Directory →"}
+                {ar ? "استعراض الوحدات المؤسسية الأربع ←" : "Explore Four Institutional Units →"}
               </Link>
             </div>
           </div>

@@ -271,7 +271,7 @@ export function NationalInitiativesShowcase() {
                       ACCELERATOR BLUEPRINT
                     </span>
                     <span className="rounded-full bg-[#f5f0e6] px-3 py-1 font-mono text-[10px] font-bold text-[#0c1836]">
-                      {ar ? "رؤية السعودية 2030" : "Saudi Vision 2030 Aligned"}
+                      {ar ? "مستهدفات رؤية 2030" : "Vision 2030 Horizons"}
                     </span>
                   </div>
 

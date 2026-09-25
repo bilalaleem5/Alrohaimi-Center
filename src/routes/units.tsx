@@ -6,29 +6,29 @@ import {
   useLanguage,
   Arrow,
 } from "../components/site";
-import { primaryUnits, units } from "../lib/content";
+import { primaryUnits } from "../lib/content";
 import researchLightImg from "../assets/research_light.jpg";
-import { Building2, Layers, Sparkles, Network, FlaskConical, Share2, Compass, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { Building2, Layers, Sparkles, Network, Share2, Compass, ArrowUpRight, CheckCircle2, ShieldAlert, GraduationCap, BookMarked, Cpu } from "lucide-react";
 
 export const Route = createFileRoute("/units")({
   head: () => ({
     meta: [
       {
-        title: "Center Units & Labs — Dr. Abdulmohsen Alrohaimi Center",
+        title: "Four Institutional Units — Dr. Abdulmohsen Alrohaimi Center",
       },
       {
         name: "description",
         content:
-          "Discover the four foundational institutional units and seven specialized research laboratories driving cognitive sovereignty, conscious leadership, and civilizational futures.",
+          "Discover the four foundational institutional units and six interdisciplinary research domains driving cognitive sovereignty, conscious leadership, and civilizational futures.",
       },
       {
         property: "og:title",
-        content: "Institutional Units & Research Labs | Alrohaimi Center",
+        content: "The Four Institutional Units | Alrohaimi Center",
       },
       {
         property: "og:description",
         content:
-          "Four Primary Units and Seven Specialized Laboratories translating thought into measurable impact.",
+          "Four Primary Institutional Units translating thought into measurable civilizational impact.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -42,25 +42,27 @@ function Units() {
   const ar = lang === "ar";
   const [activeUnit, setActiveUnit] = useState<number>(0);
 
+  const unitIcons = [ShieldAlert, GraduationCap, BookMarked, Compass];
+
   return (
     <>
       {/* =====================================================================
           1. THINK-TANK CAMPUS HERO
           ===================================================================== */}
       <PageHero
-        label={ar ? "البنية المؤسسية والبحثية" : "Institutional & Research Architecture"}
+        label={ar ? "البنية المؤسسية المعتمدة" : "Approved Institutional Architecture"}
         title={
           ar
-            ? "وحدات المركز ومختبراته المتخصصة"
-            : "The Center's Units & Research Labs"
+            ? "الوحدات المؤسسية الأربع للمركز"
+            : "The Center's Four Institutional Units"
         }
         description={
           ar
-            ? "أربع وحدات مؤسسية رئيسية وسبعة مختبرات ومنصات بحثية متكاملة تعمل بتناغم منهجي لبناء المعرفة وتطوير الأدوات المعيارية وتحويل الفكر إلى أثر حضاري ملموس."
-            : "Four foundational institutional units and seven specialized research laboratories operating in systematic harmony to construct original theories, calibrate diagnostic metrics, and translate ideas into measurable impact."
+            ? "أربع وحدات مؤسسية رئيسية وستة مجالات بحثية بينية تعمل بتناغم منهجي لبناء المعرفة وتطوير الأدوات المعيارية وتحويل الفكر إلى أثر حضاري ملموس."
+            : "Four foundational institutional units and six interdisciplinary research domains operating in systematic harmony to construct original theories, develop prototype diagnostic tools, and translate ideas into measurable civilizational impact."
         }
         image={researchLightImg}
-        alt={ar ? "المكتبة البحثية ومختبرات المركز" : "Research Think Tank & Knowledge Hub"}
+        alt={ar ? "المكتبة البحثية ومرافق المركز" : "Research Think Tank & Knowledge Hub"}
       />
 
       {/* =====================================================================
@@ -69,65 +71,68 @@ function Units() {
       <section className="border-b border-[#0c1836]/10 bg-[#f5f0e6] py-20 lg:py-28">
         <div className="mx-auto max-w-[1440px] px-5 lg:px-10">
           <div className="mb-12 text-center">
-            <SectionLabel>{ar ? "الوحدات المؤسسية الكبرى" : "Core Primary Units"}</SectionLabel>
+            <SectionLabel>{ar ? "الهيكلية المؤسسية الكبرى" : "Core Institutional Pillars"}</SectionLabel>
             <h2 className="font-display text-3xl font-black text-[#0c1836] md:text-5xl">
-              {ar ? "الوحدات القيادية الأربع للمركز" : "The Four Foundational Units"}
+              {ar ? "الوحدات المؤسسية الأربع" : "The Four Institutional Units"}
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-base text-[#4e5e7b]">
               {ar
-                ? "تشكل هذه الوحدات الأربع الركيزة الإدارية والعلمية الكبرى لمشروع المركز الفكري."
-                : "These four units constitute the primary scholarly and executive pillars governing the Center's intellectual project."}
+                ? "تشكل هذه الوحدات الأربع الركيزة الإدارية والعلمية الكبرى لمشروع المركز الفكري وتعمل كحواضن للبحث والتطوير."
+                : "These four units constitute the primary scholarly and institutional pillars governing the Center's intellectual project."}
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {primaryUnits[lang].map((unit, i) => (
-              <div
-                key={unit.id}
-                onClick={() => setActiveUnit(i)}
-                className={`group cursor-pointer relative flex flex-col justify-between rounded-3xl border p-8 lg:p-10 transition-all duration-300 ${
-                  activeUnit === i
-                    ? "border-[#b88a3b] bg-white shadow-md"
-                    : "border-[#0c1836]/10 bg-white/70 hover:border-[#b88a3b]/40"
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-black tracking-widest text-[#b88a3b]">
-                      DIRECTORATE 0{i + 1}
-                    </span>
-                    <Building2 size={22} className="text-[#b88a3b]" />
-                  </div>
-
-                  <h3 className="mt-4 font-display text-2xl font-bold text-[#0c1836] transition-colors group-hover:text-[#b88a3b]">
-                    {unit.title}
-                  </h3>
-
-                  <p className="mt-4 text-base leading-relaxed text-[#4e5e7b]">
-                    {unit.description}
-                  </p>
-                </div>
-
-                <div className="mt-8 border-t border-[#0c1836]/10 pt-5">
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-[#b88a3b] font-bold">
-                    {ar ? "المحاور والمجالات البحثية الرئيسية:" : "Core Focus Areas & Responsibilities:"}
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {unit.focus.map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-lg border border-[#0c1836]/10 bg-[#fbf9f5] px-3 py-1 text-xs font-semibold text-[#0c1836] shadow-2xs"
-                      >
-                        {item}
+            {primaryUnits[lang].map((unit, i) => {
+              const IconComp = unitIcons[i % unitIcons.length];
+              return (
+                <div
+                  key={unit.id}
+                  onClick={() => setActiveUnit(i)}
+                  className={`group cursor-pointer relative flex flex-col justify-between rounded-3xl border p-8 lg:p-10 transition-all duration-300 ${
+                    activeUnit === i
+                      ? "border-[#b88a3b] bg-white shadow-md"
+                      : "border-[#0c1836]/10 bg-white/70 hover:border-[#b88a3b]/40"
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs font-black tracking-widest text-[#b88a3b]">
+                        DIRECTORATE 0{i + 1}
                       </span>
-                    ))}
+                      <IconComp size={22} className="text-[#b88a3b]" />
+                    </div>
+
+                    <h3 className="mt-4 font-display text-2xl font-bold text-[#0c1836] transition-colors group-hover:text-[#b88a3b]">
+                      {unit.title}
+                    </h3>
+
+                    <p className="mt-4 text-base leading-relaxed text-[#4e5e7b]">
+                      {unit.description}
+                    </p>
+                  </div>
+
+                  <div className="mt-8 border-t border-[#0c1836]/10 pt-5">
+                    <p className="font-mono text-[10px] uppercase tracking-wider text-[#b88a3b] font-bold">
+                      {ar ? "المحاور والمجالات التخصصية:" : "Core Focus Areas & Responsibilities:"}
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {unit.focus.map((item) => (
+                        <span
+                          key={item}
+                          className="rounded-lg border border-[#0c1836]/10 bg-[#fbf9f5] px-3 py-1 text-xs font-semibold text-[#0c1836] shadow-2xs"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
-          {/* Institutional Distinction Callout: 6 Research Domains across 4 Units (Point 9 & 35) */}
+          {/* Institutional Distinction Callout: 6 Research Domains across 4 Units (Section 4 & 5 of Master Revision) */}
           <div className="mt-12 rounded-3xl border border-[#b88a3b]/40 bg-white p-8 lg:p-10 shadow-sm">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-[#0c1836]/10 pb-6">
               <div>
@@ -169,105 +174,84 @@ function Units() {
       </section>
 
       {/* =====================================================================
-          3. THE SEVEN RESEARCH LABS: Scientific Console Matrix (Zero Cards)
+          3. APPLIED TRANSLATIONAL EXTENSION & NATIONAL ACCELERATOR
           ===================================================================== */}
       <section className="border-b border-[#0c1836]/10 bg-[#fbf9f5] py-20 lg:py-28">
         <div className="mx-auto max-w-[1440px] px-5 lg:px-10">
-          <div className="mb-12 text-center">
-            <SectionLabel>{ar ? "المختبرات والمنصات التخصصية" : "Specialized Laboratories"}</SectionLabel>
-            <h2 className="font-display text-3xl font-black text-[#0c1836] md:text-5xl">
-              {ar
-                ? "سبعة مختبرات ومنصات بحثية متقدمة"
-                : "Seven Specialized Research Labs & Platforms"}
-            </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-base text-[#4e5e7b]">
-              {ar
-                ? "أذرع تجريبية وتطبيقية متخصصة تترجم المفاهيم النظرية إلى أبحاث ميدانية وأدوات قياس محكمة."
-                : "Specialized empirical and applied entities translating theoretical concepts into field studies and verified diagnostic tools."}
-            </p>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {units[lang].map((lab, i) => (
-              <div
-                key={lab[0]}
-                className="group relative flex flex-col justify-between rounded-3xl border border-[#0c1836]/10 bg-white p-7 transition-all duration-300 hover:border-[#b88a3b]/50 hover:shadow-xs"
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-black tracking-widest text-[#b88a3b]">
-                      LAB 0{i + 1}
-                    </span>
-                    <span className="rounded-full bg-[#f5f0e6] px-2.5 py-0.5 font-mono text-[10px] font-bold text-[#0c1836]">
-                      {lab[2]}
-                    </span>
-                  </div>
-
-                  <h3 className="mt-4 font-display text-lg font-bold text-[#0c1836] transition-colors group-hover:text-[#b88a3b]">
-                    {lab[0]}
-                  </h3>
-
-                  <p className="mt-3 text-sm leading-relaxed text-[#4e5e7b]">
-                    {lab[1]}
-                  </p>
-                </div>
-
-                <div className="mt-6 flex items-center justify-between border-t border-[#0c1836]/10 pt-4 text-xs font-bold text-[#b88a3b]">
-                  <span className="flex items-center gap-1.5">
-                    <span className="size-2 rounded-full bg-emerald-600 animate-pulse" />
-                    <span>{ar ? "مختبر بحثي نشط" : "Active Research Platform"}</span>
-                  </span>
-                  <FlaskConical size={16} />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Applied Translational Extension: AI Drug Innovation Accelerator */}
-          <div className="mt-12 rounded-3xl border border-[#b88a3b]/40 bg-white p-8 lg:p-10 shadow-sm">
+          <div className="rounded-3xl border border-[#b88a3b]/40 bg-white p-8 lg:p-12 shadow-sm">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-[#0c1836]/10 pb-6">
               <div>
                 <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#b88a3b]">
-                  {ar ? "الامتداد التطبيقي والشراكات الحيوية" : "Applied Translational Extension"}
+                  {ar ? "الامتداد التطبيقي والمبادرات الوطنية" : "Applied Translational Extension"}
                 </span>
-                <h3 className="mt-1 font-display text-xl font-bold text-[#0c1836]">
+                <h3 className="mt-2 font-display text-2xl lg:text-3xl font-bold text-[#0c1836]">
                   {ar
                     ? "الربط مع مسرّعة ابتكار الدواء بالذكاء الاصطناعي (ترخيص منشآت 1171)"
-                    : "Integration with AI Drug Innovation Accelerator (Monsha'at 1171)"}
+                    : "Integration with AI Drug Innovation Accelerator (Monsha'at License No. 1171)"}
                 </h3>
               </div>
               <Link
                 to="/partnerships"
-                className="inline-flex items-center gap-2 rounded-full border border-[#b88a3b]/40 bg-[#fbf9f5] px-5 py-2 text-xs font-bold text-[#0c1836] hover:bg-[#f5f0e6] self-start lg:self-center"
+                className="inline-flex items-center gap-2 rounded-full border border-[#b88a3b]/40 bg-[#fbf9f5] px-6 py-2.5 text-xs font-bold text-[#0c1836] hover:bg-[#f5f0e6] self-start lg:self-center transition-colors"
               >
                 <span>{ar ? "استعراض المنظومة والموافقات" : "View Accelerator & SDAIA Tracks"}</span>
                 <Arrow />
               </Link>
             </div>
 
-            <p className="mt-6 text-sm leading-relaxed text-[#4e5e7b]">
+            <p className="mt-6 text-base leading-relaxed text-[#4e5e7b]">
               {ar
-                ? "يرتبط مختبر الأنظمة الحية والإدراك الحيوي تشغيلياً وبحثياً مع مسرّعة ابتكار الدواء بالذكاء الاصطناعي وجمعية (WAII) الخاضعة للإشراف الفني لـ سدايا، بهدف ترجمة النماذج المعرفية للأنظمة الحية إلى وحدات تدريبية متخصصة لاكتشاف الأدوية ومشاريع حيوية ناشئة تدعم الأمن الدوائي والسيادة الصحية الوطنية."
-                : "The Living Systems & Biological Cognition Lab collaborates directly with the National AI Drug Innovation Accelerator and the WAII ecosystem under SDAIA supervision, bridging biological cognition models with computational drug design, specialized training units, and investable biotech ventures."}
+                ? "ترتبط أبحاث الأنظمة الحية والنمذجة المعقدة مع مسرّعة ابتكار الدواء بالذكاء الاصطناعي وجمعية (WAII) الخاضعة للإشراف الفني لـ سدايا، بهدف ترجمة النماذج المعرفية للأنظمة الحية إلى وحدات تدريبية متخصصة لاكتشاف الأدوية ومشاريع حيوية ناشئة تدعم الأمن الدوائي والسيادة الصحية الوطنية."
+                : "The Center's living systems and complex modeling research collaborates directly with the National AI Drug Innovation Accelerator and the WAII ecosystem under SDAIA supervision, bridging biological cognition models with computational drug design, specialized training units, and investable biotech ventures."}
             </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-[#0c1836]/10 bg-[#fbf9f5] p-5">
+                <span className="font-mono text-xs font-bold text-[#b88a3b]">01 // SDAIA SUPERVISION</span>
+                <h4 className="mt-1 font-display text-sm font-bold text-[#0c1836]">
+                  {ar ? "الإشراف الفني لـ سدايا" : "Technical Supervision by SDAIA"}
+                </h4>
+                <p className="mt-1 text-xs text-[#4e5e7b]">
+                  {ar ? "مواءمة معايير الذكاء الاصطناعي والأمن الرقمي الوطني." : "Aligning computational biopharma models with sovereign standards."}
+                </p>
+              </div>
+              <div className="rounded-2xl border border-[#0c1836]/10 bg-[#fbf9f5] p-5">
+                <span className="font-mono text-xs font-bold text-[#b88a3b]">02 // MONSHA'AT LICENSE 1171</span>
+                <h4 className="mt-1 font-display text-sm font-bold text-[#0c1836]">
+                  {ar ? "ترخيص حاضنة ومسرّعة منشآت" : "Monsha'at Licensed Accelerator"}
+                </h4>
+                <p className="mt-1 text-xs text-[#4e5e7b]">
+                  {ar ? "تأهيل الشركات الحيوية الناشئة ونقل التقنية المتقدمة." : "Incubating emerging pharmaceutical and therapeutic biotech ventures."}
+                </p>
+              </div>
+              <div className="rounded-2xl border border-[#0c1836]/10 bg-[#fbf9f5] p-5">
+                <span className="font-mono text-xs font-bold text-[#b88a3b]">03 // HEALTH SOVEREIGNTY</span>
+                <h4 className="mt-1 font-display text-sm font-bold text-[#0c1836]">
+                  {ar ? "الأمن الدوائي والسيادة الصحية" : "National Health Sovereignty"}
+                </h4>
+                <p className="mt-1 text-xs text-[#4e5e7b]">
+                  {ar ? "توطين سلاسل القيمة الدوائية واكتشاف المركبات العلاجية." : "Accelerating indigenous pharmaceutical discovery pipelines."}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* =====================================================================
-          4. BILATERAL RESEARCH PROTOCOLS
+          4. BILATERAL RESEARCH PROTOCOLS & SCHOLARLY PARTNERSHIPS
           ===================================================================== */}
       <section className="relative overflow-hidden border-b border-[#0c1836]/10 bg-[#f5f0e6] py-20 lg:py-28">
         <div className="mx-auto max-w-[1200px] px-5 lg:px-10">
           <div className="relative rounded-3xl border border-[#0c1836]/15 bg-white p-8 text-center shadow-sm lg:p-12">
             <Network className="mx-auto text-[#b88a3b]" size={42} />
             <h3 className="mt-4 font-display text-2xl font-bold text-[#0c1836] md:text-3xl">
-              {ar ? "بناء مشروعات بحثية مشتركة مع المركز" : "Initiate Joint Scholarly Programs"}
+              {ar ? "بناء مشروعات بحثية وشراكات علمية مع المركز" : "Initiate Academic Collaboration & Joint Programs"}
             </h3>
             <p className="mx-auto mt-3 max-w-2xl text-base text-[#4e5e7b]">
               {ar
-                ? "ترحب وحدات المركز ومختبراته بالشراكات الأكاديمية مع الأقسام المتخصصة في كبرى الجامعات السعودية والعالمية لدراسة نماذج المركز واختبارها عبر بيئات متنوعة."
-                : "The Center's units actively invite scientific partnerships with leading academic faculties worldwide to study, test, and adapt its models across diverse institutional contexts."}
+                ? "يرحب المركز ويطور شراكات علمية وبحثية مع الجامعات العالمية والمؤسسات البحثية والجهات المؤسسية لتعزيز السيادة الإدراكية وصناعة أثر حضاري مستدام."
+                : "The Center welcomes and develops partnerships with international universities, research institutions, and institutional stakeholders to advance cognitive sovereignty and create enduring civilizational impact."}
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link

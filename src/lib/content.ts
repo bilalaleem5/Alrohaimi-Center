@@ -364,15 +364,15 @@ export const primaryUnits = {
       id: "knowledge-theories",
       title: "Knowledge, Theories & Research Unit",
       arabicTitle: "وحدة المعرفة والنظريات والأبحاث",
-      description: "Constructing foundational theories, scientific concepts, analytical models, and empirical research publications anchoring Alrohaimi Theory and complex systems scholarship.",
-      focus: ["Theoretical Architecture", "Alrohaimi Theory Development", "Complexity Modeling", "Peer-Reviewed Studies"],
+      description: "Constructing foundational theories, scientific concepts, analytical models, and research publications anchoring Alrohaimi Theory and complex systems scholarship.",
+      focus: ["Theoretical Architecture", "Alrohaimi Theory Development", "Complexity Modeling", "Research Studies & Strategic Whitepapers"],
     },
     {
       id: "thought-future",
       title: "Thought, Future & Impact Unit",
       arabicTitle: "وحدة الفكر والمستقبل والأثر",
-      description: "Connecting forward-looking intellectual inquiry with global scientific dialogues, futures studies, and the strategic translation of ideas into institutional and societal impact.",
-      focus: ["Global Academic Dialogue", "Civilizational Foresight", "Impact Measurement", "Policy Consulting"],
+      description: "Develops prototype diagnostic tools, developing indicators, and applied frameworks for exploring transformation assessment across institutional contexts, connecting foresight with enduring societal impact.",
+      focus: ["Global Academic Dialogue", "Civilizational Foresight", "Prototype Diagnostic Scorecards", "Developing Transformation Indicators"],
     },
   ],
   ar: [
@@ -395,14 +395,14 @@ export const primaryUnits = {
       title: "وحدة المعرفة والنظريات والأبحاث",
       arabicTitle: "Knowledge, Theories & Research Unit",
       description: "بناء النظريات التأسيسية، والمفاهيم، والنماذج، والمؤشرات، وإجراء البحوث النظرية والتطبيقية التي ترتكز عليها نظرية الرحيمي.",
-      focus: ["البناء النظري", "تطوير نظرية الرحيمي", "نمذجة التعقيد", "الدراسات المحكمة"],
+      focus: ["البناء النظري", "تطوير نظرية الرحيمي", "نمذجة التعقيد", "الدراسات البحثية والأوراق الاستراتيجية"],
     },
     {
       id: "thought-future",
       title: "وحدة الفكر والمستقبل والأثر",
       arabicTitle: "Thought, Future & Impact Unit",
-      description: "ربط الفكر الاستشرافي بالمستقبل والحوار الدولي، وتحويل المعرفة إلى أثر مؤسسي ومجتمعي ملموس.",
-      focus: ["الحوار العلمي الدولي", "استشراف المستقبل الحضاري", "قياس الأثر", "الاستشارات السياساتية"],
+      description: "تطوير أدوات تشخيصية أولية ومؤشرات قيد التطوير وأطر تطبيقية لاستكشاف تقييم التحول المؤسسي، وربط الفكر الاستشرافي بالأثر المستدام.",
+      focus: ["الحوار العلمي الدولي", "استشراف المستقبل الحضاري", "لوحات القياس التشخيصية الأولية", "مؤشرات التحول قيد التطوير"],
     },
   ],
 };
@@ -410,76 +410,46 @@ export const primaryUnits = {
 export const units = {
   en: [
     [
-      "Living Systems & Biological Cognition Lab",
-      "Explores the biological, ecological, and living system foundations of cognition, awareness, adaptation, and decision-making.",
-      "Bio-Cognition",
+      "Cognitive Sovereignty Unit",
+      "Developing knowledge, methodologies, and frameworks related to human cognition, critical discernment, decision-making, and ethical governance in the age of algorithmic and AI systems.",
+      "Epistemic Independence & AI",
     ],
     [
-      "Applied Transformation & Metrics Unit",
-      "Develops practical measurement tools, indicators, and applied frameworks for transformation assessment across institutions.",
-      "Metrics & Indicators",
+      "Conscious Leadership & Civilizational Transformation Unit",
+      "Developing advanced leadership models, strategic foresight frameworks, transformation management paradigms, and sustainable civilizational impact programs for public and private institutions.",
+      "Leadership & Civilizational Horizons",
     ],
     [
-      "Cognitive & Conceptual Lexicon Unit",
-      "Builds the conceptual vocabulary and definitional frameworks that anchor the Center's intellectual and scholarly system.",
-      "Conceptual Architecture",
+      "Knowledge, Theories & Research Unit",
+      "Constructing foundational theories, scientific concepts, analytical models, and research publications anchoring Alrohaimi Theory and complex systems scholarship.",
+      "Theoretical Architecture & Complexity",
     ],
     [
-      "Existential Resilience Literature Lab",
-      "Studies literature, philosophical meaning, and humanity's capacity to confront systemic transformation, uncertainty, and pressure.",
-      "Resilience & Meaning",
-    ],
-    [
-      "Civilizational Futures Platform",
-      "Explores dynamic pathways for civilizational transformation, societal foresight, and knowledge-driven global impact.",
-      "Futures & Foresight",
-    ],
-    [
-      "Saudi School of Conscious Leadership",
-      "The Center's executive training and leadership development arm — translating theoretical knowledge into practical leadership excellence.",
-      "Executive Academy",
-    ],
-    [
-      "Cognitive Sovereignty Lab",
-      "Develops cutting-edge frameworks, audit protocols, and training tools for strengthening cognitive sovereignty in leaders and institutions.",
-      "AI & Sovereignty",
+      "Thought, Future & Impact Unit",
+      "Develops prototype diagnostic tools, developing indicators, and applied frameworks for exploring transformation assessment across institutional contexts.",
+      "Futures & Impact Assessment",
     ],
   ],
   ar: [
     [
-      "مختبر الأنظمة الحية والإدراك البيولوجي",
-      "يستكشف الأسس البيولوجية والحيوية للإدراك والوعي والتكيف وصناعة القرار في الأنظمة الحية.",
-      "الإدراك الحيوي",
+      "وحدة السيادة الإدراكية",
+      "تطوير المعرفة والأطر المنهجية المتعلقة بالإدراك وصناعة القرار والإنسان في عصر الأنظمة الخوارزمية والذكاء الاصطناعي.",
+      "السيادة الإدراكية والذكاء الاصطناعي",
     ],
     [
-      "وحدة التحول التطبيقي والمقاييس",
-      "تطور أدوات القياس التطبيقية والمؤشرات والأطر العملية لتقييم التحول المؤسسي وقياس الأثر.",
-      "المقاييس والمؤشرات",
+      "وحدة القيادة الواعية والتحول الحضاري",
+      "تطوير مفاهيم القيادة المتقدمة، وصناعة الرؤية، وإدارة التحول، وتحقيق الأثر الحضاري المستدام للمؤسسات القيادية.",
+      "القيادة الواعية والتحول الحضاري",
     ],
     [
-      "وحدة المعجم الإدراكي والمفاهيمي",
-      "تبني المفردات المفاهيمية والأطر التعريفية المنهجية التي ترتكز عليها منظومة المركز الفكرية.",
-      "البناء المفاهيمي",
+      "وحدة المعرفة والنظريات والأبحاث",
+      "بناء النظريات التأسيسية، والمفاهيم، والنماذج، والمؤشرات، وإجراء البحوث النظرية والتطبيقية التي ترتكز عليها نظرية الرحيمي.",
+      "المعرفة والنظريات والأبحاث",
     ],
     [
-      "مختبر أدب المرونة الوجودية",
-      "يدرس الأدب والمعنى الإنساني وقدرة المجتمعات على مواجهة التحولات الكبرى وعدم اليقين والضغوط.",
-      "المرونة والمعنى",
-    ],
-    [
-      "منصة المستقبل الحضاري",
-      "تستكشف مسارات التحول الحضاري، والمستقبل المجتمعي، والأثر العالمي المدفوع بإنتاج المعرفة.",
-      "الاستشراف الحضاري",
-    ],
-    [
-      "المدرسة السعودية للقيادة الواعية",
-      "ذراع المركز التنفيذي للتدريب وتطوير القيادات، لتحويل المعرفة والنظريات إلى ممارسة قيادية رفيعة.",
-      "أكاديمية القيادة",
-    ],
-    [
-      "مختبر السيادة الإدراكية",
-      "يطور أطراً وأدوات تدريبية ونماذج تدقيق متقدمة لفهم وتعزيز السيادة الإدراكية في مواجهة الأنظمة الخوارزمية.",
-      "السيادة والذكاء الاصطناعي",
+      "وحدة الفكر والمستقبل والأثر",
+      "تطوير أدوات تشخيصية أولية ومؤشرات قيد التطوير وأطر تطبيقية لاستكشاف تقييم التحول المؤسسي وربط الفكر الاستشرافي بالأثر.",
+      "الفكر والمستقبل والأثر",
     ],
   ],
 };
@@ -489,7 +459,7 @@ export const outputs = {
     [
       "Research & Studies",
       "Rigorous theoretical and applied research exploring cognition, conscious leadership, complex systems, and civilizational transformation.",
-      "Peer-reviewed publications, white papers, and academic monographs.",
+      "Research publications, strategic white papers, and academic monographs.",
     ],
     [
       "Training Programs",
@@ -503,13 +473,13 @@ export const outputs = {
     ],
     [
       "Models & Theories",
-      "Original intellectual frameworks including Alrohaimi Theory, the Leadership Bridging Model, and Gene Latency Theory.",
-      "Actionable conceptual blueprints tested across institutional environments.",
+      "Developing intellectual systems and frameworks including Alrohaimi Theory, the Leadership Bridging Model, and foundational conceptual architectures.",
+      "Actionable conceptual blueprints and frameworks for institutional environments.",
     ],
     [
-      "Tools & Indicators",
-      "Proprietary measurement instruments, including the Alrohaimi Index for Civilizational Transformation and cognitive audit tools.",
-      "Diagnostic metrics and evaluation scorecards.",
+      "Developing Diagnostic Tools & Indicators",
+      "Developing diagnostic tools and indicators, including the prototype Alrohaimi Index for Civilizational Transformation (AICT) and cognitive assessment tools.",
+      "Prototype diagnostic scorecards and impact measurement frameworks.",
     ],
     [
       "Knowledge Consulting",
@@ -520,8 +490,8 @@ export const outputs = {
   ar: [
     [
       "البحوث والدراسات",
-      "أبحاث نظرية وتطبيقية محكمة تستكشف الإدراك، والقيادة الواعية، والأنظمة المعقدة، والتحول الحضاري.",
-      "أوراق علمية، ودراسات رصينة، وتقارير استراتيجية.",
+      "أبحاث نظرية وتطبيقية تستكشف الإدراك، والقيادة الواعية، والأنظمة المعقدة، والتحول الحضاري.",
+      "دراسات بحثية، وأوراق بيضاء استراتيجية، ومصنفات أكاديمية.",
     ],
     [
       "البرامج التدريبية",
@@ -535,13 +505,13 @@ export const outputs = {
     ],
     [
       "النماذج والنظريات",
-      "أطر فكرية ونظرية أصيلة تشمل نظرية الرحيمي، ونموذج التجسير القيادي، ونظرية الكمون الجيني.",
-      "نماذج تطبيقية مختبرة في البيئات المؤسسية.",
+      "أنظمة وأطر فكرية قيد التطوير تشمل نظرية الرحيمي، ونموذج التجسير القيادي، والبنى المفاهيمية التأسيسية.",
+      "نماذج بنائية وأطر مفاهيمية قابلة للتطبيق في البيئات المؤسسية.",
     ],
     [
-      "الأدوات والمؤشرات",
-      "أدوات قياس معيارية، وفي مقدمتها مؤشر الرحيمي للتحول الحضاري وأدوات تدقيق السيادة الإدراكية.",
-      "مؤشرات تشخيصية ولوحات قياس الأثر.",
+      "الأدوات والمؤشرات التشخيصية قيد التطوير",
+      "أدوات تشخيصية ومؤشرات قيد التطوير، وفي طليعتها النموذج الأولي لمؤشر الرحيمي للتحول الحضاري (AICT) وأدوات تقييم السيادة الإدراكية.",
+      "لوحات قياس تشخيصية أولية وأطر قياس الأثر.",
     ],
     [
       "الاستشارات المعرفية",

@@ -24,15 +24,15 @@ export function OutputsShowcase() {
       icon: BookOpen,
       title: {
         en: "Research & Scholarly Studies",
-        ar: "البحوث والدراسات العلمية المحكمة",
+        ar: "البحوث والدراسات العلمية",
       },
       desc: {
         en: "Rigorous theoretical and applied research exploring human cognition, conscious leadership, complex adaptive systems, and civilizational transformation.",
-        ar: "أبحاث نظرية وتطبيقية محكمة تستكشف الإدراك، والقيادة الواعية، والأنظمة المعقدة، والتحول الحضاري في عصر الذكاء الاصطناعي.",
+        ar: "أبحاث نظرية وتطبيقية تستكشف الإدراك، والقيادة الواعية، والأنظمة المعقدة، والتحول الحضاري في عصر الذكاء الاصطناعي.",
       },
       deliverable: {
-        en: "Peer-Reviewed Studies & Strategic Whitepapers",
-        ar: "أوراق علمية محكمة وتقارير استراتيجية دورية",
+        en: "Research Studies & Strategic Whitepapers",
+        ar: "دراسات بحثية وأوراق بيضاء استراتيجية",
       },
       link: "/research",
     },
@@ -75,11 +75,11 @@ export function OutputsShowcase() {
       icon: Layers,
       title: {
         en: "Conceptual Models & Theories",
-        ar: "النماذج والأطر النظرية الأصيلة",
+        ar: "النماذج والأطر النظرية",
       },
       desc: {
-        en: "Original intellectual systems including Alrohaimi Theory, the Leadership Bridging Paradigm, and the Gene Latency Epistemic Architecture.",
-        ar: "أطر فكرية ونظرية أصيلة تشمل نظرية الرحيمي، ونموذج التجسير القيادي، ونظرية الكمون الجيني المختبرة في البيئات المؤسسية.",
+        en: "Developing intellectual systems and frameworks including Alrohaimi Theory, the Leadership Bridging Model, and foundational conceptual architectures.",
+        ar: "أنظمة وأطر فكرية قيد التطوير تشمل نظرية الرحيمي، ونموذج التجسير القيادي، والبنى المفاهيمية التأسيسية.",
       },
       deliverable: {
         en: "Actionable Theoretical Blueprints & Schemas",
@@ -91,16 +91,16 @@ export function OutputsShowcase() {
       num: "05",
       icon: Gauge,
       title: {
-        en: "Measurement Tools & Indicators",
-        ar: "الأدوات والمؤشرات المعيارية",
+        en: "Developing Diagnostic Tools & Indicators",
+        ar: "الأدوات والمؤشرات التشخيصية قيد التطوير",
       },
       desc: {
-        en: "Proprietary diagnostic instruments, including the Alrohaimi Index for Civilizational Transformation (AICT) and cognitive sovereignty audit scorecards.",
-        ar: "أدوات قياس معيارية متقدمة، وفي طليعتها مؤشر الرحيمي للتحول الحضاري (AICT) وأدوات تدقيق السيادة الإدراكية.",
+        en: "Developing diagnostic tools and indicators, including the prototype Alrohaimi Index for Civilizational Transformation (AICT) and cognitive sovereignty assessment scorecards.",
+        ar: "أدوات تشخيصية ومؤشرات قيد التطوير، وفي طليعتها النموذج الأولي لمؤشر الرحيمي للتحول الحضاري (AICT) وأدوات تقييم السيادة الإدراكية.",
       },
       deliverable: {
-        en: "Diagnostic Scorecards & Impact Metric Engines",
-        ar: "لوحات قياس معيارية ومؤشرات تقييم الجاهزية",
+        en: "Prototype Diagnostic Scorecards & Impact Measurement Frameworks",
+        ar: "لوحات قياس تشخيصية أولية وأطر قياس الأثر",
       },
       link: "/theory",
     },
@@ -253,8 +253,8 @@ export function OutputsShowcase() {
 
             <p className="mx-auto mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300/90 font-normal">
               {ar
-                ? "يفتح مركز الدكتور عبدالمحسن الرحيمي مسارات التعاون العلمي الرفيع مع الجامعات العالمية، والمؤسسات الحكومية، وصناع القرار لتبادل المعرفة وصناعة الأثر التاريخي."
-                : "The Center actively partners with international universities, research institutions, and sovereign executive bodies to advance cognitive sovereignty and create enduring civilizational impact."}
+                ? "يرحب المركز ويطور شراكات علمية وبحثية مع الجامعات العالمية والمؤسسات البحثية والجهات المؤسسية لتعزيز السيادة الإدراكية وصناعة أثر حضاري مستدام."
+                : "The Center welcomes and develops partnerships with international universities, research institutions, and institutional stakeholders to advance cognitive sovereignty and create enduring civilizational impact."}
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center items-center gap-4">

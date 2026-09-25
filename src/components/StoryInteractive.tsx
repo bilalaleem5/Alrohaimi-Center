@@ -308,7 +308,7 @@ export function StoryInteractive() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex size-2 rounded-full bg-emerald-300" />
               </span>
-              <span>{ar ? "رؤية المملكة 2030" : "Vision 2030 Aligned"}</span>
+              <span>{ar ? "أصالة التراث، رؤية 2030، والعمق الحضاري" : "Saudi Heritage, Vision 2030 & Civilizational Depth"}</span>
             </div>
           </div>
 

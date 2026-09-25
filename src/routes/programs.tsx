@@ -103,7 +103,7 @@ function Programs() {
           1. EXECUTIVE ACADEMY HERO
           ===================================================================== */}
       <PageHero
-        label={ar ? "الذراع القيادي والتنفيذي" : "Executive Leadership Arm"}
+        label={ar ? "منظومة فكرية وتربوية قيادية" : "Intellectual & Educational Leadership Ecosystem"}
         title={
           ar
             ? "المدرسة السعودية للقيادة الواعية"

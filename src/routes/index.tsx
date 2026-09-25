@@ -200,41 +200,35 @@ function Home() {
 
         {/* Live Strategic Statistics Island */}
         <div className="mx-auto mt-14 max-w-[1440px] px-5 lg:px-10">
-          <div className="grid grid-cols-2 gap-4 rounded-2xl border border-amber-900/15 bg-white p-6 shadow-luxury sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-4 rounded-2xl border border-amber-900/15 bg-white p-6 shadow-luxury sm:grid-cols-3 lg:grid-cols-5">
+            <div className="flex flex-col items-start">
+              <p className="font-display text-3xl font-black text-amber-800">04</p>
+              <p className="text-xs font-semibold text-[#4e5e7b]">
+                {ar ? "وحدات مؤسسية معتمدة" : "Core Institutional Units"}
+              </p>
+            </div>
+            <div className="flex flex-col items-start">
+              <p className="font-display text-3xl font-black text-slate-800">06</p>
+              <p className="text-xs font-semibold text-[#4e5e7b]">
+                {ar ? "مجالات بحثية تخصصية" : "Research Domains"}
+              </p>
+            </div>
             <div className="flex flex-col items-start">
               <p className="font-display text-3xl font-black text-amber-800">06</p>
               <p className="text-xs font-semibold text-[#4e5e7b]">
-                {ar ? "مجالات بحثية تأسيسية" : "Research Pillars"}
+                {ar ? "مصنفات فكرية تأسيسية" : "Foundational Treatises"}
               </p>
             </div>
             <div className="flex flex-col items-start">
               <p className="font-display text-3xl font-black text-sky-700">08</p>
               <p className="text-xs font-semibold text-[#4e5e7b]">
-                {ar ? "برامج قيادية تنفيذية" : "Leadership Programs"}
+                {ar ? "برامج قيادية وتعليمية" : "Educational Programs"}
               </p>
             </div>
             <div className="flex flex-col items-start">
-              <p className="font-display text-3xl font-black text-amber-800">04</p>
+              <p className="font-display text-3xl font-black text-amber-800">06</p>
               <p className="text-xs font-semibold text-[#4e5e7b]">
-                {ar ? "وحدات مؤسسية كبرى" : "Core Primary Units"}
-              </p>
-            </div>
-            <div className="flex flex-col items-start">
-              <p className="font-display text-3xl font-black text-emerald-700">07</p>
-              <p className="text-xs font-semibold text-[#4e5e7b]">
-                {ar ? "مختبرات تخصصية" : "Specialized Labs"}
-              </p>
-            </div>
-            <div className="flex flex-col items-start">
-              <p className="font-display text-3xl font-black text-purple-700">100%</p>
-              <p className="text-xs font-semibold text-[#4e5e7b]">
-                {ar ? "سيادة إدراكية واستقلالية" : "Cognitive Sovereignty"}
-              </p>
-            </div>
-            <div className="flex flex-col items-start">
-              <p className="font-display text-3xl font-black text-amber-800">2030</p>
-              <p className="text-xs font-semibold text-[#4e5e7b]">
-                {ar ? "مواءمة مع رؤية المملكة" : "Vision 2030 Aligned"}
+                {ar ? "مراحل نظرية الرحيمي" : "Theory Stages"}
               </p>
             </div>
           </div>
