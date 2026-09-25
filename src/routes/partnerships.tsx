@@ -8,6 +8,7 @@ import {
 } from "../components/site";
 import leadershipLightImg from "../assets/leadership_light.jpg";
 import { Globe2, ShieldCheck, BookOpen, Users, Sparkles, Network, ArrowUpRight, CheckCircle2, Compass } from "lucide-react";
+import { NationalInitiativesShowcase } from "../components/NationalInitiativesShowcase";
 
 export const Route = createFileRoute("/partnerships")({
   head: () => ({
@@ -217,7 +218,12 @@ function Partnerships() {
       </section>
 
       {/* =====================================================================
-          4. GLOBAL DIALOGUE NODES: Interactive Radar Matrix (Zero Cards)
+          4. AFFILIATED SOVEREIGN INITIATIVES & ACCELERATORS (WAII / SDAIA)
+          ===================================================================== */}
+      <NationalInitiativesShowcase />
+
+      {/* =====================================================================
+          5. GLOBAL DIALOGUE NODES: Interactive Radar Matrix (Zero Cards)
           ===================================================================== */}
       <section className="border-b border-[#0c1836]/10 bg-[#f5f0e6] py-20 lg:py-28">
         <div className="mx-auto max-w-[1440px] px-5 lg:px-10">

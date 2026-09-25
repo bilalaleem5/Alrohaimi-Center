@@ -382,6 +382,14 @@ function About() {
                   <CheckCircle2 size={16} className="text-[#b88a3b]" />
                   <span>{ar ? "مطور مؤشر الرحيمي للتحول الحضاري (AICT)" : "Architect of the Alrohaimi Index (AICT)"}</span>
                 </div>
+                <div className="flex items-center gap-3 text-xs font-bold text-[#0c1836]">
+                  <CheckCircle2 size={16} className="text-[#b88a3b]" />
+                  <span>{ar ? "رئيس مجلس إدارة جمعية بالذكاء الاصطناعي نبتكر الدواء (بإشراف سدايا)" : "Chairman of AI for Drug Innovation Society (SDAIA Supervised)"}</span>
+                </div>
+                <div className="flex items-center gap-3 text-xs font-bold text-[#0c1836]">
+                  <CheckCircle2 size={16} className="text-[#b88a3b]" />
+                  <span>{ar ? "المشرف على مسرّعة ابتكار الدواء بالذكاء الاصطناعي (ترخيص منشآت 1171)" : "Supervisor of AI Drug Innovation Accelerator (Monsha'at 1171)"}</span>
+                </div>
               </div>
             </div>
 

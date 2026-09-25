@@ -222,6 +222,35 @@ function Units() {
               </div>
             ))}
           </div>
+
+          {/* Applied Translational Extension: AI Drug Innovation Accelerator */}
+          <div className="mt-12 rounded-3xl border border-[#b88a3b]/40 bg-white p-8 lg:p-10 shadow-sm">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-[#0c1836]/10 pb-6">
+              <div>
+                <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#b88a3b]">
+                  {ar ? "الامتداد التطبيقي والشراكات الحيوية" : "Applied Translational Extension"}
+                </span>
+                <h3 className="mt-1 font-display text-xl font-bold text-[#0c1836]">
+                  {ar
+                    ? "الربط مع مسرّعة ابتكار الدواء بالذكاء الاصطناعي (ترخيص منشآت 1171)"
+                    : "Integration with AI Drug Innovation Accelerator (Monsha'at 1171)"}
+                </h3>
+              </div>
+              <Link
+                to="/partnerships"
+                className="inline-flex items-center gap-2 rounded-full border border-[#b88a3b]/40 bg-[#fbf9f5] px-5 py-2 text-xs font-bold text-[#0c1836] hover:bg-[#f5f0e6] self-start lg:self-center"
+              >
+                <span>{ar ? "استعراض المنظومة والموافقات" : "View Accelerator & SDAIA Tracks"}</span>
+                <Arrow />
+              </Link>
+            </div>
+
+            <p className="mt-6 text-sm leading-relaxed text-[#4e5e7b]">
+              {ar
+                ? "يرتبط مختبر الأنظمة الحية والإدراك الحيوي تشغيلياً وبحثياً مع مسرّعة ابتكار الدواء بالذكاء الاصطناعي وجمعية (WAII) الخاضعة للإشراف الفني لـ سدايا، بهدف ترجمة النماذج المعرفية للأنظمة الحية إلى وحدات تدريبية متخصصة لاكتشاف الأدوية ومشاريع حيوية ناشئة تدعم الأمن الدوائي والسيادة الصحية الوطنية."
+                : "The Living Systems & Biological Cognition Lab collaborates directly with the National AI Drug Innovation Accelerator and the WAII ecosystem under SDAIA supervision, bridging biological cognition models with computational drug design, specialized training units, and investable biotech ventures."}
+            </p>
+          </div>
         </div>
       </section>
 
