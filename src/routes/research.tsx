@@ -229,10 +229,12 @@ function ResearchPage() {
                       key={item.id}
                       className="flex items-center justify-between rounded-xl border border-[#0c1836]/10 bg-[#fbf9f5] px-4 py-2.5 text-xs font-semibold"
                     >
-                      <span className="font-mono text-[#b88a3b] font-bold">{item.arsNumber}</span>
-                      <span className="text-[#0c1836] truncate px-3">{item.title}</span>
+                      <span className="font-mono text-[#b88a3b] font-bold">{item.code}</span>
+                      <span className="text-[#0c1836] truncate px-3">
+                        {ar ? item.title.ar : item.title.en}
+                      </span>
                       <span className="shrink-0 rounded-full bg-[#f5f0e6] px-2 py-0.5 text-[10px] text-[#718096]">
-                        {item.scientificStatus}
+                        {ar ? item.arabicScientificStatus : item.scientificStatus}
                       </span>
                     </div>
                   ))}
@@ -276,12 +278,12 @@ function ResearchPage() {
                       key={item.id}
                       className="flex items-center justify-between rounded-xl border border-[#0c1836]/10 bg-[#fbf9f5] px-4 py-2.5 text-xs font-semibold"
                     >
-                      <span className="font-mono text-[#b88a3b] font-bold">{item.fiwNumber}</span>
+                      <span className="font-mono text-[#b88a3b] font-bold">{item.code}</span>
                       <span className="text-[#0c1836] truncate px-3">
-                        {ar ? item.arabicTitle : item.title}
+                        {ar ? item.title.ar : item.title.en}
                       </span>
                       <span className="shrink-0 rounded-full bg-[#f5f0e6] px-2 py-0.5 text-[10px] text-[#718096]">
-                        {item.workType}
+                        {ar ? item.classification.ar : item.classification.en}
                       </span>
                     </div>
                   ))}

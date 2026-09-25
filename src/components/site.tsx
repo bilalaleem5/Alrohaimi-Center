@@ -3,6 +3,7 @@ import {
   useContext,
   useEffect,
   useState,
+  useRef,
   type ButtonHTMLAttributes,
   type ReactNode,
 } from "react";
@@ -99,12 +100,26 @@ export function Shell({ children }: { children: ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileResearchOpen, setMobileResearchOpen] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
     setOpen(false);
     setDropdownOpen(false);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
   }, [pathname]);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      setDropdownOpen(false);
+    }, 200);
+  };
 
   // Dynamic Scroll Listener for Header Animation
   useEffect(() => {
@@ -255,12 +270,15 @@ export function Shell({ children }: { children: ReactNode }) {
                 {/* 3. Dropdown: Intellectual System & Research */}
                 <div
                   className="relative"
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                 >
                   <button
                     type="button"
-                    onClick={() => setDropdownOpen((v) => !v)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setDropdownOpen((v) => !v);
+                    }}
                     className={`flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold tracking-normal transition-all duration-200 ${
                       isResearchActive
                         ? "bg-[#0c1836] text-[#dfbe7a] shadow-md scale-[1.02]"
@@ -278,35 +296,39 @@ export function Shell({ children }: { children: ReactNode }) {
 
                   {dropdownOpen && (
                     <div
-                      className={`absolute top-full mt-2 w-80 rounded-2xl border border-amber-900/15 bg-white/95 p-2 shadow-2xl backdrop-blur-2xl animate-fadeIn z-50 ${
+                      className={`absolute top-full pt-2 w-80 z-50 animate-fadeIn ${
                         ar ? "right-0 text-right" : "left-0 text-left"
                       }`}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
                     >
-                      <div className="space-y-1">
-                        {researchSubLinks.map((item) => {
-                          const isSubActive = pathname === item.to;
-                          return (
-                            <Link
-                              key={item.to}
-                              to={item.to}
-                              onClick={() => setDropdownOpen(false)}
-                              className={`block rounded-xl px-3.5 py-2.5 transition-all ${
-                                isSubActive
-                                  ? "bg-[#0c1836] text-[#dfbe7a]"
-                                  : "text-[#0c1836] hover:bg-[#f5f0e6]"
-                              }`}
-                            >
-                              <div className="font-display text-xs font-bold">{item.label}</div>
-                              <div
-                                className={`mt-0.5 text-[10px] leading-tight ${
-                                  isSubActive ? "text-[#dfbe7a]/80" : "text-[#718096]"
+                      <div className="rounded-2xl border border-amber-900/15 bg-white/95 p-2 shadow-2xl backdrop-blur-2xl">
+                        <div className="space-y-1">
+                          {researchSubLinks.map((item) => {
+                            const isSubActive = pathname === item.to;
+                            return (
+                              <Link
+                                key={item.to}
+                                to={item.to}
+                                onClick={() => setDropdownOpen(false)}
+                                className={`block rounded-xl px-3.5 py-2.5 transition-all ${
+                                  isSubActive
+                                    ? "bg-[#0c1836] text-[#dfbe7a]"
+                                    : "text-[#0c1836] hover:bg-[#f5f0e6]"
                                 }`}
                               >
-                                {item.desc}
-                              </div>
-                            </Link>
-                          );
-                        })}
+                                <div className="font-display text-xs font-bold">{item.label}</div>
+                                <div
+                                  className={`mt-0.5 text-[10px] leading-tight ${
+                                    isSubActive ? "text-[#dfbe7a]/80" : "text-[#718096]"
+                                  }`}
+                                >
+                                  {item.desc}
+                                </div>
+                              </Link>
+                            );
+                          })}
+                        </div>
                       </div>
                     </div>
                   )}
