@@ -50,7 +50,7 @@ function Contact() {
       desc: ar
         ? "لطلبات الشراكة مع الجامعات، وتبادل الباحثين، ودراسة أطر نظرية الرحيمي والسيادة الإدراكية."
         : "For university partnerships, scholar exchanges, and inquiries regarding Alrohaimi Theory and cognitive sovereignty frameworks.",
-      email: "research@alrohaimitheory.org",
+      email: "research@alrohaimicenter.org",
       dept: "RESEARCH-DIR",
     },
     {
@@ -58,7 +58,7 @@ function Contact() {
       desc: ar
         ? "لترشيح القيادات العليا، وحجز الدفعات المغلقة للجهات الحكومية والشركات، واستفسارات البرامج."
         : "For senior executive nominations, institutional cohort reservations, and curriculum consultations.",
-      email: "admissions@alrohaimitheory.org",
+      email: "admissions@alrohaimicenter.org",
       dept: "ACADEMY-DIR",
     },
     {
@@ -66,7 +66,7 @@ function Contact() {
       desc: ar
         ? "للتغطيات الإعلامية، وطلبات المشاركة في المؤتمرات الدولية، والحصول على تراخيص الإصدارات."
         : "For media briefings, international conference speaking requests, and publication licensing permissions.",
-      email: "media@alrohaimitheory.org",
+      email: "media@alrohaimicenter.org",
       dept: "MEDIA-DISPATCH",
     },
   ];
@@ -121,7 +121,7 @@ function Contact() {
 
               <div className="mt-6 border-t border-[#0c1836]/10 pt-4">
                 <button
-                  onClick={() => copyToClipboard("domain", "https://alrohaimitheory.org")}
+                  onClick={() => copyToClipboard("domain", "https://alrohaimicenter.org")}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#b88a3b] hover:text-[#0c1836]"
                 >
                   {copiedKey === "domain" ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
@@ -171,7 +171,7 @@ function Contact() {
                   {ar ? "البريد المؤسسي الموحد" : "Central Dispatch"}
                 </p>
                 <p className="mt-2 font-display text-lg xl:text-xl font-bold text-[#0c1836] break-all">
-                  contact@alrohaimitheory.org
+                  contact@alrohaimicenter.org
                 </p>
                 <p className="mt-3 text-xs leading-relaxed text-[#4e5e7b]">
                   {ar ? "يُحال الاستفسار فوراً إلى الوحدة الأكاديمية المعنية خلال 24 ساعة" : "Inquiries are routed directly to the designated academic unit within 24 hours"}
@@ -180,7 +180,7 @@ function Contact() {
 
               <div className="mt-6 border-t border-[#0c1836]/10 pt-4">
                 <button
-                  onClick={() => copyToClipboard("email", "contact@alrohaimitheory.org")}
+                  onClick={() => copyToClipboard("email", "contact@alrohaimicenter.org")}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#b88a3b] hover:text-[#0c1836]"
                 >
                   {copiedKey === "email" ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}

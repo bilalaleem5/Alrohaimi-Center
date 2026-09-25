@@ -67,22 +67,22 @@ function About() {
     {
       year: "2020",
       arabicYear: "٢٠٢٠",
-      epoch: ar ? "مرحلة القياس المعياري" : "Empirical Calibration",
-      title: ar ? "بناء مؤشر التحول الحضاري (AICT)" : "Engineering the Alrohaimi Index",
+      epoch: ar ? "مرحلة نمذجة المؤشرات" : "Diagnostic Framework Modeling",
+      title: ar ? "بناء إطار مؤشر التحول (AICT)" : "Engineering the Alrohaimi Index",
       desc: ar
-        ? "تطوير أداة القياس المعيارية الأولى التي تربط بين المفاهيم الفلسفية والمؤشرات الإدارية والميدانية الملموسة لقياس جاهزية المؤسسات للسيادة الإدراكية."
-        : "Developing the first composite diagnostic indicator bridging high-order philosophy with measurable institutional metrics of cognitive sovereignty.",
-      takeaway: ar ? "تحويل المفاهيم الفلسفية إلى مقاييس قابلة للمعايرة." : "Transforming speculative philosophy into calibrated diagnostic metrics.",
+        ? "تطوير إطار تشخيصي مركب يربط بين المفاهيم النظرية والأبعاد الميدانية الملموسة لقياس جاهزية المؤسسات للسيادة الإدراكية عبر أربعة أبعاد جوهرية."
+        : "Developing the composite diagnostic framework connecting theoretical constructs with operational metrics of institutional cognitive sovereignty across four core dimensions.",
+      takeaway: ar ? "ربط البناءات النظرية بالنماذج التشغيلية والمقاييس التشخيصية." : "Connecting theoretical constructs with operational models and diagnostic metrics.",
     },
     {
       year: "2026",
       arabicYear: "٢٠٢٦",
-      epoch: ar ? "مرحلة الإطلاق المؤسسي السيادي" : "Sovereign Inauguration",
+      epoch: ar ? "مرحلة الإطلاق المؤسسي للمركز" : "Institutional Launch",
       title: ar ? "إطلاق المركز والمدرسة السعودية" : "Inauguration of the Sovereign Center",
       desc: ar
-        ? "تأسيس الصرح الأكاديمي الشامل في الرياض وإطلاق المدرسة السعودية للقيادة الواعية والسبعة مختبرات المتخصصة لخدمة المملكة والعالم في عصر الذكاء الاصطناعي."
-        : "Inaugurating the comprehensive Riyadh think-tank, the Saudi School of Conscious Leadership, and 7 specialized research labs to serve the Kingdom and the world.",
-      takeaway: ar ? "صرح فكري سعودي ذو أثر حضاري عالمي ممتد." : "A Saudi intellectual institution delivering sustained global civilizational impact.",
+        ? "تأسيس الصرح الأكاديمي الشامل في الرياض وإطلاق المدرسة السعودية للقيادة الواعية والوحدات المؤسسية المتخصصة لخدمة المملكة والعالم في عصر الذكاء الاصطناعي."
+        : "Inaugurating the comprehensive Riyadh research center, the Saudi School of Conscious Leadership, and specialized institutional units to advance research in the algorithmic era.",
+      takeaway: ar ? "صرح فكري وبحثي ذو أثر حضاري ممتد." : "An intellectual and research institution delivering sustained civilizational impact.",
     },
   ];
 
@@ -157,7 +157,7 @@ function About() {
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-[#0c1836]/15 bg-white/80 px-4 py-1.5 font-mono text-xs font-bold text-[#0c1836] shadow-xs">
                   <Globe size={13} className="text-[#b88a3b]" />
-                  alrohaimitheory.org
+                  alrohaimicenter.org
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-[#b88a3b]/30 bg-[#f5f0e6] px-4 py-1.5 font-mono text-xs font-bold text-[#b88a3b] shadow-xs">
                   <Sparkles size={13} />
@@ -312,7 +312,7 @@ function About() {
                 <div className="mt-6 flex items-start gap-2.5 rounded-xl border border-[#b88a3b]/30 bg-[#fbf9f5] p-4 text-xs md:text-sm font-semibold text-[#0c1836]">
                   <Sparkles size={16} className="mt-0.5 shrink-0 text-[#b88a3b]" />
                   <span>
-                    <strong className="text-[#b88a3b]">{ar ? "المفهوم الجوهري: " : "Core Postulate: "}</strong>
+                    <strong className="text-[#b88a3b]">{ar ? "الفرضية المركزية: " : "Central Proposition: "}</strong>
                     {chronology[activeChronology].takeaway}
                   </span>
                 </div>

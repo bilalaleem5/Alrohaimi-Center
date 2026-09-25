@@ -17,6 +17,10 @@ import { Route as PartnershipsRouteImport } from './routes/partnerships'
 import { Route as ProgramsRouteImport } from './routes/programs'
 import { Route as TheoryRouteImport } from './routes/theory'
 import { Route as UnitsRouteImport } from './routes/units'
+import { Route as IntellectualSystemRouteImport } from './routes/intellectual-system'
+import { Route as ResearchSeriesRouteImport } from './routes/research-series'
+import { Route as FoundationalWorksRouteImport } from './routes/foundational-works'
+import { Route as ResearchRouteImport } from './routes/research'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -58,6 +62,26 @@ const UnitsRoute = UnitsRouteImport.update({
   path: '/units',
   getParentRoute: () => rootRouteImport,
 } as any)
+const IntellectualSystemRoute = IntellectualSystemRouteImport.update({
+  id: '/intellectual-system',
+  path: '/intellectual-system',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchSeriesRoute = ResearchSeriesRouteImport.update({
+  id: '/research-series',
+  path: '/research-series',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FoundationalWorksRoute = FoundationalWorksRouteImport.update({
+  id: '/foundational-works',
+  path: '/foundational-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchRoute = ResearchRouteImport.update({
+  id: '/research',
+  path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -68,6 +92,10 @@ export interface FileRoutesByFullPath {
   '/programs': typeof ProgramsRoute
   '/theory': typeof TheoryRoute
   '/units': typeof UnitsRoute
+  '/intellectual-system': typeof IntellectualSystemRoute
+  '/research-series': typeof ResearchSeriesRoute
+  '/foundational-works': typeof FoundationalWorksRoute
+  '/research': typeof ResearchRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +106,10 @@ export interface FileRoutesByTo {
   '/programs': typeof ProgramsRoute
   '/theory': typeof TheoryRoute
   '/units': typeof UnitsRoute
+  '/intellectual-system': typeof IntellectualSystemRoute
+  '/research-series': typeof ResearchSeriesRoute
+  '/foundational-works': typeof FoundationalWorksRoute
+  '/research': typeof ResearchRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +121,10 @@ export interface FileRoutesById {
   '/programs': typeof ProgramsRoute
   '/theory': typeof TheoryRoute
   '/units': typeof UnitsRoute
+  '/intellectual-system': typeof IntellectualSystemRoute
+  '/research-series': typeof ResearchSeriesRoute
+  '/foundational-works': typeof FoundationalWorksRoute
+  '/research': typeof ResearchRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +137,10 @@ export interface FileRouteTypes {
     | '/programs'
     | '/theory'
     | '/units'
+    | '/intellectual-system'
+    | '/research-series'
+    | '/foundational-works'
+    | '/research'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +151,10 @@ export interface FileRouteTypes {
     | '/programs'
     | '/theory'
     | '/units'
+    | '/intellectual-system'
+    | '/research-series'
+    | '/foundational-works'
+    | '/research'
   id:
     | '__root__'
     | '/'
@@ -121,6 +165,10 @@ export interface FileRouteTypes {
     | '/programs'
     | '/theory'
     | '/units'
+    | '/intellectual-system'
+    | '/research-series'
+    | '/foundational-works'
+    | '/research'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,6 +180,10 @@ export interface RootRouteChildren {
   ProgramsRoute: typeof ProgramsRoute
   TheoryRoute: typeof TheoryRoute
   UnitsRoute: typeof UnitsRoute
+  IntellectualSystemRoute: typeof IntellectualSystemRoute
+  ResearchSeriesRoute: typeof ResearchSeriesRoute
+  FoundationalWorksRoute: typeof FoundationalWorksRoute
+  ResearchRoute: typeof ResearchRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -192,6 +244,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UnitsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/intellectual-system': {
+      id: '/intellectual-system'
+      path: '/intellectual-system'
+      fullPath: '/intellectual-system'
+      preLoaderRoute: typeof IntellectualSystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research-series': {
+      id: '/research-series'
+      path: '/research-series'
+      fullPath: '/research-series'
+      preLoaderRoute: typeof ResearchSeriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/foundational-works': {
+      id: '/foundational-works'
+      path: '/foundational-works'
+      fullPath: '/foundational-works'
+      preLoaderRoute: typeof FoundationalWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research': {
+      id: '/research'
+      path: '/research'
+      fullPath: '/research'
+      preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -204,6 +284,10 @@ const rootRouteChildren: RootRouteChildren = {
   ProgramsRoute: ProgramsRoute,
   TheoryRoute: TheoryRoute,
   UnitsRoute: UnitsRoute,
+  IntellectualSystemRoute: IntellectualSystemRoute,
+  ResearchSeriesRoute: ResearchSeriesRoute,
+  FoundationalWorksRoute: FoundationalWorksRoute,
+  ResearchRoute: ResearchRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

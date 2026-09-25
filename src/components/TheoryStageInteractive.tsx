@@ -175,11 +175,11 @@ export function TheoryStageInteractive() {
             <div className="mt-8 flex flex-wrap items-center gap-4 text-xs font-semibold text-[#0c1836]">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#0c1836]/10 bg-[#fbf9f5] px-3.5 py-1.5">
                 <ShieldCheck size={14} className="text-[#b88a3b]" />
-                <span>{ar ? "موثق أكاديمياً" : "Academically Verified"}</span>
+                <span>{ar ? "بناء نظري" : "Theoretical Construct"}</span>
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-[#0c1836]/10 bg-[#fbf9f5] px-3.5 py-1.5">
                 <Activity size={14} className="text-[#0c1836]" />
-                <span>{ar ? "مؤشر تطبيقي فعال" : "Empirical Calibration Active"}</span>
+                <span>{ar ? "قيد التحقق والتطوير" : "Validation in Progress"}</span>
               </span>
             </div>
           </div>
@@ -189,7 +189,7 @@ export function TheoryStageInteractive() {
             <div className="relative overflow-hidden rounded-2xl border border-[#b88a3b]/25 bg-gradient-to-br from-[#fbf9f5] via-white to-[#f5f0e6] p-7 shadow-xs">
               <div className="flex items-center justify-between border-b border-[#0c1836]/10 pb-4">
                 <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-[#b88a3b]">
-                  {ar ? "مقياس التحقق الميداني" : "Diagnostic Metric Output"}
+                  {ar ? "مخرج تشخيصي توضيحي" : "ILLUSTRATIVE DIAGNOSTIC OUTPUT"}
                 </span>
                 <span className="font-mono text-xs font-bold text-[#0c1836]">
                   {current.num} / 06
@@ -206,12 +206,17 @@ export function TheoryStageInteractive() {
                     ? "يقيس هذا المعيار درجة النضج الإدراكي والانتقال الفعلي من مرحلة الكمون إلى الأثر الحضاري المستدام."
                     : "Calibrates the maturity of transition from latent capability into sovereign decision and measurable societal footprint."}
                 </p>
+                <p className="mt-3 rounded-lg border border-amber-900/10 bg-amber-500/5 p-2.5 font-mono text-[10.5px] leading-relaxed text-amber-900/90">
+                  {ar
+                    ? "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا."
+                    : "Illustrative model output for demonstration purposes; not an empirically validated population estimate."}
+                </p>
               </div>
 
-              {/* Epistemic Progress Bar */}
+              {/* Research Development Progress Bar */}
               <div className="space-y-2">
                 <div className="flex justify-between text-[11px] font-mono font-bold text-[#718096]">
-                  <span>{ar ? "اكتمال المسار" : "Continuum Progress"}</span>
+                  <span>{ar ? "مستوى التطوير البحثي" : "Research Development Progress"}</span>
                   <span className="text-[#b88a3b]">{Math.round(progressPercent)}%</span>
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-full bg-[#0c1836]/10">
@@ -224,9 +229,9 @@ export function TheoryStageInteractive() {
 
               <div className="mt-6 flex items-center justify-between border-t border-[#0c1836]/10 pt-4 text-[11px]">
                 <span className="text-[#718096]">
-                  {ar ? "مركز الدكتور عبدالمحسن الرحيمي" : "Alrohaimi Center Riyadh"}
+                  {ar ? "مركز الدكتور عبدالمحسن الرحيمي" : "Dr. Abdulmohsen Alrohaimi Center"}
                 </span>
-                <span className="font-mono font-bold text-[#b88a3b]">alrohaimitheory.org</span>
+                <span className="font-mono font-bold text-[#b88a3b]">alrohaimicenter.org</span>
               </div>
             </div>
           </div>

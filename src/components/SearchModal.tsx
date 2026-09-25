@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { Search, X, BookOpen, Layers, Award, Sparkles, Building2 } from "lucide-react";
 import { useLanguage } from "./site";
-import { leadershipPrograms, primaryUnits, publications, research } from "../lib/content";
+import { leadershipPrograms, primaryUnits, publications, research, alrohaimiResearchSeries, foundationalIntellectualWorks } from "../lib/content";
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -30,6 +30,25 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   if (!isOpen) return null;
 
   const q = query.toLowerCase().trim();
+
+  // Search through ARS
+  const matchingARS = alrohaimiResearchSeries.filter(
+    (item) =>
+      item.arsNumber.toLowerCase().includes(q) ||
+      item.title.toLowerCase().includes(q) ||
+      item.abstract.toLowerCase().includes(q) ||
+      item.keywords.some((k) => k.toLowerCase().includes(q))
+  );
+
+  // Search through FIW
+  const matchingFIW = foundationalIntellectualWorks.filter(
+    (w) =>
+      w.fiwNumber.toLowerCase().includes(q) ||
+      w.title.toLowerCase().includes(q) ||
+      w.arabicTitle.includes(q) ||
+      w.description.en.toLowerCase().includes(q) ||
+      w.description.ar.includes(q)
+  );
 
   // Search through programs
   const matchingPrograms = leadershipPrograms.filter(
@@ -62,6 +81,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   );
 
   const hasResults =
+    matchingARS.length > 0 ||
+    matchingFIW.length > 0 ||
     matchingPrograms.length > 0 ||
     matchingUnits.length > 0 ||
     matchingPubs.length > 0 ||
@@ -122,6 +143,72 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             </div>
           ) : (
             <>
+              {/* Alrohaimi Research Series (ARS) */}
+              {matchingARS.length > 0 && (
+                <div>
+                  <p className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-wider text-[#b88a3b]">
+                    <Sparkles size={13} />
+                    <span>{lang === "ar" ? "سلسلة أبحاث الرحيمي (ARS)" : "Alrohaimi Research Series (ARS)"}</span>
+                  </p>
+                  <div className="mt-2.5 space-y-2">
+                    {matchingARS.map((item) => (
+                      <Link
+                        key={item.id}
+                        to="/research-series"
+                        onClick={onClose}
+                        className="block rounded-xl border border-amber-900/10 bg-[#fbf9f5] p-3.5 transition hover:border-amber-600 hover:bg-white hover:shadow-sm"
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <p className="font-display text-sm font-bold text-[#0c1836]">
+                            <span className="font-mono text-xs text-[#b88a3b] me-2 font-bold">{item.arsNumber}:</span>
+                            {item.title}
+                          </p>
+                          <span className="shrink-0 rounded-full bg-[#f5f0e6] px-2 py-0.5 font-mono text-[9px] text-[#718096]">
+                            {item.scientificStatus}
+                          </span>
+                        </div>
+                        <p className="line-clamp-1 mt-1 text-xs text-[#4e5e7b]">
+                          {item.abstract}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Foundational Intellectual Works (FIW) */}
+              {matchingFIW.length > 0 && (
+                <div>
+                  <p className="flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-wider text-amber-900">
+                    <BookOpen size={13} />
+                    <span>{lang === "ar" ? "الأعمال الفكرية التأسيسية (FIW)" : "Foundational Intellectual Works (FIW)"}</span>
+                  </p>
+                  <div className="mt-2.5 space-y-2">
+                    {matchingFIW.map((w) => (
+                      <Link
+                        key={w.id}
+                        to="/foundational-works"
+                        onClick={onClose}
+                        className="block rounded-xl border border-amber-900/10 bg-[#fbf9f5] p-3.5 transition hover:border-amber-600 hover:bg-white hover:shadow-sm"
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <p className="font-display text-sm font-bold text-[#0c1836]">
+                            <span className="font-mono text-xs text-[#b88a3b] me-2 font-bold">{w.fiwNumber}:</span>
+                            {lang === "ar" ? w.arabicTitle : w.title}
+                          </p>
+                          <span className="shrink-0 rounded-full bg-[#f5f0e6] px-2 py-0.5 font-mono text-[9px] text-[#718096]">
+                            {w.workType}
+                          </span>
+                        </div>
+                        <p className="line-clamp-1 mt-1 text-xs text-[#4e5e7b]">
+                          {lang === "ar" ? w.description.ar : w.description.en}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Programs */}
               {matchingPrograms.length > 0 && (
                 <div>

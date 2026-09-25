@@ -173,16 +173,16 @@ export function Shell({ children }: { children: ReactNode }) {
                   </span>
 
                   <span className="hidden sm:block font-mono text-[8.5px] uppercase tracking-wider text-amber-700/80 font-medium leading-tight whitespace-nowrap">
-                    {ar ? "للسيادة الإدراكية والتحول الحضاري" : "Cognitive Sovereignty & Transformation"}
+                    {ar ? "للسيادة الإدراكية والتحول الحضاري" : "Cognitive Sovereignty & Civilizational Transformation"}
                   </span>
                 </div>
               </Link>
             </div>
 
             {/* Center: Dedicated Segmented Glass Capsule Island (MATHEMATICALLY CENTERED) */}
-            <div className="relative z-10 hidden xl:flex items-center justify-center shrink-0">
+            <div className="relative z-10 hidden xl:flex items-center justify-center shrink-0 max-w-[62vw]">
               <nav
-                className={`flex items-center rounded-full border border-amber-900/10 bg-[#f4efe4]/80 p-1 shadow-inner backdrop-blur-md transition-all duration-300 ${
+                className={`flex items-center gap-0.5 rounded-full border border-amber-900/10 bg-[#f4efe4]/85 p-1 shadow-inner backdrop-blur-md transition-all duration-300 overflow-x-auto no-scrollbar ${
                   scrolled ? "scale-[0.98] py-0.5" : "py-1"
                 }`}
                 aria-label="Primary Navigation"
@@ -193,7 +193,7 @@ export function Shell({ children }: { children: ReactNode }) {
                     <Link
                       key={to}
                       to={to}
-                      className={`whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide transition-all duration-200 ${
+                      className={`whitespace-nowrap rounded-full px-2.5 2xl:px-3 py-1 text-[11px] 2xl:text-xs font-semibold tracking-normal transition-all duration-200 ${
                         isActive
                           ? "bg-[#0c1836] text-[#dfbe7a] shadow-md scale-[1.02]"
                           : "text-[#0c1836]/75 hover:bg-white/85 hover:text-[#0c1836]"
@@ -206,47 +206,59 @@ export function Shell({ children }: { children: ReactNode }) {
               </nav>
             </div>
 
-            {/* Right: Language Switcher Pill + Mobile Menu Toggle (flex-1 to balance the left) */}
-            <div className="relative z-10 flex flex-1 items-center justify-end gap-1 sm:gap-3 min-w-0">
-            {/* Sleek Modern Language Toggle Pill */}
-            <div className="flex items-center rounded-full border border-amber-900/15 bg-[#f5f0e6]/90 p-0.5 sm:p-1 shadow-xs">
+            {/* Right: Search | Language Switcher Pill + Mobile Menu Toggle (Point 36) */}
+            <div className="relative z-10 flex flex-1 items-center justify-end gap-1.5 sm:gap-2.5 min-w-0">
+              {/* Sleek Search Trigger Button */}
               <button
                 type="button"
-                onClick={() => setLang("en")}
-                className={`rounded-full px-2 sm:px-3 py-1 text-xs font-bold transition-all duration-200 ${
-                  lang === "en"
-                    ? "bg-[#0c1836] text-[#dfbe7a] shadow-sm"
-                    : "text-slate-600 hover:text-[#0c1836]"
-                }`}
-                aria-label="Switch to English"
+                onClick={() => setSearchOpen(true)}
+                className="inline-flex items-center gap-1.5 rounded-full border border-amber-900/15 bg-white/80 px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs font-semibold text-[#0c1836] shadow-2xs transition-all hover:bg-white hover:border-amber-700/30"
+                aria-label={ar ? "بحث" : "Search"}
+                title={ar ? "البحث في المركز" : "Search the Center"}
               >
-                EN
+                <Sparkles size={13} className="text-amber-700" />
+                <span className="hidden md:inline text-[11px] font-bold">{ar ? "بحث" : "Search"}</span>
               </button>
+
+              {/* Sleek Modern Language Toggle Pill */}
+              <div className="flex items-center rounded-full border border-amber-900/15 bg-[#f5f0e6]/90 p-0.5 sm:p-1 shadow-xs">
+                <button
+                  type="button"
+                  onClick={() => setLang("en")}
+                  className={`rounded-full px-2 sm:px-2.5 py-1 text-xs font-bold transition-all duration-200 ${
+                    lang === "en"
+                      ? "bg-[#0c1836] text-[#dfbe7a] shadow-sm"
+                      : "text-slate-600 hover:text-[#0c1836]"
+                  }`}
+                  aria-label="Switch to English"
+                >
+                  EN
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLang("ar")}
+                  className={`rounded-full px-2 sm:px-2.5 py-1 text-xs font-bold transition-all duration-200 ${
+                    lang === "ar"
+                      ? "bg-[#0c1836] text-[#dfbe7a] shadow-sm"
+                      : "text-slate-600 hover:text-[#0c1836]"
+                  }`}
+                  aria-label="Switch to Arabic"
+                >
+                  AR
+                </button>
+              </div>
+
+              {/* Mobile Menu Toggle */}
               <button
                 type="button"
-                onClick={() => setLang("ar")}
-                className={`rounded-full px-2 sm:px-3 py-1 text-xs font-bold transition-all duration-200 ${
-                  lang === "ar"
-                    ? "bg-[#0c1836] text-[#dfbe7a] shadow-sm"
-                    : "text-slate-600 hover:text-[#0c1836]"
-                }`}
-                aria-label="Switch to Arabic"
+                className="grid size-10 place-items-center rounded-full border border-amber-900/15 bg-white text-[#0c1836] shadow-sm transition-colors hover:bg-[#f5f0e6] xl:hidden"
+                aria-label={open ? "Close menu" : "Open menu"}
+                onClick={() => setOpen((v) => !v)}
               >
-                عربي
+                {open ? <X size={20} /> : <Menu size={20} />}
               </button>
             </div>
-
-            {/* Mobile Menu Toggle */}
-            <button
-              type="button"
-              className="grid size-10 place-items-center rounded-full border border-amber-900/15 bg-white text-[#0c1836] shadow-sm transition-colors hover:bg-[#f5f0e6] xl:hidden"
-              aria-label={open ? "Close menu" : "Open menu"}
-              onClick={() => setOpen((v) => !v)}
-            >
-              {open ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </div>
-        </header>
+          </header>
 
         {/* Mobile Navigation Drawer (Floating Card) */}
         {open && (
@@ -414,15 +426,15 @@ function Footer() {
             </div>
             <div className="flex items-center gap-2.5">
               <Mail size={16} className="text-amber-700 shrink-0" />
-              <span>contact@alrohaimitheory.org</span>
+              <span className="font-mono text-[#0c1836] font-medium">{centerInfo.email}</span>
             </div>
           </div>
 
           <div className="mt-6 rounded-xl border border-amber-900/15 bg-white/70 p-4 text-xs text-[#4e5e7b] shadow-xs">
             <p>
               {ar
-                ? "الأطر النظرية والمفاهيمية المنشورة هي مشاريع معرفية مسجلة وخاضعة للبحث والتطوير المستمر."
-                : "The theoretical models and intellectual frameworks are registered knowledge assets open to ongoing empirical research and academic collaboration."}
+                ? "تُعد النماذج النظرية والأطر الفكرية المختارة أصولاً فكرية محمية، وتبقى مفتوحة للبحث التجريبي المستمر والتعاون الأكاديمي الدولي."
+                : "Selected theoretical models and intellectual frameworks are protected intellectual assets and remain open to ongoing empirical research and academic collaboration."}
             </p>
           </div>
         </div>
@@ -431,10 +443,10 @@ function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-amber-900/15 bg-[#ede4d3]/50">
         <div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-3 px-6 py-5 text-xs text-slate-500 font-medium sm:flex-row lg:px-12">
-          <p>
+          <p className="font-medium tracking-wide">
             {ar
-              ? "المعرفة · الإنسان · الأنظمة · التحول الحضاري"
-              : "Knowledge · Humanity · Systems · Civilizational Transformation"}
+              ? "المعرفة · الإنسان · الأنظمة · السيادة الإدراكية · التحول الحضاري"
+              : "Knowledge · Humanity · Systems · Cognitive Sovereignty · Civilizational Transformation"}
           </p>
           <div className="flex flex-col gap-1 sm:items-end">
             <p>

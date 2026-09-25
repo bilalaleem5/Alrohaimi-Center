@@ -18,13 +18,15 @@ export const centerInfo = {
   founder: {
     en: "Dr. Abdulmohsen Hameed Alrohaimi",
     ar: "الدكتور عبدالمحسن حميد الرحيمي",
+    shortEn: "Dr. Abdulmohsen Alrohaimi",
+    shortAr: "الدكتور عبدالمحسن الرحيمي",
     title: {
-      en: "Founder & Lead Theorist",
-      ar: "المؤسس والمنظر الرئيسي",
+      en: "Founder: Dr. Abdulmohsen Hameed Alrohaimi",
+      ar: "المؤسس: الدكتور عبدالمحسن حميد الرحيمي",
     },
     bio: {
-      en: "Founder of the Center and the intellectual project associated with Alrohaimi Theory, Cognitive Sovereignty, the Saudi School of Conscious Leadership, and a range of pioneering research models addressing leadership, cognition, complex systems, and civilizational transformation.",
-      ar: "مؤسس المركز والمشروع الفكري المرتبط بنظرية الرحيمي، والسيادة الإدراكية، والمدرسة السعودية للقيادة الواعية، ومجموعة من النماذج والمشروعات البحثية الرائدة المعنية بالقيادة والإدراك والأنظمة المعقدة والتحول الحضاري.",
+      en: "Founder of the Center and the intellectual project associated with Alrohaimi Theory, Cognitive Sovereignty, the Saudi School of Conscious Leadership, and a range of developing research frameworks addressing leadership, cognition, complex systems, and civilizational transformation.",
+      ar: "مؤسس المركز والمشروع الفكري المرتبط بنظرية الرحيمي، والسيادة الإدراكية، والمدرسة السعودية للقيادة الواعية، ومجموعة من الأطر والنماذج البحثية الرائدة المعنية بالقيادة والإدراك والأنظمة المعقدة والتحول الحضاري.",
     },
   },
   centralQuestion: {
@@ -39,7 +41,17 @@ export const centerInfo = {
     en: "To develop an intellectual, research, and applied system that deepens understanding of humanity, cognition, and systems; transforms knowledge and capability into impact; and opens pathways for scientific collaboration and international dialogue.",
     ar: "تطوير منظومة فكرية وبحثية وتطبيقية تعمق فهم الإنسان والإدراك والأنظمة، وتحول المعرفة والقدرة إلى أثر، وتفتح مسارات للتعاون العلمي والحوار الدولي.",
   },
-  website: "alrohaimitheory.org",
+  scientificPositioning: {
+    en: "Alrohaimi Theory is a developing intellectual and theoretical system that connects latent potential, cognition, meaning, decision, transformation, and impact. The Center develops conceptual models, applied frameworks, and prototype diagnostic tools derived from this system and makes them available for peer engagement, empirical validation, and international research collaboration.",
+    ar: "تمثل نظرية الرحيمي منظومة فكرية ونظرية قيد التطوير تصل بين الإمكان الكامن والإدراك والمعنى والقرار والتحول والأثر. ويعمل المركز على تطوير نماذج مفاهيمية، وأطر تطبيقية، وأدوات تشخيصية أولية مشتقة من هذه المنظومة، وإتاحتها للتحكيم والمشاركة العلمية والتحقق التجريبي والتعاون البحثي الدولي.",
+  },
+  intellectualProperty: {
+    en: "Selected theoretical models and intellectual frameworks are protected intellectual assets and remain open to ongoing empirical research and academic collaboration.",
+    ar: "تُعد النماذج النظرية والأطر الفكرية المختارة أصولاً فكرية محمية، وتبقى مفتوحة للبحث التجريبي المستمر والتعاون الأكاديمي الدولي.",
+  },
+  website: "alrohaimicenter.org",
+  theoryWebsite: "alrohaimitheory.org",
+  email: "contact@alrohaimicenter.org",
   location: {
     en: "Riyadh, Kingdom of Saudi Arabia",
     ar: "الرياض، المملكة العربية السعودية",
@@ -50,20 +62,28 @@ export const nav = {
   en: [
     ["/", "Home"],
     ["/about", "About the Center"],
+    ["/intellectual-system", "Alrohaimi Intellectual System"],
     ["/theory", "Alrohaimi Theory"],
+    ["/research-series", "Research Series"],
+    ["/foundational-works", "Foundational Works"],
     ["/programs", "Programs"],
     ["/units", "Units"],
     ["/knowledge", "Knowledge"],
+    ["/research", "Research & Publications"],
     ["/partnerships", "Partnerships"],
     ["/contact", "Contact"],
   ],
   ar: [
     ["/", "الرئيسية"],
     ["/about", "عن المركز"],
+    ["/intellectual-system", "المنظومة الفكرية للرحيمي"],
     ["/theory", "نظرية الرحيمي"],
+    ["/research-series", "سلسلة الأبحاث"],
+    ["/foundational-works", "الأعمال التأسيسية"],
     ["/programs", "البرامج"],
     ["/units", "الوحدات"],
     ["/knowledge", "المعرفة"],
+    ["/research", "الأبحاث والنشر"],
     ["/partnerships", "الشراكات"],
     ["/contact", "تواصل معنا"],
   ],
@@ -108,6 +128,11 @@ export const pillars = {
   ],
 };
 
+export const researchDomainsNote = {
+  en: "Six research domains operate across the Center’s four institutional units.",
+  ar: "تعمل مجالات البحث الستة عبر الوحدات المؤسسية الأربع للمركز.",
+};
+
 export const research = {
   en: [
     [
@@ -116,11 +141,11 @@ export const research = {
     ],
     [
       "Cognitive Sovereignty",
-      "The capacity of individuals and institutions to understand, interpret, and assume responsibility for decisions in the age of algorithmic and AI systems.",
+      "The capacity of individuals and institutions to understand, interpret, and assume responsibility for decisions in the age of algorithmic and AI-enabled systems.",
     ],
     [
       "Conscious Leadership",
-      "Leadership understood as an integrated process anchored in deep cognition, meaning, sound decision-making, and purposeful transformation.",
+      "Leadership understood as an integrated process anchored in cognition, meaning, sound decision-making, and purposeful transformation.",
     ],
     [
       "Complex Systems",
@@ -132,7 +157,7 @@ export const research = {
     ],
     [
       "Civilizational Transformation",
-      "Investigating how societies and institutions move from latent knowledge and capability toward systemic, ethical, and historic impact.",
+      "Latent knowledge and capability toward systemic, ethical, and historical impact.",
     ],
   ],
   ar: [
@@ -142,11 +167,11 @@ export const research = {
     ],
     [
       "السيادة الإدراكية",
-      "قدرة الأفراد والمؤسسات على الفهم والتفسير والمسؤولية عن القرارات في عصر الأنظمة الخوارزمية والذكاء الاصطناعي.",
+      "قدرة الأفراد والمؤسسات على الفهم والتفسير وتحمل المسؤولية عن القرارات في عصر الأنظمة الخوارزمية والذكاء الاصطناعي.",
     ],
     [
       "القيادة الواعية",
-      "فهم القيادة بوصفها عملية متكاملة ترتكز إلى عمق الإدراك، والمعنى، وصناعة القرار الرشيد، والتحول الهادف.",
+      "فهم القيادة بوصفها عملية متكاملة ترتكز إلى الإدراك، والمعنى، وصناعة القرار الرشيد، والتحول الهادف.",
     ],
     [
       "الأنظمة المعقدة",
@@ -158,7 +183,7 @@ export const research = {
     ],
     [
       "التحول الحضاري",
-      "دراسة انتقال المجتمعات والمؤسسات من المعرفة والقدرة الكامنة نحو التحول المنهجي والأثر التاريخي المستدام.",
+      "انتقال المجتمعات والمؤسسات من المعرفة والقدرة الكامنة نحو التحول المنهجي والأثر الأخلاقي والتاريخي.",
     ],
   ],
 };
@@ -171,7 +196,11 @@ export const theoryStages = {
       title: "Latent Potential",
       subtitle: "The unactivated capability residing within individuals, cultures, and institutions.",
       detail: "In scarce or abundant settings, capability begins in latent form. Identifying latency requires deep cognitive perception before any resource mobilization.",
-      metric: "Potential Mobilization Index: 94%",
+      metricLabel: "ILLUSTRATIVE DIAGNOSTIC OUTPUT",
+      metric: "Illustrative Score: 94",
+      disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
+      status: "Theoretical Construct",
+      progress: "Research Development Progress: 17%",
     },
     {
       id: "cognition",
@@ -179,7 +208,11 @@ export const theoryStages = {
       title: "Cognition",
       subtitle: "The perceptual lens through which reality, systems, and constraints are comprehended.",
       detail: "Moving beyond passive data intake. Cognition forms the foundational awareness required to interpret algorithmic realities and environmental signals.",
-      metric: "Cognitive Sovereignty: High",
+      metricLabel: "ILLUSTRATIVE DIAGNOSTIC OUTPUT",
+      metric: "Illustrative Score: 88",
+      disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
+      status: "Theoretical Construct",
+      progress: "Research Development Progress: 33%",
     },
     {
       id: "meaning",
@@ -187,7 +220,11 @@ export const theoryStages = {
       title: "Meaning",
       subtitle: "The integration of purpose, human values, and existential resonance into awareness.",
       detail: "Raw information without meaning breeds confusion. Meaning aligns perception with ethical purpose, enabling human-centered clarity.",
-      metric: "Value Alignment: Optimal",
+      metricLabel: "ILLUSTRATIVE DIAGNOSTIC OUTPUT",
+      metric: "Illustrative Score: 91",
+      disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
+      status: "Theoretical Construct",
+      progress: "Research Development Progress: 50%",
     },
     {
       id: "decision",
@@ -195,7 +232,11 @@ export const theoryStages = {
       title: "Decision",
       subtitle: "The decisive turning point where awareness crystallizes into purposeful intent and strategy.",
       detail: "Decisions made with cognitive sovereignty transcend algorithmic compulsion, taking full institutional responsibility.",
-      metric: "Strategic Soundness: Verified",
+      metricLabel: "ILLUSTRATIVE DIAGNOSTIC OUTPUT",
+      metric: "Illustrative Score: 86",
+      disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
+      status: "Validation in Progress",
+      progress: "Research Development Progress: 67%",
     },
     {
       id: "transformation",
@@ -203,7 +244,11 @@ export const theoryStages = {
       title: "Transformation",
       subtitle: "The structural, behavioral, and systemic shift implemented across domains.",
       detail: "Transformation reshapes institutional architectures, deploying human and technological systems in synchronized harmony.",
-      metric: "Systemic Adaptability: Active",
+      metricLabel: "ILLUSTRATIVE DIAGNOSTIC OUTPUT",
+      metric: "Illustrative Score: 89",
+      disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
+      status: "Validation in Progress",
+      progress: "Research Development Progress: 83%",
     },
     {
       id: "impact",
@@ -211,7 +256,11 @@ export const theoryStages = {
       title: "Impact",
       subtitle: "The enduring, measurable civilizational value created beyond space and time.",
       detail: "Impact validates theory. It creates generational value, elevating societies and establishing human-centered civilizational milestones.",
-      metric: "Civilizational Footprint: Global",
+      metricLabel: "ILLUSTRATIVE DIAGNOSTIC OUTPUT",
+      metric: "Illustrative Score: 92",
+      disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
+      status: "Validation in Progress",
+      progress: "Research Development Progress: 100%",
     },
   ],
   ar: [
@@ -221,7 +270,11 @@ export const theoryStages = {
       title: "الإمكان الكامن",
       subtitle: "القدرة غير المفعلة المستقرة في عمق الإنسان والمؤسسات والمجتمعات.",
       detail: "في بيئات الوفرة أو الشح، تبدأ القدرة في طور الكمون. ويتطلب كشف هذا الكمون وعياً إدراكياً عميقاً يسبق أي تعبئة للموارد.",
-      metric: "مؤشر تعبئة الممكن: 94%",
+      metricLabel: "مخرج تشخيصي توضيحي",
+      metric: "درجة توضيحية: 94",
+      disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
+      status: "بناء نظري",
+      progress: "مستوى التطوير البحثي: 17%",
     },
     {
       id: "cognition",
@@ -229,7 +282,11 @@ export const theoryStages = {
       title: "الإدراك",
       subtitle: "العدسة المعرفية التي من خلالها يُقرأ الواقع وتُفهم الأنظمة المعقدة.",
       detail: "الانتقال من مجرد استقبال البيانات إلى تشكيل الوعي المنهجي القادر على تفسير الواقع في عصر الخوارزميات.",
-      metric: "السيادة الإدراكية: مرتفعة",
+      metricLabel: "مخرج تشخيصي توضيحي",
+      metric: "درجة توضيحية: 88",
+      disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
+      status: "بناء نظري",
+      progress: "مستوى التطوير البحثي: 33%",
     },
     {
       id: "meaning",
@@ -237,7 +294,11 @@ export const theoryStages = {
       title: "المعنى",
       subtitle: "دمج الغاية والقيم الإنسانية والأصالة الحضارية في بنية الوعي.",
       detail: "المعلومة المجردة بلا معنى تقود للتشتت. المعنى يمنح الوعي بوصلته الأخلاقية، مما يوفر وضوحاً مرتكزاً إلى الإنسان.",
-      metric: "التوافق القيمي: مثالي",
+      metricLabel: "مخرج تشخيصي توضيحي",
+      metric: "درجة توضيحية: 91",
+      disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
+      status: "بناء نظري",
+      progress: "مستوى التطوير البحثي: 50%",
     },
     {
       id: "decision",
@@ -245,7 +306,11 @@ export const theoryStages = {
       title: "القرار",
       subtitle: "نقطة التحول الحاسمة التي يتبلور فيها الوعي والمعنى إلى إرادة واستراتيجية.",
       detail: "القرارات الناتجة عن السيادة الإدراكية تتحرر من التبعية الخوارزمية وتتحمل كامل المسؤولية الأخلاقية والمؤسسية.",
-      metric: "الرشاد الاستراتيجي: معتمد",
+      metricLabel: "مخرج تشخيصي توضيحي",
+      metric: "درجة توضيحية: 86",
+      disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
+      status: "قيد التحقق والتطوير",
+      progress: "مستوى التطوير البحثي: 67%",
     },
     {
       id: "transformation",
@@ -253,7 +318,11 @@ export const theoryStages = {
       title: "التحول",
       subtitle: "الانتقال البنيوي والسلوكي والمؤسسي عبر كافة مستويات المنظومة.",
       detail: "يعيد التحول تشكيل البنى المؤسسية وينسق بين الطاقات البشرية والحلول التقنية في تناغم مدروس.",
-      metric: "التكيف المنظومي: نشط",
+      metricLabel: "مخرج تشخيصي توضيحي",
+      metric: "درجة توضيحية: 89",
+      disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
+      status: "قيد التحقق والتطوير",
+      progress: "مستوى التطوير البحثي: 83%",
     },
     {
       id: "impact",
@@ -261,7 +330,11 @@ export const theoryStages = {
       title: "الأثر",
       subtitle: "القيمة الحضارية المستدامة والقابلة للقياس التي تتجاوز حدود المكان والزمان.",
       detail: "الأثر هو برهان النظرية. يصنع قيمة عابرة للأجيال ترتقي بالمجتمعات وتثبت ركائز النهضة الإنسانية.",
-      metric: "البصمة الحضارية: عالمية",
+      metricLabel: "مخرج تشخيصي توضيحي",
+      metric: "درجة توضيحية: 92",
+      disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
+      status: "قيد التحقق والتطوير",
+      progress: "مستوى التطوير البحثي: 100%",
     },
   ],
 };
@@ -290,7 +363,7 @@ export const primaryUnits = {
     {
       id: "knowledge-theories",
       title: "Knowledge, Theories & Research Unit",
-      arabicTitle: "وحدة المعرفة والنظريات والبحوث",
+      arabicTitle: "وحدة المعرفة والنظريات والأبحاث",
       description: "Constructing foundational theories, scientific concepts, analytical models, and empirical research publications anchoring Alrohaimi Theory and complex systems scholarship.",
       focus: ["Theoretical Architecture", "Alrohaimi Theory Development", "Complexity Modeling", "Peer-Reviewed Studies"],
     },
@@ -319,7 +392,7 @@ export const primaryUnits = {
     },
     {
       id: "knowledge-theories",
-      title: "وحدة المعرفة والنظريات والبحوث",
+      title: "وحدة المعرفة والنظريات والأبحاث",
       arabicTitle: "Knowledge, Theories & Research Unit",
       description: "بناء النظريات التأسيسية، والمفاهيم، والنماذج، والمؤشرات، وإجراء البحوث النظرية والتطبيقية التي ترتكز عليها نظرية الرحيمي.",
       focus: ["البناء النظري", "تطوير نظرية الرحيمي", "نمذجة التعقيد", "الدراسات المحكمة"],
@@ -734,17 +807,17 @@ export const publications = [
   {
     id: "pub-3",
     title: {
-      en: "The Alrohaimi Index for Civilizational Transformation (AICT)",
-      ar: "مؤشر الرحيمي للتحول الحضاري: دليل المقاييس والتقييم المؤسسي",
+      en: "The Alrohaimi Index: Composite Diagnostic Framework (AICT)",
+      ar: "مؤشر الرحيمي للتحول الحضاري: إطار تشخيصي مركب للمقاييس والتقييم المؤسسي",
     },
-    category: "Tools & Indicators",
-    arabicCategory: "الأدوات والمؤشرات",
+    category: "Models & Frameworks",
+    arabicCategory: "النماذج والأطر",
     year: "2026",
     author: "Applied Transformation & Metrics Unit",
-    pages: "Methodological Guidebook & Scoring Rubric",
+    pages: "Methodological Framework Guidebook",
     description: {
-      en: "Standardized diagnostic indicator measuring an organization's capacity to convert latent resources into systemic, measurable transformation.",
-      ar: "مؤشر تشخيصي معياري يقيس قدرة المنظمات والمجتمعات على تحويل الموارد الكامنة إلى تحول منظومي قابل للقياس.",
+      en: "The Alrohaimi Index is a composite diagnostic framework designed to explore institutional readiness to mobilize latent capacity toward sustainable transformation across four core dimensions.",
+      ar: "مؤشر الرحيمي هو إطار تشخيصي مركب مصمم لاستكشاف الجاهزية المؤسسية لتعبئة القدرات الكامنة نحو التحول المستدام عبر أربعة أبعاد جوهرية.",
     },
   },
   {
@@ -775,8 +848,8 @@ export const publications = [
     author: "Living Systems Lab & Resilience Lab",
     pages: "Scientific Monograph · 96 pages",
     description: {
-      en: "Exploring the biological and psychological parallels of latent capability activation during institutional crisis and civilizational shifts.",
-      ar: "استكشاف التناغم الحيوي والنفسي لتفعيل القدرات الكامنة أثناء الأزمات المؤسسية والتحولات الحضارية.",
+      en: "An interdisciplinary study of the biological and systems-level roots of unexpressed capabilities and the mechanisms through which they may become activated under stress or disruption.",
+      ar: "دراسة بينية للأسس البيولوجية والمنظومية للقدرات غير المفعلة والآليات التي يمكن من خلالها تنشيطها في ظل الضغوط والاضطرابات.",
     },
   },
   {
@@ -791,8 +864,447 @@ export const publications = [
     author: "Executive Education Board",
     pages: "Institutional Syllabus & Assessment Framework",
     description: {
-      en: "The pedagogical blueprint detailing competency rubrics, experiential modules, and leadership immersion criteria.",
-      ar: "الوثيقة البيداغوجية التي تفصل معايير الجدارات القيادية ومسارات المعايشة والتقييم التنفيذي.",
+      en: "A foundational intellectual and educational framework exploring conscious leadership, meaning, cognition, responsibility, and transformation through a Saudi conceptual perspective.",
+      ar: "إطار فكري وتربوي تأسيسي يستكشف القيادة الواعية والمعنى والإدراك والمسؤولية والتحول من منظور مفاهيمي سعودي.",
     },
   },
 ];
+
+export interface ARSPublication {
+  id: string;
+  code: string;
+  title: { en: string; ar: string };
+  author: { en: string; ar: string };
+  affiliation: { en: string; ar: string };
+  abstract: { en: string; ar: string };
+  keywords: string[];
+  arabicKeywords: string[];
+  date: string;
+  version: string;
+  scientificStatus: "Theoretical Construct" | "Conceptual Framework" | "Research Development Stage" | "Validation in Progress" | "Empirically Validated";
+  arabicScientificStatus: string;
+  doi?: string;
+  pdfUrl: string;
+  citation: string;
+  relatedResearch: string[];
+  relatedFrameworks: string[];
+  researchStage: { en: string; ar: string };
+  peerEngagement: { en: string; ar: string };
+}
+
+export const alrohaimiResearchSeries: ARSPublication[] = [
+  {
+    id: "ars-001",
+    code: "ARS-001",
+    title: {
+      en: "Alrohaimi Theory: From Latency to Impact",
+      ar: "نظرية الرحيمي: من الكمون إلى الأثر",
+    },
+    author: {
+      en: "Dr. Abdulmohsen Hameed Alrohaimi",
+      ar: "الدكتور عبدالمحسن حميد الرحيمي",
+    },
+    affiliation: {
+      en: "Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
+      ar: "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
+    },
+    abstract: {
+      en: "Alrohaimi Theory represents a proposed systematic framework investigating how human and institutional latent potential transitions from an unactivated state through perception and meaning-making into sovereign decision, systemic transformation, and measurable civilizational impact. The theory extends beyond conceptual formulation by connecting theoretical constructs with operational models and diagnostic metrics.",
+      ar: "تمثل نظرية الرحيمي إطارًا منهجيًا مقترحًا يبحث في كيفية انتقال الإمكان الكامن البشري والمؤسسي من حالة غير مفعلة، عبر الإدراك وصناعة المعنى، إلى القرار السيادي والتحول المنظومي والأثر الحضاري القابل للقياس. وتمتد النظرية إلى ما هو أبعد من الصياغة المفاهيمية بربط البناءات النظرية بالنماذج التشغيلية والمقاييس التشخيصية.",
+    },
+    keywords: ["Latency", "Cognition", "Meaning", "Decision", "Transformation", "Civilizational Impact", "Systems Theory"],
+    arabicKeywords: ["الكمون", "الإدراك", "المعنى", "القرار", "التحول", "الأثر الحضاري", "نظرية الأنظمة"],
+    date: "2026",
+    version: "v2.4 (Research Draft)",
+    scientificStatus: "Theoretical Construct",
+    arabicScientificStatus: "بناء نظري",
+    doi: "10.5281/zenodo.ars.001",
+    pdfUrl: "#",
+    citation: "Alrohaimi, A. H. (2026). Alrohaimi Theory: From Latency to Impact (ARS-001). Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.",
+    relatedResearch: ["ARS-002: Cognitive Sovereignty in the Algorithmic Era", "ARS-003: The Alrohaimi Index"],
+    relatedFrameworks: ["Six Stages of Transformation", "Leadership Bridging Model"],
+    researchStage: {
+      en: "Theoretical Conceptualization & Model Development",
+      ar: "التأصيل النظري وتطوير النماذج",
+    },
+    peerEngagement: {
+      en: "Open to international research collaboration, empirical validation, and academic dialogue.",
+      ar: "متاح للمشاركة العلمية والتحقق التجريبي والحوار الأكاديمي الدولي.",
+    },
+  },
+  {
+    id: "ars-002",
+    code: "ARS-002",
+    title: {
+      en: "Cognitive Sovereignty in the Algorithmic Era",
+      ar: "السيادة الإدراكية في العصر الخوارزمي",
+    },
+    author: {
+      en: "Dr. Abdulmohsen Hameed Alrohaimi & Research Collective",
+      ar: "الدكتور عبدالمحسن حميد الرحيمي والفريق البحثي للمركز",
+    },
+    affiliation: {
+      en: "Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
+      ar: "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
+    },
+    abstract: {
+      en: "Investigates the capacity of individuals and institutions to understand, interpret, and assume responsibility for decisions in the age of algorithmic and AI-enabled systems. Presents a methodological framework for safeguarding human and institutional judgment autonomy against algorithmic vulnerability and algorithmic bias.",
+      ar: "يبحث في قدرة الأفراد والمؤسسات على الفهم والتفسير وتحمل المسؤولية عن القرارات في عصر الأنظمة الخوارزمية وأنظمة الذكاء الاصطناعي. يقدم إطارًا منهجيًا لصيانة استقلالية الحكم الإنساني والمؤسسي ضد الهشاشة الخوارزمية والتحيز الخوارزمي.",
+    },
+    keywords: ["Cognitive Sovereignty", "Algorithmic Bias", "AI Governance", "Epistemic Autonomy", "Decision Auditing"],
+    arabicKeywords: ["السيادة الإدراكية", "التحيز الخوارزمي", "حوكمة الذكاء الاصطناعي", "الاستقلال المعرفي", "تدقيق القرارات"],
+    date: "2025",
+    version: "v1.8",
+    scientificStatus: "Conceptual Framework",
+    arabicScientificStatus: "إطار مفاهيمي",
+    doi: "10.5281/zenodo.ars.002",
+    pdfUrl: "#",
+    citation: "Alrohaimi, A. H. et al. (2025). Cognitive Sovereignty in the Algorithmic Era (ARS-002). Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.",
+    relatedResearch: ["ARS-001: Alrohaimi Theory", "ARS-003: The Alrohaimi Index"],
+    relatedFrameworks: ["Cognitive Sovereignty Framework", "Algorithmic Agency Protocol"],
+    researchStage: {
+      en: "Framework Formulation & Protocol Prototyping",
+      ar: "صياغة الأطر ونمذجة بروتوكولات الفحص",
+    },
+    peerEngagement: {
+      en: "Open for interdisciplinary review and institutional cognitive audit trials.",
+      ar: "متاح للمراجعة البينية وتجارب التدقيق المؤسسي.",
+    },
+  },
+  {
+    id: "ars-003",
+    code: "ARS-003",
+    title: {
+      en: "The Alrohaimi Index",
+      ar: "مؤشر الرحيمي",
+    },
+    author: {
+      en: "Applied Transformation & Metrics Unit",
+      ar: "وحدة التحول التطبيقي والمقاييس",
+    },
+    affiliation: {
+      en: "Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
+      ar: "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
+    },
+    abstract: {
+      en: "The Alrohaimi Index is a composite diagnostic framework designed to explore institutional readiness to mobilize latent capacity toward sustainable transformation across four core dimensions: Cognitive Sovereignty & AI Independence, Systems Adaptability & Emergent Dynamics, Existential Resilience & Human Dignity, and Latent Potential Mobilization & Historical Impact.",
+      ar: "مؤشر الرحيمي هو إطار تشخيصي مركب مصمم لاستكشاف الجاهزية المؤسسية لتعبئة القدرات الكامنة نحو التحول المستدام عبر أربعة أبعاد جوهرية: السيادة الإدراكية والاستقلال عن الذكاء الاصطناعي، التكيف المنظومي والديناميكيات الناشئة، المرونة الوجودية والكرامة الإنسانية، وتعبئة الإمكان الكامن والأثر التاريخي.",
+    },
+    keywords: ["Alrohaimi Index", "Diagnostic Framework", "Four Dimensions", "Readiness Simulation", "Systemic Transformation"],
+    arabicKeywords: ["مؤشر الرحيمي", "إطار تشخيصي مركب", "الأبعاد الأربعة", "محاكاة الجاهزية", "التحول المنظومي"],
+    date: "2026",
+    version: "v2.0",
+    scientificStatus: "Validation in Progress",
+    arabicScientificStatus: "قيد التحقق والتطوير",
+    doi: "10.5281/zenodo.ars.003",
+    pdfUrl: "#",
+    citation: "Applied Transformation & Metrics Unit. (2026). The Alrohaimi Index: Composite Diagnostic Framework (ARS-003). Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.",
+    relatedResearch: ["ARS-001: Alrohaimi Theory", "ARS-004: Leadership Bridging Model"],
+    relatedFrameworks: ["Institutional Transformational Readiness Model", "Alrohaimi Index Simulator"],
+    researchStage: {
+      en: "Metric Calibration & Simulation Modeling",
+      ar: "المعايرة المعيارية ونمذجة المحاكاة",
+    },
+    peerEngagement: {
+      en: "Open for empirical calibration, field methodology partnerships, and academic validation.",
+      ar: "متاح للمعايرة التجريبية وشراكات القياس الميداني والتحقق الأكاديمي.",
+    },
+  },
+  {
+    id: "ars-004",
+    code: "ARS-004",
+    title: {
+      en: "Leadership Bridging Model",
+      ar: "نموذج التجسير القيادي",
+    },
+    author: {
+      en: "Dr. Abdulmohsen Hameed Alrohaimi",
+      ar: "الدكتور عبدالمحسن حميد الرحيمي",
+    },
+    affiliation: {
+      en: "Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
+      ar: "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
+    },
+    abstract: {
+      en: "An actionable operational model connecting higher-order theoretical insights with frontline executive decision-making under uncertainty. Addresses how leaders bridge complex epistemic insight and institutional execution during critical civilizational inflections.",
+      ar: "نموذج تشغيلي إجرائي يربط بين الرؤى النظرية الرفيعة وصناعة القرار التنفيذي في الميدان تحت ظروف عدم اليقين. يعالج كيفية تجسير القادة بين الفهم المعرفي المعقد والتنفيذ المؤسسي أثناء المنعطفات الحضارية الحاسمة.",
+    },
+    keywords: ["Leadership Bridging", "Executive Decision-Making", "Uncertainty", "Operational Modeling", "Strategic Leadership"],
+    arabicKeywords: ["التجسير القيادي", "صناعة القرار التنفيذي", "عدم اليقين", "النمذجة التشغيلية", "القيادة الاستراتيجية"],
+    date: "2025",
+    version: "v1.5",
+    scientificStatus: "Research Development Stage",
+    arabicScientificStatus: "مرحلة التطوير البحثي",
+    doi: "10.5281/zenodo.ars.004",
+    pdfUrl: "#",
+    citation: "Alrohaimi, A. H. (2025). Leadership Bridging Model: Connecting Theory to Decision (ARS-004). Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.",
+    relatedResearch: ["ARS-001: Alrohaimi Theory", "ARS-003: The Alrohaimi Index"],
+    relatedFrameworks: ["Saudi School of Conscious Leadership", "Executive Decision Architecture"],
+    researchStage: {
+      en: "Operational Framework Development",
+      ar: "تطوير الإطار التشغيلي",
+    },
+    peerEngagement: {
+      en: "Open for executive cohort feedback and leadership laboratory pilots.",
+      ar: "متاح للتجريب في مختبرات القيادة واستطلاع آراء النخب التنفيذية.",
+    },
+  },
+  {
+    id: "ars-005",
+    code: "ARS-005",
+    title: {
+      en: "Gene Latency Theory",
+      ar: "نظرية الكمون الجيني",
+    },
+    author: {
+      en: "Living Systems & Biological Cognition Lab",
+      ar: "مختبر الأنظمة الحية والإدراك البيولوجي",
+    },
+    affiliation: {
+      en: "Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation",
+      ar: "مركز الدكتور عبدالمحسن الرحيمي للسيادة الإدراكية والتحول الحضاري",
+    },
+    abstract: {
+      en: "An interdisciplinary study of the biological and systems-level roots of unexpressed capabilities and the mechanisms through which they may become activated under stress or disruption. Presented as an exploratory theoretical construct open to interdisciplinary scientific investigation.",
+      ar: "دراسة بينية للأسس البيولوجية والمنظومية للقدرات غير المفعلة والآليات التي يمكن من خلالها تنشيطها في ظل الضغوط والاضطرابات. تُطرح كبناء نظري استكشافي مفتوح للبحث العلمي البيني.",
+    },
+    keywords: ["Gene Latency", "Biological Systems", "Epigenetic Activation", "Stress Adaptation", "Living Systems Theory"],
+    arabicKeywords: ["الكمون الجيني", "الأنظمة البيولوجية", "التنشيط فوق الجيني", "التكيف مع الضغوط", "نظرية النظم الحية"],
+    date: "2025",
+    version: "v1.2",
+    scientificStatus: "Theoretical Construct",
+    arabicScientificStatus: "بناء نظري",
+    doi: "10.5281/zenodo.ars.005",
+    pdfUrl: "#",
+    citation: "Living Systems Lab. (2025). Gene Latency Theory: Systems-Level Mechanisms of Activation (ARS-005). Dr. Abdulmohsen Alrohaimi Center for Cognitive Sovereignty & Civilizational Transformation.",
+    relatedResearch: ["ARS-001: Alrohaimi Theory", "Literature of Existential Resistance"],
+    relatedFrameworks: ["Existential Resilience Framework", "Living Systems Adaptation Model"],
+    researchStage: {
+      en: "Interdisciplinary Conceptual Synthesis",
+      ar: "التوليف المفاهيمي البيني",
+    },
+    peerEngagement: {
+      en: "Open for bio-cognitive research partnerships and multidisciplinary critique.",
+      ar: "متاح لشراكات البحث البيولوجي الإدراكي والنقد الأكاديمي المتعدد التخصصات.",
+    },
+  },
+];
+
+export interface FoundationalWork {
+  id: string;
+  code: string;
+  title: { en: string; ar: string };
+  classification: { en: string; ar: string };
+  description: { en: string; ar: string };
+  scientificStatusNote: { en: string; ar: string };
+  roleInSystem: { en: string; ar: string };
+  supportedAreas: Array<{ en: string; ar: string }>;
+  keyHighlights: Array<{ en: string; ar: string }>;
+}
+
+export const foundationalIntellectualWorks: FoundationalWork[] = [
+  {
+    id: "fiw-001",
+    code: "FIW-001",
+    title: {
+      en: "The Saudi School of Conscious Leadership",
+      ar: "المدرسة السعودية للقيادة الواعية",
+    },
+    classification: {
+      en: "Foundational Intellectual & Educational Framework",
+      ar: "إطار فكري وتربوي تأسيسي",
+    },
+    description: {
+      en: "A foundational intellectual and educational framework exploring conscious leadership, meaning, cognition, responsibility, and transformation through a Saudi conceptual perspective.",
+      ar: "إطار فكري وتربوي تأسيسي يستكشف القيادة الواعية والمعنى والإدراك والمسؤولية والتحول من منظور مفاهيمي سعودي.",
+    },
+    scientificStatusNote: {
+      en: "Presented as a foundational intellectual and educational framework developed within the Alrohaimi intellectual system. The book is the foundational reference.",
+      ar: "تُقدم بوصفها إطارًا فكريًا وتربويًا تأسيسيًا مطورًا ضمن منظومة الرحيمي الفكرية، حيث يمثل الكتاب المرجع التأسيسي لها.",
+    },
+    roleInSystem: {
+      en: "The School functions as the applied leadership development vehicle of the Center, bridging deep cultural wisdom with modern institutional governance.",
+      ar: "تعمل المدرسة كذراع لتطوير القيادات، مجسرة بين الحكمة الثقافية العميقة والحوكمة المؤسسية الحديثة.",
+    },
+    supportedAreas: [
+      { en: "Leadership Education", ar: "التربية والتعليم القيادي" },
+      { en: "Executive Learning", ar: "التعلم التنفيذي" },
+      { en: "Research Programs", ar: "البرامج البحثية" },
+      { en: "Workshops & Masterclasses", ar: "ورش العمل والماستر كلاس" },
+      { en: "Applied Leadership Models", ar: "النماذج القيادية التطبيقية" },
+      { en: "International Dialogue", ar: "الحوار الدولي" },
+    ],
+    keyHighlights: [
+      { en: "Conscious Leadership Core: Anchored in cognition, meaning, sound decisions, and purposeful transformation.", ar: "جوهر القيادة الواعية: يرتكز إلى الإدراك والمعنى والقرار الرشيد والتحول الهادف." },
+      { en: "Executive Competency Blueprint: Grounded in Saudi Vision 2030 and global civilizational demands.", ar: "مصفوفة الجدارات التنفيذية: مستندة إلى رؤية السعودية 2030 ومتطلبات الحوار الحضاري العالمي." },
+      { en: "Institutional Sovereignty: Decision-making free from blind algorithmic dependence.", ar: "السيادة المؤسسية: صناعة قرارات متحررة من التبعية الخوارزمية العمياء." },
+    ],
+  },
+  {
+    id: "fiw-002",
+    code: "FIW-002",
+    title: {
+      en: "Literature of Existential Resistance",
+      ar: "أدب المقاومة الوجودية",
+    },
+    classification: {
+      en: "Foundational Intellectual Work / Manifesto",
+      ar: "عمل فكري تأسيسي / بيان فكري",
+    },
+    description: {
+      en: "A foundational intellectual work exploring human meaning, dignity, existential resilience, resistance, and the preservation of agency under conditions of systemic and existential pressure.",
+      ar: "عمل فكري تأسيسي يستكشف المعنى الإنساني، والكرامة، والمرونة الوجودية، والمقاومة، وصيانة الفاعلية في ظل ظروف الضغط المنظومي والوجودي.",
+    },
+    scientificStatusNote: {
+      en: "Presented as a foundational intellectual work and philosophical manifesto; not an empirically validated scientific theory.",
+      ar: "يُطرح بوصفه عملاً فكريًا تأسيسيًا وبيانًا فلسفيًا؛ وليس نظرية علمية مثبتة تجريبيًا.",
+    },
+    roleInSystem: {
+      en: "Provides the humanistic, philosophical, and ethical backbone for the Center's inquiries into resilience and civilizational survival.",
+      ar: "يوفر العمق الإنساني والفلسفي والأخلاقي لأبحاث المركز حول الصمود والاستدامة الحضارية.",
+    },
+    supportedAreas: [
+      { en: "Philosophical & Existential Inquiries", ar: "الدراسات الفلسفية والوجودية" },
+      { en: "Human Agency & Meaning-Making", ar: "الفاعلية الإنسانية وصناعة المعنى" },
+      { en: "Crisis & Shock Resilience Research", ar: "أبحاث الصمود في الأزمات" },
+      { en: "Cultural Thought & Dignity Studies", ar: "دراسات الفكر الثقافي والكرامة" },
+    ],
+    keyHighlights: [
+      { en: "Agency Preservation: Safeguarding human autonomy and moral accountability against crushing pressures.", ar: "صيانة الفاعلية: حماية الاستقلالية الإنسانية والمسؤولية الأخلاقية أمام الضغوط الكبرى." },
+      { en: "Dignity as an Invariable: Human dignity as the non-negotiable anchor of civilizational systems.", ar: "الكرامة كثابت: الكرامة الإنسانية كمرساة غير قابلة للتفاوض في النظم الحضارية." },
+      { en: "Resilience Through Meaning: Victor Frankl-informed yet independently original civilizational perspective.", ar: "الصمود عبر المعنى: منظور حضاري أصيل يربط الإرادة بالمعنى الحضاري التراكمي." },
+    ],
+  },
+  {
+    id: "fiw-003",
+    code: "FIW-003",
+    title: {
+      en: "The Conceptual Lexicon of Conscious Leadership",
+      ar: "المعجم المفاهيمي للقيادة الواعية",
+    },
+    classification: {
+      en: "Conceptual Reference",
+      ar: "مرجع مفاهيمي ومعجم مصطلحي",
+    },
+    description: {
+      en: "A conceptual reference work defining and organizing the terminology, concepts, and intellectual vocabulary of conscious leadership and meaning-centered transformation.",
+      ar: "عمل مرجعي مفاهيمي يعرف وينظم المصطلحات، والمفاهيم، والمفردات الفكرية للقيادة الواعية والتحول المرتكز على المعنى.",
+    },
+    scientificStatusNote: {
+      en: "Functions as the official terminology and conceptual vocabulary reference for the broader leadership framework.",
+      ar: "يعمل كمرجع معجمي ومفاهيمي رسمي لضبط المصطلحات للأطر القيادية والفكرية للمركز.",
+    },
+    roleInSystem: {
+      en: "Establishes unified, academically rigorous definitions across all Center publications, educational programs, and research domains.",
+      ar: "يؤسس لتعريفات أكاديمية موحدة عبر جميع منشورات المركز، وبرامجه التعليمية، ومجالاته البحثية.",
+    },
+    supportedAreas: [
+      { en: "Terminology Standardization", ar: "توحيد المصطلحات الأكاديمية" },
+      { en: "Curriculum Integration", ar: "تضمين المناهج التعليمية" },
+      { en: "Interdisciplinary Research Translation", ar: "ترجمة المفاهيم البينية" },
+      { en: "Executive Training Lexicons", ar: "معاجم التدريب التنفيذي" },
+    ],
+    keyHighlights: [
+      { en: "Standardized Definitions: Comprehensive taxonomy of 100+ concepts spanning latency, sovereignty, and transformation.", ar: "تعريفات معيارية: تصنيف شامل لأكثر من ١٠٠ مفهوم يغطي الكمون والسيادة والتحول." },
+      { en: "Bilingual Epistemic Precision: Exact conceptual parity between Arabic and English terms.", ar: "دقة معرفية ثنائية اللغة: تماثل مفاهيمي دقيق بين المصطلحات العربية والإنجليزية." },
+      { en: "Living Intellectual Asset: Continually curated with peer research inputs.", ar: "أصل معرفي حي: يُحدث دورياً بمساهمات ومراجعات النظراء." },
+    ],
+  },
+];
+
+export const intellectualSystemHierarchy = [
+  {
+    level: "01",
+    tag: "THEORY",
+    arabicTag: "النظرية",
+    title: "Alrohaimi Theory",
+    arabicTitle: "نظرية الرحيمي: من الكمون إلى الأثر",
+    description: "The foundational intellectual system exploring the movement from latency to cognition, meaning, decision, transformation, and impact.",
+    arabicDescription: "المنظومة الفكرية التأسيسية التي تستكشف حركة الإمكان من الكمون إلى الإدراك والمعنى والقرار والتحول والأثر.",
+    status: "Theoretical Construct",
+    arabicStatus: "بناء نظري",
+    link: "/theory",
+  },
+  {
+    level: "02",
+    tag: "CONCEPTS",
+    arabicTag: "المفاهيم",
+    title: "Core Systemic Concepts",
+    arabicTitle: "المفاهيم التأسيسية للمنظومة",
+    items: [
+      { name: "Cognitive Sovereignty", arName: "السيادة الإدراكية", desc: "The capacity to understand, interpret, and assume responsibility for decisions in the age of algorithmic and AI-enabled systems." },
+      { name: "Gene Latency", arName: "الكمون الجيني", desc: "Biological and systems-level roots of unexpressed capabilities activated under stress." },
+      { name: "Existential Resilience", arName: "المرونة الوجودية", desc: "Human meaning, dignity, and preservation of agency under systemic pressure." },
+      { name: "Civilizational Transformation", arName: "التحول الحضاري", desc: "Latent capability mobilized toward systemic, ethical, and historical impact." },
+    ],
+    link: "/intellectual-system",
+  },
+  {
+    level: "03",
+    tag: "MODELS & FRAMEWORKS",
+    arabicTag: "النماذج والأطر",
+    title: "Operational Models & Frameworks",
+    arabicTitle: "النماذج التشغيلية والأطر المنهجية",
+    items: [
+      { name: "The Alrohaimi Index", arName: "مؤشر الرحيمي", desc: "Composite diagnostic framework across four core dimensions." },
+      { name: "Leadership Bridging Model", arName: "نموذج التجسير القيادي", desc: "Connecting higher-order theoretical insights with frontline executive decision-making." },
+      { name: "Cognitive Sovereignty Framework", arName: "إطار السيادة الإدراكية", desc: "Methodological framework safeguarding human autonomy against algorithmic bias." },
+      { name: "Institutional Transformational Readiness Model", arName: "نموذج الجاهزية المؤسسية للتحول", desc: "Exploring institutional sovereignty and civilizational momentum through scenario simulation." },
+    ],
+    link: "/intellectual-system",
+  },
+  {
+    level: "04",
+    tag: "RESEARCH",
+    arabicTag: "الأبحاث والدراسات",
+    title: "Alrohaimi Research Series (ARS)",
+    arabicTitle: "سلسلة أبحاث الرحيمي (ARS-001 → ARS-005)",
+    description: "Developing theoretical frameworks, conceptual models, applied research programs, and research instruments open to peer engagement and validation.",
+    arabicDescription: "أطر نظرية ونماذج مفاهيمية وأدوات بحثية قيد التطوير ومفتوحة للمشاركة العلمية والتحقق الأكاديمي الدولي.",
+    link: "/research-series",
+  },
+  {
+    level: "05",
+    tag: "FOUNDATIONAL WORKS",
+    arabicTag: "الأعمال الفكرية التأسيسية",
+    title: "Foundational Intellectual Works (FIW)",
+    arabicTitle: "الأعمال الفكرية والمراجع التأسيسية (FIW-001 → FIW-003)",
+    description: "Foundational works shaping the intellectual and conceptual foundations of the Alrohaimi system.",
+    arabicDescription: "الأعمال المرجعية والتأسيسية التي تشكل المنطلقات الفكرية والمفاهيمية لمنظومة الرحيمي.",
+    link: "/foundational-works",
+  },
+  {
+    level: "06",
+    tag: "TOOLS & SIMULATIONS",
+    arabicTag: "الأدوات والمحاكاة",
+    title: "Diagnostic Tools & Simulations",
+    arabicTitle: "الأدوات التشخيصية ونماذج المحاكاة",
+    items: [
+      { name: "Alrohaimi Index Simulator", arName: "محاكي مؤشر الرحيمي", desc: "Interactive scenario-based simulation exploring four core dimensions." },
+      { name: "Diagnostic Scenarios", arName: "السيناريوهات التشخيصية", desc: "Illustrative model demonstrations for vision alignment and crisis resilience." },
+      { name: "Measurement Instruments", arName: "أدوات القياس والمؤشرات", desc: "Prototype scorecards and evaluation frameworks." },
+    ],
+    link: "/theory",
+  },
+  {
+    level: "07",
+    tag: "VALIDATION",
+    arabicTag: "التحقق والتحكيم",
+    title: "Scientific Validation Pathway",
+    arabicTitle: "مسار التحقق العلمي والتحكيم الأكاديمي",
+    description: "Active academic dialogue, peer review, empirical validation studies, and international university research collaboration.",
+    arabicDescription: "الحوار الأكاديمي النشط، وتحكيم النظراء، ودراسات التحقق التجريبي، والشراكات البحثية الجامعية الدولية.",
+    link: "/partnerships",
+  },
+  {
+    level: "08",
+    tag: "APPLICATION",
+    arabicTag: "التطبيق والأثر",
+    title: "Applied Programs & Societal Impact",
+    arabicTitle: "البرامج التطبيقية والأثر المجتمعي",
+    description: "Executive education via the Saudi School of Conscious Leadership, institutional advisory, foresight governance, and sustainable impact.",
+    arabicDescription: "التعليم التنفيذي عبر المدرسة السعودية للقيادة الواعية، والاستشارات المؤسسية، وحوكمة الاستشراف، والأثر المستدام.",
+    link: "/programs",
+  },
+];
+

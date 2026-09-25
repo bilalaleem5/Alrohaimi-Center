@@ -111,8 +111,8 @@ function Programs() {
         }
         description={
           ar
-            ? "مسار المركز التدريبي لتحويل المعرفة والنظريات إلى ممارسة قيادية رشيدة، يربط التفكير النظري بالقيادة العملية عبر القرار، والسيادة الإدراكية، والتحول الحضاري، والذكاء الاصطناعي، والتفكير المنظومي."
-            : "The Center's executive training pathway for transforming knowledge and theory into conscious leadership practice, connecting theoretical thinking with practical leadership through decision-making, cognitive sovereignty, civilizational transformation, AI, and systems thinking."
+            ? "إطار فكري وتعليمي تأسيسي تطور ضمن منظومة الرحيمي الفكرية؛ يُعد الكتاب مرجعه التأسيسي، وتدعم المدرسة التعليم القيادي، والتطوير التنفيذي، والأبحاث، وورش العمل، ونماذج القيادة التطبيقية، والحوار الدولي لترسيخ القيادة الواعية والسيادة الإدراكية."
+            : "A foundational intellectual and educational framework developed within the Alrohaimi intellectual system. Grounded in the foundational reference treatise, the School supports leadership education, executive learning, research, workshops, applied leadership models, and international dialogue."
         }
         image={leadershipLightImg}
         alt={ar ? "قاعة القيادة الواعية" : "Saudi School of Conscious Leadership Chamber"}

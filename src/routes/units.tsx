@@ -126,6 +126,45 @@ function Units() {
               </div>
             ))}
           </div>
+
+          {/* Institutional Distinction Callout: 6 Research Domains across 4 Units (Point 9 & 35) */}
+          <div className="mt-12 rounded-3xl border border-[#b88a3b]/40 bg-white p-8 lg:p-10 shadow-sm">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-[#0c1836]/10 pb-6">
+              <div>
+                <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#b88a3b]">
+                  {ar ? "التمايز المؤسسي والمنهجي" : "Institutional & Epistemic Architecture"}
+                </span>
+                <h3 className="mt-1 font-display text-xl font-bold text-[#0c1836]">
+                  {ar
+                    ? "مجالات البحث الستة تعمل عبر الوحدات المؤسسية الأربع"
+                    : "Six Research Domains Operating Across Four Institutional Units"}
+                </h3>
+              </div>
+              <p className="max-w-xl text-sm leading-relaxed text-[#4e5e7b]">
+                {ar
+                  ? "يميز المركز بدقة بين بنيته المؤسسية (الوحدات الأربع) ومجالاته البحثية التخصصية التي تنشط عبر هذه الوحدات لتحقيق الأثر المعرفي والحضاري."
+                  : "The Center clearly distinguishes between its four operational units and its six interdisciplinary research domains that function collaboratively across them."}
+              </p>
+            </div>
+
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {[
+                { en: "Alrohaimi Theory", ar: "نظرية الرحيمي" },
+                { en: "Cognitive Sovereignty", ar: "السيادة الإدراكية" },
+                { en: "Conscious Leadership", ar: "القيادة الواعية" },
+                { en: "Complex Systems", ar: "الأنظمة المعقدة" },
+                { en: "Existential Resilience", ar: "المرونة الوجودية" },
+                { en: "Civilizational Transformation", ar: "التحول الحضاري" },
+              ].map((domain, idx) => (
+                <div key={idx} className="rounded-2xl border border-[#0c1836]/10 bg-[#fbf9f5] p-3 text-center">
+                  <span className="font-mono text-[10px] font-bold text-[#b88a3b]">0{idx + 1}</span>
+                  <p className="mt-1 font-display text-xs font-bold text-[#0c1836]">
+                    {ar ? domain.ar : domain.en}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

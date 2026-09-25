@@ -149,7 +149,7 @@ const RESEARCH_FIELDS: ResearchField[] = [
       ar: "كيف تُحوَّل المعرفة الأصيلة إلى أثر حضاري ملموس ومستدام يعبر الأجيال؟",
     },
     tags: {
-      en: ["Sovereign Metrics", "Vision 2030 Aligned", "Historic Impact"],
+      en: ["Sovereign Metrics", "Vision 2030 Aligned", "Historical Impact"],
       ar: ["المؤشرات السيادية", "مواءمة رؤية 2030", "الأثر التاريخي"],
     },
     image: founderLightImg,

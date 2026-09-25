@@ -98,14 +98,14 @@ const PILLARS_DATA: PillarDetail[] = [
     number: "04",
     name: { en: "Transformation", ar: "التحول" },
     inquiry: {
-      en: "How is theoretical knowledge engineered into historic impact?",
+      en: "How is theoretical knowledge engineered into historical impact?",
       ar: "كيف تُحوَّل المعرفة النظرية والقدرة الكامنة إلى أثر حضاري دائم؟",
     },
     desc: {
       en: "Translating theoretical models into empirical executive academies, sovereign metrics, and enduring civilizational transformation.",
       ar: "تحويل النماذج النظرية إلى أكاديميات قيادية ومؤشرات قياس معيارية تصنع أثراً حضارياً مستداماً.",
     },
-    concept: { en: "Historic Impact // الأثر الحضاري", ar: "صناعة الأثر المستدام" },
+    concept: { en: "Historical Impact // الأثر الحضاري", ar: "صناعة الأثر المستدام" },
     accentColor: "#b88a3b",
     glowColor: "rgba(184, 138, 59, 0.45)",
     borderColor: "rgba(184, 138, 59, 0.8)",

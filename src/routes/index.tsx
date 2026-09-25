@@ -57,7 +57,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Dr. Abdulmohsen Alrohaimi Center | alrohaimitheory.org",
+        content: "Dr. Abdulmohsen Alrohaimi Center | alrohaimicenter.org",
       },
       {
         property: "og:description",
@@ -114,10 +114,10 @@ function Home() {
                     </p>
                     <div className="mt-2 flex items-center justify-between border-t border-amber-900/10 pt-2">
                       <p className="font-mono text-[9px] font-bold uppercase tracking-wider text-amber-800">
-                        {ar ? "أ.د. عبدالمحسن الرحيمي" : "Dr. Abdulmohsen Alrohaimi"}
+                        {ar ? "الدكتور عبدالمحسن الرحيمي" : "Dr. Abdulmohsen Alrohaimi"}
                       </p>
                       <p className="font-mono text-[8.5px] uppercase tracking-wider text-slate-500">
-                        {ar ? "المؤسس والمنظر الرئيسي" : "Founder & Lead Theorist"}
+                        {ar ? "المؤسس: الدكتور عبدالمحسن حميد الرحيمي" : "Founder: Dr. Abdulmohsen Hameed Alrohaimi"}
                       </p>
                     </div>
                   </div>
@@ -127,10 +127,12 @@ function Home() {
 
             {/* Right: Authentic Monumental Typography & Actions */}
             <div className="order-1 lg:order-2 lg:col-span-7">
-              {/* Institution Hierarchy Badge */}
+              {/* Institution Hierarchy Badge (Points 44 & 45) */}
               <div className="inline-flex items-center gap-2 rounded-full border border-amber-900/15 bg-[#f5f0e6] px-4 py-1.5 shadow-sm">
                 <span className="font-mono text-xs font-bold uppercase tracking-wider text-amber-900">
-                  {ar ? "المعرفة · الإنسان · التحول الحضاري" : "Knowledge · Humanity · Transformation"}
+                  {ar
+                    ? "المعرفة · الإنسان · الأنظمة · السيادة الإدراكية · التحول الحضاري"
+                    : "Knowledge · Humanity · Systems · Cognitive Sovereignty · Civilizational Transformation"}
                 </span>
               </div>
 
@@ -160,11 +162,11 @@ function Home() {
                 {ar ? centerInfo.tagline.ar : `"${centerInfo.tagline.en}"`}
               </p>
 
-              {/* Mission / Paragraph */}
+              {/* Mission / Positioning Paragraph (Point 2) */}
               <p className="mt-4 max-w-[58ch] text-base leading-relaxed text-[#4e5e7b] sm:text-lg">
                 {ar
-                  ? "مركز فكري وبحثي وتطبيقي متعدد التخصصات يستكشف العلاقة بين الإنسان والإدراك والأنظمة والقيادة والتحول الحضاري في عصر الذكاء الاصطناعي."
-                  : "A multidisciplinary intellectual, research, and applied center exploring the relationship between humanity, cognition, systems, leadership, and civilizational transformation in the age of artificial intelligence."}
+                  ? "مركز فكري وبحثي وتطبيقي يطور منظومات نظرية، وأطراً مفاهيمية، ونماذج تشغيلية، ونماذج تشخيصية أولية، وبرامج بحثية تعنى بالإنسان والإدراك والأنظمة والقيادة والتحول الحضاري."
+                  : "An intellectual, research, and applied center developing theoretical systems, conceptual frameworks, models, diagnostic prototypes, and research programs addressing humanity, cognition, systems, leadership, and civilizational transformation."}
               </p>
 
               {/* Dual Action CTAs */}

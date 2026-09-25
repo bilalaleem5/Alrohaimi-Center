@@ -98,104 +98,111 @@ export function AlrohaimiIndexSimulator() {
               <span className="relative inline-flex rounded-full size-2 bg-amber-600" />
             </span>
             <span className="font-mono text-xs font-bold uppercase tracking-wider text-amber-900">
-              {ar ? "أداة النمذجة التشخيصية الحية (AICT)" : "LIVE DIAGNOSTIC MODEL // AICT SIMULATOR"}
+              {ar ? "أداة النمذجة التشخيصية القائمة على السيناريوهات (AICT)" : "SCENARIO-BASED DIAGNOSTIC SIMULATION // AICT FRAMEWORK"}
             </span>
           </div>
 
           <h3 className="mt-2 font-display text-2xl sm:text-3xl font-bold text-[#0c1836]">
-            {ar ? "نموذج الجاهزية والتحول الحضاري" : "Institutional Transformational Readiness Model"}
+            {ar ? "نموذج الجاهزية المؤسسية للتحول" : "Institutional Transformational Readiness Model"}
           </h3>
           <p className="mt-1 text-sm text-[#4e5e7b] max-w-xl">
             {ar
-              ? "معايرة فورية للقدرة السيادية على توجيه القرار وتوليد الأثر في بيئات التعقيد والتسارع التقني."
-              : "Calibrate institutional sovereignty, adaptive feedback loops, and civilizational momentum in real-time."}
+              ? "استكشاف السيادة المؤسسية، وحلقات التغذية الراجعة التكيفية، والزخم الحضاري عبر محاكاة قائمة على السيناريوهات."
+              : "Explore institutional sovereignty, adaptive feedback loops, and civilizational momentum through scenario-based simulation."}
           </p>
 
-          {/* Diagnostic Presets (Architectural Hairline Pills // Zero Clutter) */}
-          <div className="mt-5 flex flex-wrap items-center gap-2">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-slate-400 mr-1">
-              {ar ? "سيناريوهات معيارية:" : "Diagnostic Scenarios:"}
-            </span>
+          {/* Point 22: Illustrative Scenarios with explicit disclaimer */}
+          <div className="mt-6">
+            <div className="flex items-center gap-2">
+              <span className="font-mono text-xs font-bold uppercase tracking-wider text-amber-900">
+                {ar ? "السيناريوهات التوضيحية" : "ILLUSTRATIVE SCENARIOS"}
+              </span>
+            </div>
+            <p className="mt-1 font-mono text-[11px] text-[#718096] leading-relaxed max-w-2xl">
+              {ar
+                ? "الدرجات التالية هي نماذج توضيحية معروضة لأغراض المحاكاة ولا تمثل تقييمات ميدانية مثبتة تجريبياً."
+                : "The following scores are model demonstrations presented for illustrative purposes and do not represent empirically validated assessments."}
+            </p>
 
-            <button
-              type="button"
-              onClick={() =>
-                animateTo({ sovereignty: 96, systems: 94, resilience: 95, latency: 96 }, "vision")
-              }
-              className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold transition-all duration-300 focus:outline-none ${
-                activePreset === "vision"
-                  ? "bg-[#0c1836] text-amber-300 shadow-sm"
-                  : "bg-amber-900/5 text-[#0c1836] hover:bg-amber-900/10 border border-amber-900/10"
-              }`}
-            >
-              <Sparkles size={12} className={activePreset === "vision" ? "text-amber-300" : "text-amber-700"} />
-              <span>{ar ? "رؤية 2030 السيادية (95.4)" : "Saudi Vision 2030 (95.4)"}</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() =>
-                animateTo({ sovereignty: 91, systems: 86, resilience: 88, latency: 84 }, "thinktank")
-              }
-              className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold transition-all duration-300 focus:outline-none ${
-                activePreset === "thinktank"
-                  ? "bg-[#0c1836] text-sky-300 shadow-sm"
-                  : "bg-sky-900/5 text-[#0c1836] hover:bg-sky-900/10 border border-sky-900/10"
-              }`}
-            >
-              <Activity size={12} className={activePreset === "thinktank" ? "text-sky-300" : "text-sky-700"} />
-              <span>{ar ? "صرح أكاديمي سيادي (87.7)" : "Sovereign Think Tank (87.7)"}</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() =>
-                animateTo({ sovereignty: 84, systems: 80, resilience: 97, latency: 92 }, "crisis")
-              }
-              className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold transition-all duration-300 focus:outline-none ${
-                activePreset === "crisis"
-                  ? "bg-[#0c1836] text-emerald-300 shadow-sm"
-                  : "bg-emerald-900/5 text-[#0c1836] hover:bg-emerald-900/10 border border-emerald-900/10"
-              }`}
-            >
-              <ShieldCheck size={12} className={activePreset === "crisis" ? "text-emerald-300" : "text-emerald-700"} />
-              <span>{ar ? "صمود الأزمات الوجودية (88.3)" : "Existential Crisis Resilience (88.3)"}</span>
-            </button>
-
-            {activePreset !== "custom" && (
+            <div className="mt-3.5 flex flex-wrap items-center gap-2">
               <button
                 type="button"
                 onClick={() =>
-                  animateTo({ sovereignty: 88, systems: 82, resilience: 92, latency: 86 }, "custom")
+                  animateTo({ sovereignty: 96, systems: 94, resilience: 95, latency: 96 }, "vision")
                 }
-                className="inline-flex items-center gap-1 font-mono text-[11px] text-slate-400 hover:text-amber-800 ml-1 transition-colors"
-                title={ar ? "إعادة الضبط" : "Reset custom"}
+                className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold transition-all duration-300 focus:outline-none ${
+                  activePreset === "vision"
+                    ? "bg-[#0c1836] text-amber-300 shadow-sm"
+                    : "bg-amber-900/5 text-[#0c1836] hover:bg-amber-900/10 border border-amber-900/10"
+                }`}
               >
-                <RotateCcw size={11} />
-                <span>{ar ? "إعادة ضبط" : "Reset"}</span>
+                <Sparkles size={12} className={activePreset === "vision" ? "text-amber-300" : "text-amber-700"} />
+                <span>{ar ? "رؤية 2030 السيادية (95.4)" : "Saudi Vision 2030 (95.4)"}</span>
               </button>
-            )}
+
+              <button
+                type="button"
+                onClick={() =>
+                  animateTo({ sovereignty: 91, systems: 86, resilience: 88, latency: 84 }, "thinktank")
+                }
+                className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold transition-all duration-300 focus:outline-none ${
+                  activePreset === "thinktank"
+                    ? "bg-[#0c1836] text-sky-300 shadow-sm"
+                    : "bg-sky-900/5 text-[#0c1836] hover:bg-sky-900/10 border border-sky-900/10"
+                }`}
+              >
+                <Activity size={12} className={activePreset === "thinktank" ? "text-sky-300" : "text-sky-700"} />
+                <span>{ar ? "صرح أكاديمي سيادي (87.7)" : "Sovereign Think Tank (87.7)"}</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() =>
+                  animateTo({ sovereignty: 84, systems: 80, resilience: 97, latency: 92 }, "crisis")
+                }
+                className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold transition-all duration-300 focus:outline-none ${
+                  activePreset === "crisis"
+                    ? "bg-[#0c1836] text-emerald-300 shadow-sm"
+                    : "bg-emerald-900/5 text-[#0c1836] hover:bg-emerald-900/10 border border-emerald-900/10"
+                }`}
+              >
+                <ShieldCheck size={12} className={activePreset === "crisis" ? "text-emerald-300" : "text-emerald-700"} />
+                <span>{ar ? "صمود الأزمات الوجودية (88.3)" : "Existential Crisis Resilience (88.3)"}</span>
+              </button>
+
+              {activePreset !== "custom" && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    animateTo({ sovereignty: 88, systems: 82, resilience: 92, latency: 86 }, "custom")
+                  }
+                  className="inline-flex items-center gap-1 font-mono text-[11px] text-slate-400 hover:text-amber-800 ml-1 transition-colors"
+                  title={ar ? "إعادة الضبط" : "Reset custom"}
+                >
+                  <RotateCcw size={11} />
+                  <span>{ar ? "إعادة ضبط" : "Reset"}</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Live Composite Index Gauge - Typographic Masterpiece */}
+        {/* Live Composite Index Gauge - Typographic Masterpiece (Points 23 & 24) */}
         <div className="flex items-center gap-5 border-t lg:border-t-0 lg:border-l border-amber-900/15 pt-4 lg:pt-0 lg:pl-8 rtl:lg:border-l-0 rtl:lg:border-r rtl:lg:pl-0 rtl:lg:pr-8">
           <div>
+            <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-amber-800 mb-1">
+              {ar ? "الدرجة المركبة التوضيحية" : "Illustrative Composite Score"}
+            </p>
             <div className="flex items-baseline gap-1">
               <span className="font-display text-4xl sm:text-5xl font-black text-[#0c1836] tracking-tight">
                 {compositeScore.toFixed(1)}
               </span>
               <span className="font-mono text-sm text-slate-400 font-bold">/100</span>
             </div>
-            <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-amber-800 mt-0.5">
-              {ar ? "المعدل التراكمي للجاهزية" : "COMPOSITE INDEX SCORE"}
-            </p>
           </div>
 
           <div className="size-14 rounded-full border border-amber-900/20 bg-white grid place-items-center shadow-xs">
-            <span className="font-mono text-xs font-black text-amber-800">
-              {compositeScore >= 92 ? "AAA+" : compositeScore >= 85 ? "AA" : "A"}
-            </span>
+            <Compass size={22} className="text-amber-800" />
           </div>
         </div>
       </div>
@@ -335,7 +342,7 @@ export function AlrohaimiIndexSimulator() {
                   DIMENSION 04
                 </span>
                 <h4 className="font-display text-base sm:text-lg font-bold text-[#0c1836]">
-                  {ar ? "تفعيل الإمكان الكامن وصناعة القيمة" : "Latent Potential Mobilization & Historic Impact"}
+                  {ar ? "تفعيل الإمكان الكامن وصناعة القيمة" : "Latent Potential Mobilization & Historical Impact"}
                 </h4>
               </div>
               <span className="font-mono text-lg font-black text-amber-800">
@@ -530,22 +537,22 @@ export function AlrohaimiIndexSimulator() {
             </div>
           </div>
 
-          {/* Real-Time Strategic Diagnostic Readiness Telemetry Banner */}
+          {/* Diagnostic Readiness Simulation Telemetry Banner (Point 24: Descriptive status without letter grades) */}
           <div className="mt-8 text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-900/15 bg-white/80 px-4 py-1.5 shadow-xs backdrop-blur-sm">
               <Compass size={14} className="text-amber-700 animate-spin" style={{ animationDuration: "16s" }} />
               <span className="font-display text-xs font-bold text-[#0c1836]">
                 {compositeScore >= 92
                   ? ar
-                    ? "مستوى الجاهزية: تحول حضاري رائد ومستدام (AAA+)"
-                    : "Readiness: Pioneering Civilizational Flourishing (AAA+)"
+                    ? "مستوى الجاهزية: تحول حضاري رائد ومستدام"
+                    : "Readiness: Pioneering Civilizational Flourishing"
                   : compositeScore >= 85
                   ? ar
-                    ? "مستوى الجاهزية: تحول مؤسسي سيادي متقدم (AA)"
-                    : "Readiness: Sovereign Transformational Momentum (AA)"
+                    ? "مستوى الجاهزية: تحول مؤسسي سيادي متقدم"
+                    : "Readiness: Sovereign Transformational Momentum"
                   : ar
-                    ? "مستوى الجاهزية: قيد التطوير المنهجي والتأصيل (A)"
-                    : "Readiness: Systematic Maturation Underway (A)"}
+                    ? "مستوى الجاهزية: قيد التطوير المنهجي والتأصيل"
+                    : "Readiness: Systematic Maturation Underway"}
               </span>
             </div>
           </div>

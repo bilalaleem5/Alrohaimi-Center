@@ -42,35 +42,35 @@ function Theory() {
 
   const relatedWorks = [
     {
-      title: ar ? "مؤشر الرحيمي للتحول الحضاري (AICT)" : "The Alrohaimi Index for Civilizational Transformation (AICT)",
+      title: ar ? "مؤشر الرحيمي (The Alrohaimi Index)" : "The Alrohaimi Index",
       desc: ar
-        ? "مؤشر قياسي مركب يقيس جاهزية المؤسسات وقدرتها على تعبئة الموارد وتحويل الإمكان الكامن إلى أثر مستدام عبر ثلاثة محاور رئيسية."
-        : "A standardized composite diagnostic instrument measuring organizational readiness to mobilize latent capacity into sustainable transformation across three core dimensions.",
-      badge: ar ? "أداة قياس معيارية" : "Standardized Diagnostic Tool",
+        ? "إطار تشخيصي مركب مصمم لاستكشاف الجاهزية المؤسسية لتعبئة القدرات الكامنة نحو التحول المستدام عبر أربعة أبعاد جوهرية."
+        : "The Alrohaimi Index is a composite diagnostic framework designed to explore institutional readiness to mobilize latent capacity toward sustainable transformation across four core dimensions.",
+      badge: ar ? "إطار تشخيصي مركب" : "Composite Diagnostic Framework",
       tag: "INDEX-AICT",
     },
     {
       title: ar ? "نموذج التجسير القيادي (Leadership Bridging Model)" : "Leadership Bridging Model",
       desc: ar
-        ? "إطار عملي للربط المنهجي بين الرؤى النظرية المعقدة والممارسات التنفيذية اليومية لكبار صناع القرار في البيئات عالية المخاطر."
-        : "An actionable operational model connecting high-order theoretical insight with frontline executive decision-making under uncertainty.",
-      badge: ar ? "نموذج تطبيقي" : "Applied Executive Framework",
+        ? "نموذج تشغيلي إجرائي يربط بين الرؤى النظرية الرفيعة وصناعة القرار التنفيذي في الميدان تحت ظروف عدم اليقين."
+        : "An actionable operational model connecting higher-order theoretical insights with frontline executive decision-making under uncertainty.",
+      badge: ar ? "نموذج تشغيلي" : "Operational Model",
       tag: "FRAMEWORK-LBM",
     },
     {
-      title: ar ? "نظرية الكمون الجيني والحيوي (Gene Latency Theory)" : "Gene Latency Theory",
+      title: ar ? "نظرية الكمون الجيني (Gene Latency Theory)" : "Gene Latency Theory",
       desc: ar
-        ? "دراسة للأسس البيولوجية والحيوية للقدرات غير المفعلة في النظم الحية وكيفية تحفيزها استجابة للضغوط والتحولات الكبرى."
-        : "An interdisciplinary study into the biological and living system roots of unexpressed capabilities and mechanisms of systemic activation under shock.",
-      badge: ar ? "بحث بيولوجي إدراكي" : "Bio-Cognitive Research",
+        ? "دراسة بينية للأسس البيولوجية والمنظومية للقدرات غير المفعلة والآليات التي يمكن من خلالها تنشيطها في ظل الضغوط والاضطرابات."
+        : "An interdisciplinary study of the biological and systems-level roots of unexpressed capabilities and the mechanisms through which they may become activated under stress or disruption.",
+      badge: ar ? "بناء نظري" : "Theoretical Construct",
       tag: "RESEARCH-GLT",
     },
     {
       title: ar ? "إطار السيادة الإدراكية (Cognitive Sovereignty Framework)" : "Cognitive Sovereignty Framework",
       desc: ar
-        ? "مصفوفة تقييم وتحصين استقلالية القرار الإنساني والمؤسسي في مواجهة هيمنة الأنظمة الخوارزمية وتحديات الذكاء الاصطناعي."
-        : "A robust methodology safeguarding human and institutional judgment autonomy against algorithmic vulnerability and synthetic bias.",
-      badge: ar ? "إطار حوكمة معرفي" : "Epistemic Governance",
+        ? "إطار منهجي لصيانة استقلالية الحكم الإنساني والمؤسسي ضد الهشاشة الخوارزمية والتحيز الخوارزمي."
+        : "A methodological framework for safeguarding human and institutional judgment autonomy against algorithmic vulnerability and algorithmic bias.",
+      badge: ar ? "إطار منهجي" : "Methodological Framework",
       tag: "GOVERNANCE-CSF",
     },
   ];
@@ -92,6 +92,21 @@ function Theory() {
         alt={ar ? "النموذج البلوري لنظرية الرحيمي" : "Alrohaimi Theory Museum Gallery Installation"}
       />
 
+      {/* Prominent Scientific Positioning Statement Banner (Point 41) */}
+      <section className="border-b border-amber-900/15 bg-gradient-to-r from-amber-500/10 via-amber-600/5 to-transparent py-6 px-5 lg:px-10">
+        <div className="mx-auto max-w-[1440px] flex items-start sm:items-center gap-3.5">
+          <ShieldCheck className="text-amber-800 shrink-0 mt-0.5 sm:mt-0" size={20} />
+          <p className="font-mono text-xs sm:text-sm text-[#0c1836] leading-relaxed">
+            <span className="font-bold text-amber-900 uppercase tracking-wider mr-1.5 block sm:inline">
+              {ar ? "الموقع العلمي والأكاديمي:" : "Scientific Positioning:"}
+            </span>
+            {ar
+              ? "تمثل نظرية الرحيمي منظومة فكرية ونظرية قيد التطوير تصل بين الإمكان الكامن والإدراك والمعنى والقرار والتحول والأثر. ويعمل المركز على تطوير نماذج مفاهيمية، وأطر تطبيقية، وأدوات تشخيصية أولية مشتقة من هذه المنظومة، وإتاحتها للتحكيم والمشاركة العلمية والتحقق التجريبي والتعاون البحثي الدولي."
+              : "Alrohaimi Theory is a developing intellectual and theoretical system that connects latent potential, cognition, meaning, decision, transformation, and impact. The Center develops conceptual models, applied frameworks, and prototype diagnostic tools derived from this system and makes them available for peer engagement, empirical validation, and international research collaboration."}
+          </p>
+        </div>
+      </section>
+
       {/* =====================================================================
           2. EPISTEMIC MANIFESTO: Open Architectural Balance
           ===================================================================== */}
@@ -106,24 +121,24 @@ function Theory() {
               <div className="mt-4 h-0.5 w-24 bg-[#b88a3b]" />
               <p className="mt-6 text-lg leading-relaxed text-[#4e5e7b] md:text-xl">
                 {ar
-                  ? "تمثل نظرية الرحيمي محاولة منهجية رائدة للإجابة عن كيفية تحول الطاقة والإمكانات البشرية الكامنة إلى فاعلية حقيقية، ثم إلى قرارات رشيدة، ومن ثم إلى تحول منظومي وأثر يتجاوز حدود المكان والزمان."
-                  : "Alrohaimi Theory represents an original systematic framework investigating how human and institutional latent potential transitions from an unactivated state through perception and meaning-making into sovereign decision, systemic transformation, and measurable civilizational impact."}
+                  ? "تمثل نظرية الرحيمي إطارًا منهجيًا مقترحًا يبحث في كيفية انتقال الإمكان الكامن البشري والمؤسسي من حالة غير مفعلة، عبر الإدراك وصناعة المعنى، إلى القرار السيادي والتحول المنظومي والأثر الحضاري القابل للقياس."
+                  : "Alrohaimi Theory represents a proposed systematic framework investigating how human and institutional latent potential transitions from an unactivated state through perception and meaning-making into sovereign decision, systemic transformation, and measurable civilizational impact."}
               </p>
               <p className="mt-4 text-base leading-relaxed text-[#4e5e7b]">
                 {ar
-                  ? "لا تقف النظرية عند حدود التوصيف الفلسفي، بل تنشئ جسراً متكاملاً يصل بين الرؤية النظرية العميقة والنماذج التطبيقية ومؤشرات القياس، لتزود قادة المؤسسات بأدوات عملية لمواجهة تعقيدات عصر الذكاء الاصطناعي."
-                  : "The theory transcends speculative philosophy by creating an unbroken bridge from rigorous theoretical conceptualization to operational models and diagnostic metrics, equipping leaders with practical instruments to navigate the algorithmic era."}
+                  ? "تمتد النظرية إلى ما هو أبعد من الصياغة المفاهيمية بربط البناءات النظرية بالنماذج التشغيلية والمقاييس التشخيصية عبر تأصيل نظري منهجي."
+                  : "The theory extends beyond conceptual formulation by connecting theoretical constructs with operational models and diagnostic metrics through systematic theoretical conceptualization."}
               </p>
             </div>
 
-            {/* Core Postulate Monolith (Open Architectural Seal) */}
+            {/* Central Proposition Monolith (Point 5) */}
             <div className="lg:col-span-5">
               <div className="relative overflow-hidden rounded-3xl border border-[#b88a3b]/30 bg-white p-8 lg:p-10 shadow-sm text-center">
                 <div className="mx-auto grid size-12 place-items-center rounded-full bg-[#f5f0e6] text-[#b88a3b]">
                   <Quote size={24} />
                 </div>
                 <span className="mt-4 inline-block font-mono text-[10px] font-bold uppercase tracking-widest text-[#b88a3b]">
-                  CORE POSTULATE · الفرضية الجوهرية
+                  CENTRAL PROPOSITION · الفرضية المركزية
                 </span>
                 <p className="mt-4 font-display text-xl font-bold italic leading-relaxed text-[#0c1836] md:text-2xl">
                   {ar
@@ -270,7 +285,7 @@ function Theory() {
 
                 <div className="mt-6 flex items-center justify-between border-t border-[#0c1836]/10 pt-4 text-xs">
                   <span className="text-[#718096]">
-                    {ar ? "تطبيق معتمد لدى المركز" : "Center Verified Implementation"}
+                    {ar ? "إطار مطور في المركز" : "Center-Developed Framework"}
                   </span>
                   <Link
                     to="/programs"
@@ -293,12 +308,12 @@ function Theory() {
           <div className="mb-12 text-center">
             <SectionLabel>{ar ? "محاكي المؤشر" : "Interactive Simulator"}</SectionLabel>
             <h2 className="font-display text-3xl font-black text-[#0c1836] md:text-5xl">
-              {ar ? "محاكاة مؤشر الرحيمي للتحول الحضاري" : "Alrohaimi Index Simulator"}
+              {ar ? "محاكاة مؤشر الرحيمي" : "Alrohaimi Index Simulator"}
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-base text-[#4e5e7b]">
               {ar
-                ? "اختبر مستويات السيادة الإدراكية، والتكيف المنظومي، والمرونة الوجودية، واستخرج معدل الجاهزية المؤسسية."
-                : "Test parameters across cognitive sovereignty, systems adaptability, and existential resilience to calculate institutional readiness."}
+                ? "استكشاف مستويات السيادة الإدراكية، والتكيف المنظومي، والمرونة الوجودية، واستخراج معدل الجاهزية المؤسسية عبر محاكاة قائمة على السيناريوهات."
+                : "Explore parameters across cognitive sovereignty, systems adaptability, and existential resilience through scenario-based simulation."}
             </p>
           </div>
 
@@ -307,7 +322,7 @@ function Theory() {
       </section>
 
       {/* =====================================================================
-          7. EPISTEMOLOGY & METHODOLOGICAL BOUNDARIES CHARTER
+          7. EPISTEMOLOGY & METHODOLOGICAL BOUNDARIES CHARTER (Points 25 & 26)
           ===================================================================== */}
       <section className="relative overflow-hidden border-b border-[#0c1836]/10 bg-[#fbf9f5] py-20 lg:py-28">
         <div className="mx-auto max-w-[1200px] px-5 lg:px-10">
@@ -322,8 +337,8 @@ function Theory() {
             </div>
             <p className="mt-5 text-base leading-relaxed text-[#4e5e7b]">
               {ar
-                ? "تؤكد المنظومة الفكرية للمركز على التمييز الصارم بين مرحلة البناء والتنظير الفلسفي من جهة، وبين النتائج المثبتة عبر الأبحاث التجريبية والمقاييس التطبيقية من جهة أخرى. وتطرح كافة المفاهيم كنماذج علمية مفتوحة للتحقق والتعاون الأكاديمي الدولي المستمر."
-                : "The Center strictly delineates between theoretical construction and conceptual modeling on one hand, and empirically verified findings derived from diagnostic metric applications on the other. All frameworks are published as living knowledge projects welcoming peer engagement and international empirical testing."}
+                ? "يميز المركز بين البناء النظري والنمذجة المفاهيمية من جهة، وبين النتائج التجريبية التي تنبثق من دراسات التحقق الحالية أو المستقبلية من جهة أخرى. وتُطرح كافة الأطر بوصفها مشاريع معرفية حية مفتوحة للمشاركة العلمية والتحقق التجريبي الدولي."
+                : "The Center distinguishes between theoretical construction and conceptual modeling on the one hand, and empirical findings that emerge from ongoing or future validation studies on the other. The frameworks are presented as living knowledge projects open to peer engagement and international empirical testing."}
             </p>
             <div className="mt-8 flex flex-wrap gap-4 border-t border-[#0c1836]/10 pt-6">
               <Link

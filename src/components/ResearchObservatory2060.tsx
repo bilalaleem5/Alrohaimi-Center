@@ -65,7 +65,7 @@ const DISCIPLINES: Discipline2060[] = [
     name: { en: "Cognitive Sovereignty", ar: "السيادة الإدراكية" },
     category: { en: "Algorithmic Independence", ar: "الاستقلال المعرفي والخوارزمي" },
     desc: {
-      en: "Safeguarding human and institutional decision autonomy against algorithmic capture, synthetic bias, and epistemic saturation.",
+      en: "Safeguarding human and institutional decision autonomy against algorithmic capture, algorithmic bias, and epistemic saturation.",
       ar: "صيانة استقلالية القرار الإنساني والمؤسسي وحمايته من الارتهان الخوارزمي والتشتت المعرفي في عصر الذكاء الاصطناعي.",
     },
     guidingQuestion: {
