@@ -152,7 +152,7 @@ export function Shell({ children }: { children: ReactNode }) {
     {
       to: "/research-series",
       label: ar ? "سلسلة أبحاث المركز" : "Alrohaimi Research Series",
-      desc: ar ? "الأوراق والدراسات العلمية المحكمة" : "Peer-reviewed research and monographs",
+      desc: ar ? "الأوراق والدراسات العلمية المحكمة" : "Research studies and monographs",
     },
     {
       to: "/research",

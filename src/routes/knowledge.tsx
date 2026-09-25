@@ -94,7 +94,7 @@ function Knowledge() {
         description={
           ar
             ? "مخرجات بحثية محكمة، ومؤلفات فكرية، ونماذج نظرية أصيلة، ومؤشرات معيارية تسهم في تعزيز السيادة الإدراكية وبناء مستقبل أكثر إنسانية."
-            : "Peer-reviewed research monographs, theoretical treatises, original models, and diagnostic indicators advancing cognitive sovereignty and civilizational flourishing."
+            : "Research monographs, theoretical treatises, developing models, and diagnostic indicators advancing cognitive sovereignty and civilizational flourishing."
         }
         image={researchLightImg}
         alt={ar ? "أرشيف المعرفة والبحث" : "Knowledge Archive & Research Hub"}
@@ -158,7 +158,7 @@ function Knowledge() {
             <div>
               <SectionLabel>{ar ? "المكتبة الرقمية" : "Digital Library"}</SectionLabel>
               <h2 className="font-display text-3xl font-black text-[#0c1836] md:text-4xl">
-                {ar ? "المؤلفات والأوراق العلمية المحكمة" : "Monographs & Peer-Reviewed Papers"}
+                {ar ? "المؤلفات والأوراق العلمية المحكمة" : "Monographs & Research Papers"}
               </h2>
             </div>
 

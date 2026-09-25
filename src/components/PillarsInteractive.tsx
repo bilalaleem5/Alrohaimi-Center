@@ -112,7 +112,7 @@ const PILLARS_DATA: PillarDetail[] = [
     badge: { en: "Civilizational Apex", ar: "الأثر والتحول" },
     themeBg: "from-amber-600/15 via-yellow-500/6 to-white",
     tags: {
-      en: ["Enduring Civilizational Impact", "Executive Academies", "Sovereign Metrics", "Vision 2030 Alignment"],
+      en: ["Enduring Civilizational Impact", "Executive Academies", "Sovereign Metrics", "Vision 2030 Horizons"],
       ar: ["الأثر الحضاري المستدام", "الأكاديميات التنفيذية", "المؤشرات السيادية", "مواءمة رؤية 2030"],
     },
   },

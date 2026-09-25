@@ -260,7 +260,7 @@ export const theoryStages = {
       metric: "Illustrative Score: 92",
       disclaimer: "Illustrative model output for demonstration purposes; not an empirically validated population estimate.",
       status: "Validation in Progress",
-      progress: "Research Development Progress: 100%",
+      progress: "Research Development Progress: Validation Phase",
     },
   ],
   ar: [
@@ -334,7 +334,7 @@ export const theoryStages = {
       metric: "درجة توضيحية: 92",
       disclaimer: "مخرج نموذجي لأغراض التوضيح والنمذجة؛ وليس تقديرًا إحصائيًا مثبتًا تجريبيًا.",
       status: "قيد التحقق والتطوير",
-      progress: "مستوى التطوير البحثي: 100%",
+      progress: "مستوى التطوير البحثي: مرحلة التحقق",
     },
   ],
 };
@@ -754,7 +754,7 @@ export const publications = [
     author: "Dr. Abdulmohsen Hameed Alrohaimi",
     pages: "348 pages · Academic Edition",
     description: {
-      en: "The comprehensive treatise introducing the six-stage movement from latency to impact, offering an original intellectual architecture for human and institutional agency.",
+      en: "The comprehensive treatise introducing the six-stage movement from latency to impact, offering a developing intellectual architecture for human and institutional agency.",
       ar: "الأطروحة الشاملة التي تقدم مسار المراحل الست من الكمون إلى الأثر، وتؤسس لبنية فكرية أصيلة للفاعلية الإنسانية والمؤسسية.",
     },
   },
@@ -768,7 +768,7 @@ export const publications = [
     arabicCategory: "البحوث والدراسات",
     year: "2025",
     author: "Alrohaimi Center Research Collective",
-    pages: "Peer-Reviewed Research Paper · 48 pages",
+    pages: "Research Paper · 48 pages",
     description: {
       en: "An empirical and theoretical examination of decision autonomy, cognitive capture, and frameworks for safeguarding institutional sovereign judgment.",
       ar: "دراسة نظرية وتطبيقية تفحص استقلالية القرار، والارتهان الإدراكي، وأطر صيانة القرار المؤسسي السيادي.",
@@ -1015,7 +1015,7 @@ export const alrohaimiResearchSeries: ARSPublication[] = [
       ar: "تطوير الإطار التشغيلي",
     },
     peerEngagement: {
-      en: "Open for executive cohort feedback and leadership laboratory pilots.",
+      en: "Open for leadership ecosystem feedback and pilot applications.",
       ar: "متاح للتجريب في مختبرات القيادة واستطلاع آراء النخب التنفيذية.",
     },
   },

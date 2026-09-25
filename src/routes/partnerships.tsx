@@ -52,7 +52,7 @@ function Partnerships() {
       code: "TRACK-01",
       deliverables: ar
         ? ["مشاريع بحثية مشتركة", "أوراق علمية محكمة", "تطبيق مؤشر الرحيمي (AICT)"]
-        : ["Joint Research Grants", "Peer-Reviewed Monographs", "Field Metric Calibration"],
+        : ["Joint Research Grants", "Research Monographs", "Field Metric Calibration"],
     },
     {
       title: ar ? "التعاون المعرفي والثقافي" : "Knowledge & Cultural Collaboration",

@@ -517,7 +517,7 @@ function About() {
                 </div>
               </div>
               <span className="rounded-full bg-[#f5f0e6] px-3.5 py-1 font-mono text-xs font-bold text-[#0c1836]">
-                PEER-REVIEWED STANDARDS
+                RESEARCH STANDARDS
               </span>
             </div>
 
@@ -539,7 +539,7 @@ function About() {
                 to="/knowledge"
                 className="inline-flex items-center gap-2 rounded-full border border-[#0c1836]/20 bg-[#fbf9f5] px-6 py-2.5 text-xs font-semibold text-[#0c1836] hover:bg-white"
               >
-                <span>{ar ? "الإصدارات والبحوث المحكمة" : "Explore Peer-Reviewed Publications"}</span>
+                <span>{ar ? "الإصدارات والبحوث المحكمة" : "Explore Research Publications"}</span>
               </Link>
             </div>
           </div>
